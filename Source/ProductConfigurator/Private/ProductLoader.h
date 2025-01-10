@@ -4,13 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Engine/StaticMeshActor.h"
-#include "Components/Widget.h"
 #include "ProductLoader.generated.h"
+
+class UConfiguratorUI;
 
 USTRUCT(BlueprintType)
 struct FConfigurationDetails : public FTableRowBase
 {
 	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly)
+	int32 ProductIndex;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FName AssetName;
@@ -29,6 +33,7 @@ struct FConfigurationDetails : public FTableRowBase
 
 	FConfigurationDetails()
 	{
+		ProductIndex = 0;
 		AssetName = TEXT("Default");
 		Thumbnail = nullptr;
 		Dimensions = FVector::ZeroVector;
@@ -73,7 +78,13 @@ public:
 	FName DefaultProductName = TEXT("Default");
 
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
-	UWidget* ConfigUI;
+	TSubclassOf<UUserWidget> ConfigurationWidget;
+
+	UPROPERTY(EditDefaultsOnly, Category = Configuration)
+	UMaterialInterface* MaterialOption1;
+	
+	UPROPERTY(EditDefaultsOnly, Category = Configuration)
+	UMaterialInterface* MaterialOption2;
 
 private:
 
@@ -85,12 +96,18 @@ private:
 
 	UPROPERTY()
 	APlayerController* PlayerController;
+
+	UPROPERTY()
+	UConfiguratorUI* ConfigUI;
+
+	UPROPERTY()
+	UMaterialInterface* CurrentMaterialOption;
 	
 	/**
 	 * Exposed Functions
 	 */
 	UFUNCTION(BlueprintCallable, Category = Configuration)
-	bool LoadAssetAsync(FName ProductName, int32 ConfigID);
+	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0);
 
 	/**
 	 * Internal Functions

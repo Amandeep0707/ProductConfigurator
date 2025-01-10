@@ -5,6 +5,7 @@
 #include "ConfiguratorGameMode.h"
 #include "Engine/StreamableManager.h"
 #include "Kismet/GameplayStatics.h"
+#include "Widgets/ConfiguratorUI.h"
 
 AProductLoader::AProductLoader()
 {
@@ -27,55 +28,70 @@ void AProductLoader::BeginPlay()
 	}
 }
 
-bool AProductLoader::LoadAssetAsync(FName ProductName, int32 ConfigID)
+void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex)
 {
+	if (!ConfigurationData) return;
 	static const FString ContextString(TEXT("ConfigData"));
-	const auto ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
-
-	if (ConfigData && ConfigData->Configurations[ConfigID].Asset)
+	auto ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
+	if (!ConfigData) return;
+	
+	AsyncAsset = ConfigData->Configurations[VariantIndex].Asset;
+	if (AsyncAsset)
 	{
-		AsyncAsset = ConfigData->Configurations[ConfigID].Asset;
-		if (AsyncAsset)
-		{
-			FStreamableManager StreamableManager;
-			TSharedPtr<FStreamableHandle> Handle = StreamableManager.RequestAsyncLoad(
-			AsyncAsset.ToSoftObjectPath(),
-			FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
-			0,
-			false
-			);
+		FStreamableManager StreamableManager;
+		TSharedPtr<FStreamableHandle> Handle = StreamableManager.RequestAsyncLoad(
+		AsyncAsset.ToSoftObjectPath(),
+		FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
+		0,
+		false
+		);
 
-			if (Handle.IsValid()) return true;
+		// This Material setup is not ideal but works for now.
+		if (MaterialIndex)
+		{
+			CurrentMaterialOption = MaterialOption2;
+		}
+		else
+		{
+			CurrentMaterialOption = MaterialOption1;
 		}
 	}
-	return false;
 }
 
 void AProductLoader::OnAssetLoaded()
 {
 	if (AsyncAsset)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Load Complete"));
 		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
+		GetStaticMeshComponent()->SetMaterial(0, CurrentMaterialOption);
 	}
 }
 
 void AProductLoader::Initialize()
 {
-	if (LoadAssetAsync(DefaultProductName, 0))
+	LoadAssetAsync(DefaultProductName, 0);
+
+	PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+	if (PlayerController && ConfigurationWidget)
 	{
-		PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-		if (PlayerController && ConfigUI)
+		ConfigUI = CreateWidget<UConfiguratorUI>(GetWorld(), ConfigurationWidget);
+		if (ConfigUI)
 		{
+			ConfigUI->SetLoader(this);
+			ConfigUI->AddToViewport();
 			EnableInput(PlayerController);
 			FInputModeGameAndUI Input;
 			Input.SetWidgetToFocus(ConfigUI->TakeWidget());
 			PlayerController->SetInputMode(Input);
 			PlayerController->SetShowMouseCursor(true);
 		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: Can't create widget."));
+		}
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Something went wrong."));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: No Input Widget Found."));
 	}
 }
