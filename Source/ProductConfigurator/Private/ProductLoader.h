@@ -4,17 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "Engine/StaticMeshActor.h"
+#include "Engine/StreamableManager.h"
 #include "ProductLoader.generated.h"
 
 class UConfiguratorUI;
 
 USTRUCT(BlueprintType)
-struct FConfigurationDetails : public FTableRowBase
+struct FAssetDetails : public FTableRowBase
 {
 	GENERATED_BODY()
 
 	UPROPERTY(BlueprintReadOnly)
-	int32 ProductIndex;
+	int32 AssetIndex;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FName AssetName;
@@ -31,13 +32,34 @@ struct FConfigurationDetails : public FTableRowBase
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	float Price = 0.f;
 
-	FConfigurationDetails()
+	FAssetDetails()
 	{
-		ProductIndex = 0;
+		AssetIndex = 0;
 		AssetName = TEXT("Default");
 		Thumbnail = nullptr;
 		Dimensions = FVector::ZeroVector;
 		Price = 0.f;
+	}
+};
+
+USTRUCT(BlueprintType)
+struct FConfigurationDetails : public FTableRowBase
+{
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly)
+	int32 ProductIndex;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	FName ProductName;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	TArray<FAssetDetails> Assets;
+
+	FConfigurationDetails()
+	{
+		ProductIndex = 0;
+		ProductName = TEXT("Default");
 	}
 };
 
@@ -66,8 +88,6 @@ UCLASS()
 class AProductLoader : public AStaticMeshActor
 {
 	GENERATED_BODY()
-	
-	AProductLoader();
 	virtual void BeginPlay() override;
 
 public:
@@ -86,6 +106,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
 	UMaterialInterface* MaterialOption2;
 
+	FORCEINLINE UConfiguratorUI* GetConfigUI() const { return ConfigUI; }
+
 private:
 
 	/**
@@ -102,6 +124,9 @@ private:
 
 	UPROPERTY()
 	UMaterialInterface* CurrentMaterialOption;
+	
+	TSharedPtr<FStreamableManager> StreamableManager;
+	TSharedPtr<FStreamableHandle> StreamableHandle;
 	
 	/**
 	 * Exposed Functions

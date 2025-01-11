@@ -1,0 +1,208 @@
+[
+	{
+		"Name": "Bosco",
+		"DisplayName": "Bosco",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductIndex": 0,
+				"ProductName": "Bosco Frame 1",
+				"Assets": [
+					{
+						"AssetIndex": 0,
+						"AssetName": "Bosco Frame 1 Size 1",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame1.Bosco_Frame1",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 34,
+							"Z": 12
+						},
+						"Price": 345
+					},
+					{
+						"AssetIndex": 0,
+						"AssetName": "Bosco Frame 1 Size 2",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame1.Bosco_Frame1",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 34,
+							"Z": 12
+						},
+						"Price": 345
+					}
+				]
+			},
+			{
+				"ProductIndex": 0,
+				"ProductName": "Bosco Frame 2",
+				"Assets": [
+					{
+						"AssetIndex": 0,
+						"AssetName": "Bosco Frame 2 Size 1",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					},
+					{
+						"AssetIndex": 0,
+						"AssetName": "Bosco Frame 2 Size 2",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					}
+				]
+			},
+			{
+				"ProductIndex": 0,
+				"ProductName": "Bosco Frame 3",
+				"Assets": [
+					{
+						"AssetIndex": 0,
+						"AssetName": "Bosco Frame 3 Size 1",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					},
+					{
+						"AssetIndex": 0,
+						"AssetName": "Bosco Frame 3 Size 2",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name": "Fiano",
+		"DisplayName": "Fiano",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductIndex": 0,
+				"ProductName": "Fiano Frame 1",
+				"Assets": [
+					{
+						"AssetIndex": 0,
+						"AssetName": "Fiano Frame 1 Size 1",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame1.Bosco_Frame1",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 34,
+							"Z": 12
+						},
+						"Price": 345
+					},
+					{
+						"AssetIndex": 0,
+						"AssetName": "Fiano Frame 1 Size 2",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame1.Bosco_Frame1",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 34,
+							"Z": 12
+						},
+						"Price": 345
+					}
+				]
+			},
+			{
+				"ProductIndex": 0,
+				"ProductName": "Fiano Frame 2",
+				"Assets": [
+					{
+						"AssetIndex": 0,
+						"AssetName": "Fiano Frame 2 Size 1",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					},
+					{
+						"AssetIndex": 0,
+						"AssetName": "Fiano Frame 2 Size 2",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					}
+				]
+			},
+			{
+				"ProductIndex": 0,
+				"ProductName": "Fiano Frame 3",
+				"Assets": [
+					{
+						"AssetIndex": 0,
+						"AssetName": "Fiano Frame 3 Size 1",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					},
+					{
+						"AssetIndex": 0,
+						"AssetName": "Fiano Frame 3 Size 2",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame2.Frame2'",
+						"Asset": "/Game/Configurator/Meshes/Bosco_Frame2.Bosco_Frame2",
+						"Dimensions":
+						{
+							"X": 13,
+							"Y": 45,
+							"Z": 12
+						},
+						"Price": 86
+					}
+				]
+			}
+		]
+	}
+]

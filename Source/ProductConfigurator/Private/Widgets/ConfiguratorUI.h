@@ -4,9 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "ProductLoader.h"
 #include "ConfiguratorUI.generated.h"
 
-class AProductLoader;
 /**
  * 
  */
@@ -23,6 +23,15 @@ public:
 	 *	Inlines
 	 */
 	FORCEINLINE void SetLoader(AProductLoader* Loader) { this->ProductLoader = Loader; }
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Configurator")
+	void HandleLeftClick(FVector2D MousePos);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Configurator")
+	void HandleRightClick();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Configurator")
+	void HandleToggle();
 
 private:
 	/**

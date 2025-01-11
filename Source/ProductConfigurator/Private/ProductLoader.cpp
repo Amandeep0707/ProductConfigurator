@@ -7,11 +7,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "Widgets/ConfiguratorUI.h"
 
-AProductLoader::AProductLoader()
-{
-	
-}
-
 void AProductLoader::BeginPlay()
 {
 	Super::BeginPlay();
@@ -30,23 +25,63 @@ void AProductLoader::BeginPlay()
 
 void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex)
 {
-	if (!ConfigurationData) return;
-	static const FString ContextString(TEXT("ConfigData"));
-	auto ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
-	if (!ConfigData) return;
-	
-	AsyncAsset = ConfigData->Configurations[VariantIndex].Asset;
-	if (AsyncAsset)
+	if (!ConfigurationData)
 	{
-		FStreamableManager StreamableManager;
-		TSharedPtr<FStreamableHandle> Handle = StreamableManager.RequestAsyncLoad(
-		AsyncAsset.ToSoftObjectPath(),
-		FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
-		0,
-		false
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Configuration Data is null!"));
+		return;
+	}
+
+	static const FString ContextString(TEXT("ConfigData"));
+	FConfigurationData* ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
+    
+	if (!ConfigData)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s"), *ProductName.ToString()));
+		return;
+	}
+
+	// Validate indices
+	if (!ConfigData->Configurations.IsValidIndex(VariantIndex))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid variant index: %d"), VariantIndex));
+		return;
+	}
+
+	const FConfigurationDetails& Configuration = ConfigData->Configurations[VariantIndex];
+    
+	if (!Configuration.Assets.IsValidIndex(VariantSizeIndex))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid size index: %d"), VariantSizeIndex));
+		return;
+	}
+
+	// Get the correct asset
+	const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
+	AsyncAsset = AssetDetails.Asset;
+
+	if (!AsyncAsset.IsNull())
+	{
+		// Create a persistent StreamableManager instance
+		if (!StreamableManager)
+		{
+			StreamableManager = MakeShared<FStreamableManager>();
+		}
+
+		// Store the handle as a class member
+		StreamableHandle = StreamableManager->RequestAsyncLoad(
+			AsyncAsset.ToSoftObjectPath(),
+			FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
+			0,
+			false
 		);
 
-		// This Material setup is not ideal but works for now.
+		// Add handle validation
+		if (!StreamableHandle.IsValid())
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to create streamable handle"));
+			return;
+		}
+
 		if (MaterialIndex)
 		{
 			CurrentMaterialOption = MaterialOption2;
@@ -60,7 +95,7 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 
 void AProductLoader::OnAssetLoaded()
 {
-	if (AsyncAsset)
+	if (AsyncAsset.IsValid())
 	{
 		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
 		GetStaticMeshComponent()->SetMaterial(0, CurrentMaterialOption);
@@ -69,7 +104,7 @@ void AProductLoader::OnAssetLoaded()
 
 void AProductLoader::Initialize()
 {
-	LoadAssetAsync(DefaultProductName, 0);
+	LoadAssetAsync(DefaultProductName);
 
 	PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
 	if (PlayerController && ConfigurationWidget)

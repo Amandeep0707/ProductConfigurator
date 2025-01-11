@@ -2,9 +2,9 @@
 
 
 #include "ConfiguratorUI.h"
-#include "ProductLoader.h"
 
 void UConfiguratorUI::NativeConstruct()
 {
 	Super::NativeConstruct();
 }
+
