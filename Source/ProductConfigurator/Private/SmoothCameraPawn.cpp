@@ -16,7 +16,7 @@
 // Sets default values
 ASmoothCameraPawn::ASmoothCameraPawn()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 	// Constructing Components
 	PawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>("PawnMovement");
@@ -24,6 +24,8 @@ ASmoothCameraPawn::ASmoothCameraPawn()
 	Sphere = CreateDefaultSubobject<USphereComponent>("Sphere");
 	Sphere->SetupAttachment(GetRootComponent());
 	Sphere->SetCollisionResponseToAllChannels(ECR_Block);
+	Sphere->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
+	Sphere->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 	
 	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
 	Camera->SetupAttachment(Sphere);
@@ -76,7 +78,10 @@ void ASmoothCameraPawn::HandleLeftClick(const FInputActionValue& Value)
 {
 	if (const AProductLoader* ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader())
 	{
-		ProductLoader->GetConfigUI()->HandleLeftClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
+		if (ProductLoader->bIsMouseOver)
+		{
+			ProductLoader->GetConfigUI()->HandleLeftClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
+		}
 	}
 }
 
@@ -86,12 +91,6 @@ void ASmoothCameraPawn::HandleRightClick(const FInputActionValue& Value)
 	{
 		ProductLoader->GetConfigUI()->HandleRightClick();
 	}
-}
-
-// Called every frame
-void ASmoothCameraPawn::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
 }
 
 // Called to bind functionality to input

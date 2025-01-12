@@ -7,6 +7,11 @@
 #include "Kismet/GameplayStatics.h"
 #include "Widgets/ConfiguratorUI.h"
 
+AProductLoader::AProductLoader()
+{
+	PrimaryActorTick.bCanEverTick = true;
+}
+
 void AProductLoader::BeginPlay()
 {
 	Super::BeginPlay();
@@ -21,6 +26,12 @@ void AProductLoader::BeginPlay()
 	{
 		GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "GameMode Not Found. Configurator won't work properly.");
 	}
+}
+
+void AProductLoader::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	TraceUnderMouse();
 }
 
 void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex)
@@ -128,5 +139,73 @@ void AProductLoader::Initialize()
 	else
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: No Input Widget Found."));
+	}
+}
+
+void AProductLoader::OnMouseOverMesh()
+{
+	GetStaticMeshComponent()->SetRenderCustomDepth(true);
+}
+
+void AProductLoader::OnMouseExitMesh()
+{
+	GetStaticMeshComponent()->SetRenderCustomDepth(false);
+}
+
+void AProductLoader::TraceUnderMouse()
+{
+	if (!PlayerController)
+	{
+		return;
+	}
+
+	// Get mouse position
+	float MouseX, MouseY;
+	if (!PlayerController->GetMousePosition(MouseX, MouseY))
+	{
+		if (bIsMouseOver)
+		{
+			bIsMouseOver = false;
+			OnMouseExitMesh();
+		}
+		return;
+	}
+
+	// Convert mouse position to world space
+	FVector WorldLocation, WorldDirection;
+	if (PlayerController->DeprojectScreenPositionToWorld(MouseX, MouseY, WorldLocation, WorldDirection))
+	{
+		// Calculate end point
+		FVector EndLocation = WorldLocation + (WorldDirection * 10000.0f);
+
+		// Setup trace parameters
+		FHitResult HitResult;
+		TArray<AActor*> ActorsToIgnore;
+		
+		bool bHit = UKismetSystemLibrary::LineTraceSingle(GetWorld(),
+			WorldLocation,
+			EndLocation,
+			UEngineTypes::ConvertToTraceType(ECC_Visibility),
+			false,
+			ActorsToIgnore,
+			EDrawDebugTrace::None,
+			HitResult,
+			false
+			);
+
+		// Check if we hit our static mesh component
+		if (bHit && HitResult.GetComponent() == GetStaticMeshComponent())
+		{
+			if (!bIsMouseOver)
+			{
+				bIsMouseOver = true;
+			}
+			OnMouseOverMesh();
+		}
+		else if (bIsMouseOver)
+		{
+			bIsMouseOver = false;
+			OnMouseExitMesh();
+		}
 	}
 }

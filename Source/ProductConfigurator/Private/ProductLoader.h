@@ -14,9 +14,6 @@ struct FAssetDetails : public FTableRowBase
 {
 	GENERATED_BODY()
 
-	UPROPERTY(BlueprintReadOnly)
-	int32 AssetIndex;
-
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FName AssetName;
 	
@@ -34,7 +31,6 @@ struct FAssetDetails : public FTableRowBase
 
 	FAssetDetails()
 	{
-		AssetIndex = 0;
 		AssetName = TEXT("Default");
 		Thumbnail = nullptr;
 		Dimensions = FVector::ZeroVector;
@@ -47,9 +43,6 @@ struct FConfigurationDetails : public FTableRowBase
 {
 	GENERATED_BODY()
 
-	UPROPERTY(BlueprintReadOnly)
-	int32 ProductIndex;
-
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FName ProductName;
 
@@ -58,7 +51,6 @@ struct FConfigurationDetails : public FTableRowBase
 
 	FConfigurationDetails()
 	{
-		ProductIndex = 0;
 		ProductName = TEXT("Default");
 	}
 };
@@ -88,11 +80,13 @@ UCLASS()
 class AProductLoader : public AStaticMeshActor
 {
 	GENERATED_BODY()
+	AProductLoader();
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
 
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta=(RowType="ConfigurationData"), Category = Configuration)
-	UDataTable* ConfigurationData;
+	UDataTable* ConfigurationData = nullptr;
 
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
 	FName DefaultProductName = TEXT("Default");
@@ -101,29 +95,33 @@ public:
 	TSubclassOf<UUserWidget> ConfigurationWidget;
 
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
-	UMaterialInterface* MaterialOption1;
+	UMaterialInterface* MaterialOption1 = nullptr;
 	
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
-	UMaterialInterface* MaterialOption2;
+	UMaterialInterface* MaterialOption2 = nullptr;
 
 	FORCEINLINE UConfiguratorUI* GetConfigUI() const { return ConfigUI; }
+
+	UPROPERTY()
+	bool bIsMouseOver = false;
 
 private:
 
 	/**
 	 * Internal Variables
 	 */
+	
 	UPROPERTY()
 	TSoftObjectPtr<UStaticMesh> AsyncAsset;
 
 	UPROPERTY()
-	APlayerController* PlayerController;
+	APlayerController* PlayerController = nullptr;
 
 	UPROPERTY()
-	UConfiguratorUI* ConfigUI;
+	UConfiguratorUI* ConfigUI = nullptr;
 
 	UPROPERTY()
-	UMaterialInterface* CurrentMaterialOption;
+	UMaterialInterface* CurrentMaterialOption = nullptr;
 	
 	TSharedPtr<FStreamableManager> StreamableManager;
 	TSharedPtr<FStreamableHandle> StreamableHandle;
@@ -139,4 +137,7 @@ private:
 	 */
 	void OnAssetLoaded();
 	void Initialize();
+	void OnMouseOverMesh();
+	void OnMouseExitMesh();
+	void TraceUnderMouse();
 };
