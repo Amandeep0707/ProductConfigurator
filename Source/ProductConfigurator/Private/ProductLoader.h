@@ -88,7 +88,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta=(RowType="ConfigurationData"), Category = Configuration)
 	UDataTable* ConfigurationData = nullptr;
 
-	UPROPERTY(EditDefaultsOnly, Category = Configuration)
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = Configuration)
 	FName DefaultProductName = TEXT("Default");
 
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
@@ -99,6 +99,9 @@ public:
 	
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
 	UMaterialInterface* MaterialOption2 = nullptr;
+
+	UPROPERTY(EditDefaultsOnly, Category = Configuration)
+	int32 MaterialSelectorIndex = 0;
 
 	FORCEINLINE UConfiguratorUI* GetConfigUI() const { return ConfigUI; }
 

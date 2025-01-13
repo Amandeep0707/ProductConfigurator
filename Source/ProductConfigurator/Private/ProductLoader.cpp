@@ -109,7 +109,7 @@ void AProductLoader::OnAssetLoaded()
 	if (AsyncAsset.IsValid())
 	{
 		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
-		GetStaticMeshComponent()->SetMaterial(0, CurrentMaterialOption);
+		GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
 }
 
