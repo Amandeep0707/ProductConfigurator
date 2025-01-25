@@ -24,6 +24,24 @@ struct FAssetDetails : public FTableRowBase
 	TSoftObjectPtr<UStaticMesh> Asset;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	bool bHalfFencingOptionAvailable;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bHalfFencingOptionAvailable", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> HalfFencingAsset;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	bool bFullFencingOptionAvailable;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFullFencingOptionAvailable", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> FullFencingAsset;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	bool bGlassOptionAvailable;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> GlassAsset;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FVector Dimensions;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
@@ -33,6 +51,9 @@ struct FAssetDetails : public FTableRowBase
 	{
 		AssetName = TEXT("Default");
 		Thumbnail = nullptr;
+		bHalfFencingOptionAvailable = false;
+		bFullFencingOptionAvailable = false;
+		bGlassOptionAvailable = false;
 		Dimensions = FVector::ZeroVector;
 		Price = 0.f;
 	}
@@ -108,14 +129,44 @@ public:
 	UPROPERTY()
 	bool bIsMouseOver = false;
 
+	void OnMouseOverMesh();
+	void OnMouseExitMesh();
+
 private:
 
 	/**
 	 * Internal Variables
 	 */
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	UStaticMeshComponent* HalfFencingMeshComp = nullptr;
+
+	UPROPERTY()
+	bool bHalfFencingVisible = false;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	UStaticMeshComponent* FullFencingMeshComp = nullptr;
+
+	UPROPERTY()
+	bool bFullFencingVisible = false;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	UStaticMeshComponent* GlassMeshComp = nullptr;
+
+	UPROPERTY()
+	bool bGlassVisible = false;
 	
 	UPROPERTY()
 	TSoftObjectPtr<UStaticMesh> AsyncAsset;
+	
+	UPROPERTY()
+	TSoftObjectPtr<UStaticMesh> AsyncHalfFencingMesh;
+	
+	UPROPERTY()
+	TSoftObjectPtr<UStaticMesh> AsyncFullFencingMesh;
+
+	UPROPERTY()
+	TSoftObjectPtr<UStaticMesh> AsyncGlassMesh;
 
 	UPROPERTY()
 	APlayerController* PlayerController = nullptr;
@@ -133,14 +184,11 @@ private:
 	 * Exposed Functions
 	 */
 	UFUNCTION(BlueprintCallable, Category = Configuration)
-	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0);
+	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, bool bHalfFencing = false, bool bFullFencing = false, bool bGlassOption = false);
 
 	/**
 	 * Internal Functions
 	 */
 	void OnAssetLoaded();
 	void Initialize();
-	void OnMouseOverMesh();
-	void OnMouseExitMesh();
-	void TraceUnderMouse();
 };

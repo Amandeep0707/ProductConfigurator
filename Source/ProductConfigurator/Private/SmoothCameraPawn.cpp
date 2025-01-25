@@ -2,11 +2,11 @@
 
 
 #include "SmoothCameraPawn.h"
+#include "CineCameraComponent.h"
 #include "ConfiguratorGameMode.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "Blueprint/WidgetLayoutLibrary.h"
-#include "Camera/CameraComponent.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Kismet/GameplayStatics.h"
@@ -16,18 +16,18 @@
 // Sets default values
 ASmoothCameraPawn::ASmoothCameraPawn()
 {
-	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bCanEverTick = true;
 
 	// Constructing Components
 	PawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>("PawnMovement");
 	
 	Sphere = CreateDefaultSubobject<USphereComponent>("Sphere");
-	Sphere->SetupAttachment(GetRootComponent());
+	SetRootComponent(Sphere);
 	Sphere->SetCollisionResponseToAllChannels(ECR_Block);
 	Sphere->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
 	Sphere->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-	
-	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
+
+	Camera = CreateDefaultSubobject<UCineCameraComponent>("CineCamera");
 	Camera->SetupAttachment(Sphere);
 	Camera->bUsePawnControlRotation = true;
 }
@@ -36,23 +36,35 @@ ASmoothCameraPawn::ASmoothCameraPawn()
 void ASmoothCameraPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	if (APlayerController* PC = UGameplayStatics::GetPlayerController(GetWorld(), 0))
+
+	PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+	if (PlayerController)
 	{
-		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
+		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
 		{
 			Subsystem->AddMappingContext(MappingContext, 0);
 		}
 	}
+
+	ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
+}
+
+void ASmoothCameraPawn::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	TraceForFocus();
 }
 
 void ASmoothCameraPawn::Move(const FInputActionValue& Value)
 {
 	const FVector LookVector = Value.Get<FVector>();
 
-	PawnMovement->AddInputVector(Camera->GetForwardVector()*LookVector.Y);
-	PawnMovement->AddInputVector(Camera->GetRightVector()*LookVector.X);
-	PawnMovement->AddInputVector(Camera->GetUpVector()*LookVector.Z);
+	if (Camera)
+	{
+		PawnMovement->AddInputVector(Camera->GetForwardVector() * LookVector.Y);
+		PawnMovement->AddInputVector(Camera->GetRightVector() * LookVector.X);
+		PawnMovement->AddInputVector(Camera->GetUpVector() * LookVector.Z);
+	}
 }
 
 void ASmoothCameraPawn::Look(const FInputActionValue& Value)
@@ -68,32 +80,49 @@ void ASmoothCameraPawn::Look(const FInputActionValue& Value)
 
 void ASmoothCameraPawn::ToggleUI(const FInputActionValue& Value)
 {
-	if (const AProductLoader* ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader())
+	if (ProductLoader)
 	{
+		ProductLoader->GetConfigUI()->HandleToggle();
+	}
+	else
+	{
+		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
 		ProductLoader->GetConfigUI()->HandleToggle();
 	}
 }
 
-void ASmoothCameraPawn::HandleLeftClick(const FInputActionValue& Value)
+void ASmoothCameraPawn::HandlePrimaryClick(const FInputActionValue& Value)
 {
-	if (const AProductLoader* ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader())
+	if (ProductLoader)
 	{
-		if (ProductLoader->bIsMouseOver)
+		if (bIsMouseOver)
 		{
-			ProductLoader->GetConfigUI()->HandleLeftClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
+			ProductLoader->GetConfigUI()->HandlePrimaryClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
+		}
+	}
+	else
+	{
+		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
+		if (bIsMouseOver)
+		{
+			ProductLoader->GetConfigUI()->HandlePrimaryClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
 		}
 	}
 }
 
-void ASmoothCameraPawn::HandleRightClick(const FInputActionValue& Value)
+void ASmoothCameraPawn::HandleSecondaryClick(const FInputActionValue& Value)
 {
-	if (const AProductLoader* ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader())
+	if (ProductLoader)
 	{
-		ProductLoader->GetConfigUI()->HandleRightClick();
+		ProductLoader->GetConfigUI()->HandleSecondaryClick();
+	}
+	else
+	{
+		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
+		ProductLoader->GetConfigUI()->HandleSecondaryClick();
 	}
 }
 
-// Called to bind functionality to input
 void ASmoothCameraPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -103,8 +132,67 @@ void ASmoothCameraPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 		EnhancedInputComponent->BindAction(IA_Fly, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::Move);
 		EnhancedInputComponent->BindAction(IA_Look, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::Look);
 		EnhancedInputComponent->BindAction(IA_ToggleUI, ETriggerEvent::Started, this, &ASmoothCameraPawn::ToggleUI);
-		EnhancedInputComponent->BindAction(IA_LeftClick, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandleLeftClick);
-		EnhancedInputComponent->BindAction(IA_RightClick, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandleRightClick);
+		EnhancedInputComponent->BindAction(IA_PrimaryClick, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandlePrimaryClick);
+		EnhancedInputComponent->BindAction(IA_SecondaryClick, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandleSecondaryClick);
 	}
 }
+
+void ASmoothCameraPawn::TraceForFocus()
+{
+	if (!PlayerController || !ProductLoader)
+	{
+		return;
+	}
+
+	// Get mouse position
+	float MouseX, MouseY;
+	if (!PlayerController->GetMousePosition(MouseX, MouseY))
+	{
+		if (bIsMouseOver)
+		{
+			bIsMouseOver = false;
+			ProductLoader->OnMouseExitMesh();
+		}
+		return;
+	}
+
+	// Convert mouse position to world space
+	FVector WorldLocation, WorldDirection;
+	if (PlayerController->DeprojectScreenPositionToWorld(MouseX, MouseY, WorldLocation, WorldDirection))
+	{
+		// Calculate end point
+		FVector EndLocation = WorldLocation + (WorldDirection * 10000.0f);
+
+		// Setup trace parameters
+		FHitResult HitResult;
+		TArray<AActor*> ActorsToIgnore;
+		
+		bool bHit = UKismetSystemLibrary::LineTraceSingle(GetWorld(),
+			WorldLocation,
+			EndLocation,
+			UEngineTypes::ConvertToTraceType(ECC_Visibility),
+			false,
+			ActorsToIgnore,
+			EDrawDebugTrace::None,
+			HitResult,
+			false
+			);
+
+		// Check if we hit our static mesh component
+		if (bHit && HitResult.GetActor() == ProductLoader)
+		{
+			if (!bIsMouseOver)
+			{
+				bIsMouseOver = true;
+			}
+			ProductLoader->OnMouseOverMesh();
+		}
+		else if (bIsMouseOver)
+		{
+			bIsMouseOver = false;
+			ProductLoader->OnMouseExitMesh();
+		}
+	}
+}
+
 

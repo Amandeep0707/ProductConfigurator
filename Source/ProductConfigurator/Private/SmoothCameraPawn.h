@@ -7,7 +7,8 @@
 #include "GameFramework/Pawn.h"
 #include "SmoothCameraPawn.generated.h"
 
-class UCameraComponent;
+class AProductLoader;
+class UCineCameraComponent;
 class USphereComponent;
 class UFloatingPawnMovement;
 class UInputMappingContext;
@@ -24,6 +25,7 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
 
 private:
 	/**
@@ -42,22 +44,31 @@ private:
 	UInputAction* IA_ToggleUI;
 
 	UPROPERTY(EditDefaultsOnly, Category = Inputs)
-	UInputAction* IA_LeftClick;
+	UInputAction* IA_PrimaryClick;
 
 	UPROPERTY(EditDefaultsOnly, Category = Inputs)
-	UInputAction* IA_RightClick;
+	UInputAction* IA_SecondaryClick;
 
 	/**
 	 * Internal Variables
 	 */
-	UPROPERTY(EditDefaultsOnly, Category = Components)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	UFloatingPawnMovement* PawnMovement;
 
-	UPROPERTY(EditDefaultsOnly, Category = Components)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	USphereComponent* Sphere;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
+	UCineCameraComponent* Camera;
 
-	UPROPERTY(EditDefaultsOnly, Category = Components)
-	UCameraComponent* Camera;
+	UPROPERTY()
+	APlayerController* PlayerController;
+	
+	UPROPERTY()
+	AProductLoader* ProductLoader;
+
+	UPROPERTY()
+	bool bIsMouseOver = false;
 	
 	/**
 	 * Input Functions
@@ -65,6 +76,7 @@ private:
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void ToggleUI(const FInputActionValue& Value);
-	void HandleLeftClick(const FInputActionValue& Value);
-	void HandleRightClick(const FInputActionValue& Value);
+	void HandlePrimaryClick(const FInputActionValue& Value);
+	void HandleSecondaryClick(const FInputActionValue& Value);
+	void TraceForFocus();
 };

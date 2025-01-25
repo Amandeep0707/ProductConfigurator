@@ -10,6 +10,20 @@
 AProductLoader::AProductLoader()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	GetStaticMeshComponent()->SetRenderCustomDepth(true);
+	
+	HalfFencingMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("HalfFencingMeshComponent");
+	HalfFencingMeshComp->SetupAttachment(GetRootComponent());
+	HalfFencingMeshComp->SetRenderCustomDepth(true);
+
+	FullFencingMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("FullFencingMeshComponent");
+	FullFencingMeshComp->SetupAttachment(GetRootComponent());
+	FullFencingMeshComp->SetRenderCustomDepth(true);
+	
+	GlassMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("GlassMeshComponent");
+	GlassMeshComp->SetupAttachment(GetRootComponent());
+	GlassMeshComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::BeginPlay()
@@ -31,10 +45,9 @@ void AProductLoader::BeginPlay()
 void AProductLoader::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	TraceUnderMouse();
 }
 
-void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex)
+void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, bool bHalfFencing, bool bFullFencing, bool bGlassOption)
 {
 	if (!ConfigurationData)
 	{
@@ -47,7 +60,7 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
     
 	if (!ConfigData)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s"), *ProductName.ToString()));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s. Please set correct DefaultProductName in Product Loader."), *ProductName.ToString()));
 		return;
 	}
 
@@ -69,9 +82,33 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 	// Get the correct asset
 	const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
 	AsyncAsset = AssetDetails.Asset;
+	AsyncHalfFencingMesh = AssetDetails.HalfFencingAsset;
+	AsyncFullFencingMesh = AssetDetails.FullFencingAsset;
+	AsyncGlassMesh = AssetDetails.GlassAsset;
 
 	if (!AsyncAsset.IsNull())
 	{
+		TArray<FSoftObjectPath> AssetPaths;
+		AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
+		
+		if (bHalfFencing)
+		{
+			AssetPaths.Add(AsyncHalfFencingMesh.ToSoftObjectPath());
+			bHalfFencingVisible = bHalfFencing;
+		} else bHalfFencingVisible = false;
+		
+		if (bFullFencing)
+		{
+			AssetPaths.Add(AsyncFullFencingMesh.ToSoftObjectPath());
+			bFullFencingVisible = bFullFencing;
+		} else bFullFencingVisible = false;
+		
+		if (bGlassOption)
+		{
+			AssetPaths.Add(AsyncGlassMesh.ToSoftObjectPath());
+			bGlassVisible = bGlassOption;
+		} else bGlassVisible = false;
+
 		// Create a persistent StreamableManager instance
 		if (!StreamableManager)
 		{
@@ -80,7 +117,7 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 
 		// Store the handle as a class member
 		StreamableHandle = StreamableManager->RequestAsyncLoad(
-			AsyncAsset.ToSoftObjectPath(),
+			AssetPaths,
 			FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
 			0,
 			false
@@ -111,6 +148,29 @@ void AProductLoader::OnAssetLoaded()
 		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
 		GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
+	if (AsyncHalfFencingMesh.IsValid())
+	{
+		HalfFencingMeshComp->SetStaticMesh(AsyncHalfFencingMesh.Get());
+		HalfFencingMeshComp->SetVisibility(true);
+		HalfFencingMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+	}
+	else HalfFencingMeshComp->SetVisibility(false);
+	
+	if (AsyncFullFencingMesh.IsValid())
+	{
+		FullFencingMeshComp->SetStaticMesh(AsyncFullFencingMesh.Get());
+		FullFencingMeshComp->SetVisibility(true);
+		FullFencingMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+	}
+	else FullFencingMeshComp->SetVisibility(false);
+	
+	if (AsyncGlassMesh.IsValid())
+	{
+		GlassMeshComp->SetStaticMesh(AsyncGlassMesh.Get());
+		GlassMeshComp->SetVisibility(true);
+		GlassMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+	}
+	else GlassMeshComp->SetVisibility(false);
 }
 
 void AProductLoader::Initialize()
@@ -145,67 +205,15 @@ void AProductLoader::Initialize()
 void AProductLoader::OnMouseOverMesh()
 {
 	GetStaticMeshComponent()->SetRenderCustomDepth(true);
+	HalfFencingMeshComp->SetRenderCustomDepth(true);
+	FullFencingMeshComp->SetRenderCustomDepth(true);
+	GlassMeshComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::OnMouseExitMesh()
 {
 	GetStaticMeshComponent()->SetRenderCustomDepth(false);
-}
-
-void AProductLoader::TraceUnderMouse()
-{
-	if (!PlayerController)
-	{
-		return;
-	}
-
-	// Get mouse position
-	float MouseX, MouseY;
-	if (!PlayerController->GetMousePosition(MouseX, MouseY))
-	{
-		if (bIsMouseOver)
-		{
-			bIsMouseOver = false;
-			OnMouseExitMesh();
-		}
-		return;
-	}
-
-	// Convert mouse position to world space
-	FVector WorldLocation, WorldDirection;
-	if (PlayerController->DeprojectScreenPositionToWorld(MouseX, MouseY, WorldLocation, WorldDirection))
-	{
-		// Calculate end point
-		FVector EndLocation = WorldLocation + (WorldDirection * 10000.0f);
-
-		// Setup trace parameters
-		FHitResult HitResult;
-		TArray<AActor*> ActorsToIgnore;
-		
-		bool bHit = UKismetSystemLibrary::LineTraceSingle(GetWorld(),
-			WorldLocation,
-			EndLocation,
-			UEngineTypes::ConvertToTraceType(ECC_Visibility),
-			false,
-			ActorsToIgnore,
-			EDrawDebugTrace::None,
-			HitResult,
-			false
-			);
-
-		// Check if we hit our static mesh component
-		if (bHit && HitResult.GetComponent() == GetStaticMeshComponent())
-		{
-			if (!bIsMouseOver)
-			{
-				bIsMouseOver = true;
-			}
-			OnMouseOverMesh();
-		}
-		else if (bIsMouseOver)
-		{
-			bIsMouseOver = false;
-			OnMouseExitMesh();
-		}
-	}
+	HalfFencingMeshComp->SetRenderCustomDepth(false);
+	FullFencingMeshComp->SetRenderCustomDepth(false);
+	GlassMeshComp->SetRenderCustomDepth(false);
 }

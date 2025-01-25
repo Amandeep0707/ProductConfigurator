@@ -25,10 +25,10 @@ public:
 	FORCEINLINE void SetLoader(AProductLoader* Loader) { this->ProductLoader = Loader; }
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Configurator")
-	void HandleLeftClick(FVector2D MousePos);
+	void HandlePrimaryClick(FVector2D MousePos);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Configurator")
-	void HandleRightClick();
+	void HandleSecondaryClick();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Configurator")
 	void HandleToggle();
