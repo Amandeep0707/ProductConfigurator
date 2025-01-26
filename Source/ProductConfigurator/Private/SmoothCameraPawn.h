@@ -69,6 +69,9 @@ private:
 
 	UPROPERTY()
 	bool bIsMouseOver = false;
+
+	UPROPERTY()
+	float FocusDistance = 0.f;
 	
 	/**
 	 * Input Functions

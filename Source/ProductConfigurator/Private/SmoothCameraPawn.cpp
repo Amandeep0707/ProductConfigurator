@@ -12,8 +12,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "Widgets/ConfiguratorUI.h"
 
-
-// Sets default values
 ASmoothCameraPawn::ASmoothCameraPawn()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -32,7 +30,6 @@ ASmoothCameraPawn::ASmoothCameraPawn()
 	Camera->bUsePawnControlRotation = true;
 }
 
-// Called when the game starts or when spawned
 void ASmoothCameraPawn::BeginPlay()
 {
 	Super::BeginPlay();
@@ -139,7 +136,13 @@ void ASmoothCameraPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 void ASmoothCameraPawn::TraceForFocus()
 {
-	if (!PlayerController || !ProductLoader)
+	if (!ProductLoader)
+	{
+		ProductLoader = Cast<AConfiguratorGameMode>(GetWorld())->GetProductLoader();
+		return;
+	}
+	
+	if (!PlayerController)
 	{
 		return;
 	}
@@ -186,13 +189,22 @@ void ASmoothCameraPawn::TraceForFocus()
 				bIsMouseOver = true;
 			}
 			ProductLoader->OnMouseOverMesh();
+			FocusDistance = FVector::Distance(HitResult.Location, Camera->GetComponentLocation());
 		}
 		else if (bIsMouseOver)
 		{
 			bIsMouseOver = false;
 			ProductLoader->OnMouseExitMesh();
+			FocusDistance = FVector::Distance(ProductLoader->GetActorLocation(), Camera->GetComponentLocation());
+		}
+		else
+		{
+			FocusDistance = FVector::Distance(ProductLoader->GetActorLocation(), Camera->GetComponentLocation());
 		}
 	}
+
+	FCameraFocusSettings FocusSettings;
+	FocusSettings.ManualFocusDistance = FocusDistance;
+	FocusSettings.bSmoothFocusChanges = true;
+	Camera->SetFocusSettings(FocusSettings);
 }
-
-
