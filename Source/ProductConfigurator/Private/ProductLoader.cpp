@@ -151,7 +151,7 @@ void AProductLoader::OnAssetLoaded()
 	if (AsyncHalfFencingMesh.IsValid())
 	{
 		HalfFencingMeshComp->SetStaticMesh(AsyncHalfFencingMesh.Get());
-		HalfFencingMeshComp->SetVisibility(true);
+		HalfFencingMeshComp->SetVisibility(bHalfFencingVisible);
 		HalfFencingMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
 	else HalfFencingMeshComp->SetVisibility(false);
@@ -159,7 +159,7 @@ void AProductLoader::OnAssetLoaded()
 	if (AsyncFullFencingMesh.IsValid())
 	{
 		FullFencingMeshComp->SetStaticMesh(AsyncFullFencingMesh.Get());
-		FullFencingMeshComp->SetVisibility(true);
+		FullFencingMeshComp->SetVisibility(bFullFencingVisible);
 		FullFencingMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
 	else FullFencingMeshComp->SetVisibility(false);
@@ -167,7 +167,7 @@ void AProductLoader::OnAssetLoaded()
 	if (AsyncGlassMesh.IsValid())
 	{
 		GlassMeshComp->SetStaticMesh(AsyncGlassMesh.Get());
-		GlassMeshComp->SetVisibility(true);
+		GlassMeshComp->SetVisibility(bGlassVisible);
 		GlassMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
 	else GlassMeshComp->SetVisibility(false);

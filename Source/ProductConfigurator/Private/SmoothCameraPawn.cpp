@@ -81,11 +81,6 @@ void ASmoothCameraPawn::ToggleUI(const FInputActionValue& Value)
 	{
 		ProductLoader->GetConfigUI()->HandleToggle();
 	}
-	else
-	{
-		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
-		ProductLoader->GetConfigUI()->HandleToggle();
-	}
 }
 
 void ASmoothCameraPawn::HandlePrimaryClick(const FInputActionValue& Value)
@@ -97,25 +92,12 @@ void ASmoothCameraPawn::HandlePrimaryClick(const FInputActionValue& Value)
 			ProductLoader->GetConfigUI()->HandlePrimaryClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
 		}
 	}
-	else
-	{
-		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
-		if (bIsMouseOver)
-		{
-			ProductLoader->GetConfigUI()->HandlePrimaryClick(UWidgetLayoutLibrary::GetMousePositionOnViewport(GetWorld()));
-		}
-	}
 }
 
 void ASmoothCameraPawn::HandleSecondaryClick(const FInputActionValue& Value)
 {
 	if (ProductLoader)
 	{
-		ProductLoader->GetConfigUI()->HandleSecondaryClick();
-	}
-	else
-	{
-		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
 		ProductLoader->GetConfigUI()->HandleSecondaryClick();
 	}
 }
@@ -138,7 +120,7 @@ void ASmoothCameraPawn::TraceForFocus()
 {
 	if (!ProductLoader)
 	{
-		ProductLoader = Cast<AConfiguratorGameMode>(GetWorld())->GetProductLoader();
+		ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
 		return;
 	}
 	
