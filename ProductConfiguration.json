@@ -1,0 +1,4282 @@
+[
+	{
+		"Name": "Giallo",
+		"DisplayName": "Giallo",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Giallo Frame 1",
+				"Assets": [
+					{
+						"AssetName": "Giallo Frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_4_2_5.1Giallo_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2810
+					},
+					{
+						"AssetName": "Giallo Frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_4_3.1Giallo_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3030
+					},
+					{
+						"AssetName": "Giallo Frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_4_3_5.1Giallo_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3270
+					},
+					{
+						"AssetName": "Giallo Frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_4_4.1Giallo_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_4_6.1Giallo_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4470
+					},
+					{
+						"AssetName": "Giallo Frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_5_2_5.1Giallo_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3250
+					},
+					{
+						"AssetName": "Giallo Frame 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_5_3.1Giallo_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3570
+					},
+					{
+						"AssetName": "Giallo Frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_5_3_5.1Giallo_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3790
+					},
+					{
+						"AssetName": "Giallo Frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_5_4.1Giallo_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4270
+					},
+					{
+						"AssetName": "Giallo Frame 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_5_6.1Giallo_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5220
+					},
+					{
+						"AssetName": "Giallo Frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_6_2_5.1Giallo_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_6_3.1Giallo_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3980
+					},
+					{
+						"AssetName": "Giallo Frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_6_3_5.1Giallo_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4330
+					},
+					{
+						"AssetName": "Giallo Frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_6_4.1Giallo_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4910
+					},
+					{
+						"AssetName": "Giallo Frame 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_6_6.1Giallo_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6040
+					},
+					{
+						"AssetName": "Giallo Frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_7_2_5.1Giallo_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4370
+					},
+					{
+						"AssetName": "Giallo Frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_7_3_5.1Giallo_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4830
+					},
+					{
+						"AssetName": "Giallo Frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_7_4.1Giallo_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5770
+					},
+					{
+						"AssetName": "Giallo Frame 7x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_7_6.1Giallo_frame_7_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6890
+					},
+					{
+						"AssetName": "Giallo Frame 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame1/1Giallo_frame_12_6.1Giallo_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 10620
+					}
+				]
+			},
+			{
+				"ProductName": "Giallo Frame 2",
+				"Assets": [
+					{
+						"AssetName": "Giallo Frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_4_2_5.2Giallo_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2810
+					},
+					{
+						"AssetName": "Giallo Frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_4_3.2Giallo_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3030
+					},
+					{
+						"AssetName": "Giallo Frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_4_3_5.2Giallo_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3270
+					},
+					{
+						"AssetName": "Giallo Frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_4_4.2Giallo_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_4_6.2Giallo_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4470
+					},
+					{
+						"AssetName": "Giallo Frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_5_2_5.2Giallo_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3570
+					},
+					{
+						"AssetName": "Giallo Frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_5_3_5.2Giallo_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3790
+					},
+					{
+						"AssetName": "Giallo Frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_5_4.2Giallo_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4270
+					},
+					{
+						"AssetName": "Giallo Frame 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_5_6.2Giallo_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5220
+					},
+					{
+						"AssetName": "Giallo Frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_6_2_5.2Giallo_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_6_3.2Giallo_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3980
+					},
+					{
+						"AssetName": "Giallo Frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_6_3_5.2Giallo_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4330
+					},
+					{
+						"AssetName": "Giallo Frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_6_4.2Giallo_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4910
+					},
+					{
+						"AssetName": "Giallo Frame 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_6_6.2Giallo_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6040
+					},
+					{
+						"AssetName": "Giallo Frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_7_2_5.2Giallo_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4160
+					},
+					{
+						"AssetName": "Giallo Frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_7_3_5.2Giallo_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4830
+					},
+					{
+						"AssetName": "Giallo Frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_7_4.2Giallo_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5770
+					},
+					{
+						"AssetName": "Giallo Frame 7x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_7_6.2Giallo_frame_7_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6890
+					},
+					{
+						"AssetName": "Giallo Frame 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_12_6.2Giallo_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 10620
+					}
+				]
+			},
+			{
+				"ProductName": "Giallo Frame 3",
+				"Assets": [
+					{
+						"AssetName": "Giallo Frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_4_2_5.3Giallo_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2810
+					},
+					{
+						"AssetName": "Giallo Frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_4_3.3Giallo_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3030
+					},
+					{
+						"AssetName": "Giallo Frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_4_3_5.3Giallo_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3270
+					},
+					{
+						"AssetName": "Giallo Frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_4_4.3Giallo_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_4_6.3Giallo_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4470
+					},
+					{
+						"AssetName": "Giallo Frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_5_2_5.3Giallo_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3250
+					},
+					{
+						"AssetName": "Giallo Frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_5_3_5.3Giallo_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3790
+					},
+					{
+						"AssetName": "Giallo Frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_5_4.3Giallo_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4270
+					},
+					{
+						"AssetName": "Giallo Frame 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_5_6.3Giallo_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5220
+					},
+					{
+						"AssetName": "Giallo Frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_6_2_5.3Giallo_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_6_3_5.3Giallo_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4330
+					},
+					{
+						"AssetName": "Giallo Frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_6_4.3Giallo_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4910
+					},
+					{
+						"AssetName": "Giallo Frame 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_6_6.3Giallo_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6040
+					},
+					{
+						"AssetName": "Giallo Frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_7_2_5.3Giallo_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4160
+					},
+					{
+						"AssetName": "Giallo Frame 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_7_3.3Giallo_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4370
+					},
+					{
+						"AssetName": "Giallo Frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_7_3_5.3Giallo_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4830
+					},
+					{
+						"AssetName": "Giallo Frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_7_4.3Giallo_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5770
+					},
+					{
+						"AssetName": "Giallo Frame 7x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_7_6.3Giallo_frame_7_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6890
+					},
+					{
+						"AssetName": "Giallo Frame 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame3/3Giallo_frame_12_6.3Giallo_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 10620
+					}
+				]
+			},
+			{
+				"ProductName": "Giallo Frame 4",
+				"Assets": [
+					{
+						"AssetName": "Giallo Frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_4_2_5.4Giallo_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2810
+					},
+					{
+						"AssetName": "Giallo Frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_4_3.4Giallo_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3030
+					},
+					{
+						"AssetName": "Giallo Frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_4_3_5.4Giallo_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3270
+					},
+					{
+						"AssetName": "Giallo Frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_4_4.4Giallo_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_4_6.4Giallo_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4470
+					},
+					{
+						"AssetName": "Giallo Frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_5_2_5.4Giallo_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3250
+					},
+					{
+						"AssetName": "Giallo Frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_5_3_5.4Giallo_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3790
+					},
+					{
+						"AssetName": "Giallo Frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_5_4.4Giallo_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4270
+					},
+					{
+						"AssetName": "Giallo Frame 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_5_6.4Giallo_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5220
+					},
+					{
+						"AssetName": "Giallo Frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_6_2_5.4Giallo_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_6_3_5.4Giallo_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4330
+					},
+					{
+						"AssetName": "Giallo Frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_6_4.4Giallo_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4910
+					},
+					{
+						"AssetName": "Giallo Frame 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_6_6.4Giallo_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6040
+					},
+					{
+						"AssetName": "Giallo Frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_7_2_5.4Giallo_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4160
+					},
+					{
+						"AssetName": "Giallo Frame 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_7_3.4Giallo_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4370
+					},
+					{
+						"AssetName": "Giallo Frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_7_3_5.4Giallo_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4830
+					},
+					{
+						"AssetName": "Giallo Frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_7_4.4Giallo_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5770
+					},
+					{
+						"AssetName": "Giallo Frame 7x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_7_6.4Giallo_frame_7_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6890
+					},
+					{
+						"AssetName": "Giallo Frame 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame4/4Giallo_frame_12_6.4Giallo_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 10620
+					}
+				]
+			},
+			{
+				"ProductName": "Giallo Frame 5",
+				"Assets": [
+					{
+						"AssetName": "Giallo Frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_4_2_5.5Giallo_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2810
+					},
+					{
+						"AssetName": "Giallo Frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_4_3.5Giallo_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3030
+					},
+					{
+						"AssetName": "Giallo Frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_4_3_5.5Giallo_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3270
+					},
+					{
+						"AssetName": "Giallo Frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_5_4.5Giallo_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_5_6.5Giallo_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4470
+					},
+					{
+						"AssetName": "Giallo Frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_5_2_5.5Giallo_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3250
+					},
+					{
+						"AssetName": "Giallo Frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_5_3_5.5Giallo_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3790
+					},
+					{
+						"AssetName": "Giallo Frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_5_4.5Giallo_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4270
+					},
+					{
+						"AssetName": "Giallo Frame 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_5_6.5Giallo_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5220
+					},
+					{
+						"AssetName": "Giallo Frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_6_2_5.5Giallo_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3690
+					},
+					{
+						"AssetName": "Giallo Frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_6_3_5.5Giallo_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4330
+					},
+					{
+						"AssetName": "Giallo Frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_6_4.5Giallo_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4910
+					},
+					{
+						"AssetName": "Giallo Frame 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_6_6.5Giallo_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6040
+					},
+					{
+						"AssetName": "Giallo Frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_7_2_5.5Giallo_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4160
+					},
+					{
+						"AssetName": "Giallo Frame 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_7_3.5Giallo_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4370
+					},
+					{
+						"AssetName": "Giallo Frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_7_3_5.5Giallo_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4830
+					},
+					{
+						"AssetName": "Giallo Frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_7_4.5Giallo_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5770
+					},
+					{
+						"AssetName": "Giallo Frame 7x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_7_6.5Giallo_frame_7_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 6890
+					},
+					{
+						"AssetName": "Giallo Frame 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame5/5Giallo_frame_12_6.5Giallo_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 10620
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name": "Nebbiollo",
+		"DisplayName": "Nebbiollo",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Nebbiollo frame 1",
+				"Assets": [
+					{
+						"AssetName": "Nebbiollo frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_4_2_5.1Nebbiolo_Frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 1790
+					},
+					{
+						"AssetName": "Nebbiollo frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_4_3.1Nebbiolo_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2030
+					},
+					{
+						"AssetName": "Nebbiollo frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_4_35.1Nebbiolo_Frame_4_35",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2150
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_5_2_5.1Nebbiolo_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2070
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_5_3.1Nebbiolo_Frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2250
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_5_3_5.1Nebbiolo_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2440
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_6_2_5.1Nebbiolo_Frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2360
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_6_3.1Nebbiolo_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2590
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame1/1Nebbiolo_Frame_6_3_5.1Nebbiolo_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2870
+					}
+				]
+			},
+			{
+				"ProductName": "Nebbiollo frame 2",
+				"Assets": [
+					{
+						"AssetName": "Nebbiollo frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_4_2_5.2Nebbiolo_Frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 1790
+					},
+					{
+						"AssetName": "Nebbiollo frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_4_3.2Nebbiolo_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2030
+					},
+					{
+						"AssetName": "Nebbiollo frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Giallo/Giallo_frame2/2Giallo_frame_4_3_5.2Giallo_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2150
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_5_2_5.2Nebbiolo_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2070
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_5_3.2Nebbiolo_Frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2250
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_5_3_5.2Nebbiolo_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2440
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_6_2_5.2Nebbiolo_Frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2360
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_6_3.2Nebbiolo_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2590
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame2/2Nebbiolo_Frame_6_3_5.2Nebbiolo_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2870
+					}
+				]
+			},
+			{
+				"ProductName": "Nebbiollo frame 3",
+				"Assets": [
+					{
+						"AssetName": "Nebbiollo frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_4_2_5.3Nebbiolo_Frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 1790
+					},
+					{
+						"AssetName": "Nebbiollo frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_4_3.3Nebbiolo_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2030
+					},
+					{
+						"AssetName": "Nebbiollo frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_4_3_5.3Nebbiolo_Frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2150
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_5_2_5.3Nebbiolo_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2070
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_5_3.3Nebbiolo_Frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2250
+					},
+					{
+						"AssetName": "Nebbiollo frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_5_3_5.3Nebbiolo_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2440
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_6_2_5.3Nebbiolo_Frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2360
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_6_3.3Nebbiolo_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2590
+					},
+					{
+						"AssetName": "Nebbiollo frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Nebbiollo/Nebbiollo_frame3/3Nebbiolo_Frame_6_3_5.3Nebbiolo_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2870
+					}
+				]
+			}
+		]
+		
+	},
+	{
+		"Name": "Pigato",
+		"DisplayName": "Pigato",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Pigato frame 1",
+				"Assets": [
+					{
+						"AssetName": "Pigato frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_4_2_5.1Pigato_Frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3550
+					},
+					{
+						"AssetName": "Pigato frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_4_3.1Pigato_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4050
+					},
+					{
+						"AssetName": "Pigato frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_4_3_5.1Pigato_Frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4500
+					},
+					{
+						"AssetName": "Pigato frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_4_4.1Pigato_Frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4990
+					},
+					{
+						"AssetName": "Pigato frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_5_2_5.1Pigato_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4200
+					},
+					{
+						"AssetName": "Pigato frame 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_5_3.1Pigato_Frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4720
+					},
+					{
+						"AssetName": "Pigato frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_5_3_5.1Pigato_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 5250
+					},
+					{
+						"AssetName": "Pigato frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_5_4.1Pigato_Frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6150
+					},
+					{
+						"AssetName": "Pigato frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_6_2_5.1Pigato_Frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4950
+					},
+					{
+						"AssetName": "Pigato frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_6_3.1Pigato_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 5500
+					},
+					{
+						"AssetName": "Pigato frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_6_3_5.1Pigato_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6050
+					},
+					{
+						"AssetName": "Pigato frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_6_4.1Pigato_Frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6950
+					},
+					{
+						"AssetName": "Pigato frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_7_2_5.1Pigato_Frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 5650
+					},
+					{
+						"AssetName": "Pigato frame 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_7_3.1Pigato_Frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 6200
+					},
+					{
+						"AssetName": "Pigato frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_7_3_5.1Pigato_Frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6900
+					},
+					{
+						"AssetName": "Pigato frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame1/1Pigato_Frame_7_4.1Pigato_Frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7950
+					}
+				]
+			},
+			{
+				"ProductName": "Pigato frame 2",
+				"Assets": [
+					{
+						"AssetName": "Pigato frame 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_4_2_5.2Pigato_Frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3550
+					},
+					{
+						"AssetName": "Pigato frame 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_4_3.2Pigato_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4050
+					},
+					{
+						"AssetName": "Pigato frame 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_4_3_5.2Pigato_Frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 4500
+					},
+					{
+						"AssetName": "Pigato frame 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_4_4.2Pigato_Frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 4990
+					},
+					{
+						"AssetName": "Pigato frame 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_5_2_5.2Pigato_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4200
+					},
+					{
+						"AssetName": "Pigato frame 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_5_3.2Pigato_Frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 4720
+					},
+					{
+						"AssetName": "Pigato frame 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_5_3_5.2Pigato_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 5250
+					},
+					{
+						"AssetName": "Pigato frame 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_5_4.2Pigato_Frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6150
+					},
+					{
+						"AssetName": "Pigato frame 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_6_2_5.2Pigato_Frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 4950
+					},
+					{
+						"AssetName": "Pigato frame 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_6_3.2Pigato_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 5500
+					},
+					{
+						"AssetName": "Pigato frame 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_6_3_5.2Pigato_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6050
+					},
+					{
+						"AssetName": "Pigato frame 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_6_4.2Pigato_Frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6950
+					},
+					{
+						"AssetName": "Pigato frame 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_7_2_5.2Pigato_Frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 5650
+					},
+					{
+						"AssetName": "Pigato frame 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_7_3.2Pigato_Frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 6200
+					},
+					{
+						"AssetName": "Pigato frame 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_7_3_5.2Pigato_Frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6900
+					},
+					{
+						"AssetName": "Pigato frame 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pigato/Pigato_frame2/2Pigato_Frame_7_4.2Pigato_Frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7950
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name": "Pinela_Delux",
+		"DisplayName": "Pinela_Delux",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Pinela Delux Frame1",
+				"Assets": [
+					{
+						"AssetName": "Pinela Delux 3x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3.1Pinela_Deluxe_frame_3_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3.5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5.1Pinela_Deluxe_frame_3_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3.5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4.1Pinela_Deluxe_frame_3_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3x5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5.1Pinela_Deluxe_frame_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3x5.4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4.1Pinela_Deluxe_frame_3_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5.4000000000000004,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3x5.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5.1Pinela_Deluxe_frame_3_5_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5.5,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3x5.6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_6.1Pinela_Deluxe_frame_3_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5.5999999999999996,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 3x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6.1Pinela_Deluxe_frame_3_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4.1Pinela_Deluxe_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 4x5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5.1Pinela_Deluxe_frame_4_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 5,
+							"Z": 0
+						},
+						"Price": 0
+					},
+					{
+						"AssetName": "Pinela Delux 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6.1Pinela_Deluxe_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 0
+					}
+				]
+			},
+			{
+				"ProductName": "Pinela Delux Frame2",
+				"Assets": [
+					{
+						"AssetName": "Pinela Delux 3x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3.2Pinela_Deluxe_frame_3_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 10490
+					},
+					{
+						"AssetName": "Pinela Delux 3.5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5.2Pinela_Deluxe_frame_3_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3.5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 12750
+					},
+					{
+						"AssetName": "Pinela Delux 3x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4.2Pinela_Deluxe_frame_3_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 12250
+					},
+					{
+						"AssetName": "Pinela Delux 3x5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5.2Pinela_Deluxe_frame_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5,
+							"Z": 0
+						},
+						"Price": 14650
+					},
+					{
+						"AssetName": "Pinela Delux 3x5.4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4.2Pinela_Deluxe_frame_3_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5.4000000000000004,
+							"Z": 0
+						},
+						"Price": 12750
+					},
+					{
+						"AssetName": "Pinela Delux 3x5.6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6.2Pinela_Deluxe_frame_3_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 5.5999999999999996,
+							"Z": 0
+						},
+						"Price": 14650
+					},
+					{
+						"AssetName": "Pinela Delux 3x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6.2Pinela_Deluxe_frame_3_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 3,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 18380
+					},
+					{
+						"AssetName": "Pinela Delux 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4.2Pinela_Deluxe_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 13890
+					},
+					{
+						"AssetName": "Pinela Delux 4x5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5.2Pinela_Deluxe_frame_4_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 5,
+							"Z": 0
+						},
+						"Price": 16950
+					},
+					{
+						"AssetName": "Pinela Delux 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6.2Pinela_Deluxe_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 19500
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name": "Ribolla",
+		"DisplayName": "Ribolla",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Ribolla Frame 1",
+				"Assets": [
+					{
+						"AssetName": "Ribolla 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_frame_4_2_5.1Ribolla_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 5400
+					},
+					{
+						"AssetName": "Ribolla 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3.1Ribolla_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 5800
+					},
+					{
+						"AssetName": "Ribolla 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_5.1Ribolla_Frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6190
+					},
+					{
+						"AssetName": "Ribolla 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_4.1Ribolla_Frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6870
+					},
+					{
+						"AssetName": "Ribolla 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_2_5.1Ribolla_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 6150
+					},
+					{
+						"AssetName": "Ribolla 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_3_5.1Ribolla_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 7020
+					},
+					{
+						"AssetName": "Ribolla 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_4.1Ribolla_Frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7740
+					},
+					{
+						"AssetName": "Ribolla 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_2_5_.1Ribolla_Frame_6_2_5_",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 6730
+					},
+					{
+						"AssetName": "Ribolla 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3.1Ribolla_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 7200
+					},
+					{
+						"AssetName": "Ribolla 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_5.1Ribolla_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 7660
+					},
+					{
+						"AssetName": "Ribolla 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_4.1Ribolla_Frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 8480
+					}
+				]
+			},
+			{
+				"ProductName": "Ribolla Frame 2",
+				"Assets": [
+					{
+						"AssetName": "Ribolla 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_2_5.2Ribolla_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 5400
+					},
+					{
+						"AssetName": "Ribolla 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3.2Ribolla_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 5800
+					},
+					{
+						"AssetName": "Ribolla 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_5.2Ribolla_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6190
+					},
+					{
+						"AssetName": "Ribolla 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_4.2Ribolla_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6870
+					},
+					{
+						"AssetName": "Ribolla 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_2_5.2Ribolla_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 6150
+					},
+					{
+						"AssetName": "Ribolla 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3.2Ribolla_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 6620
+					},
+					{
+						"AssetName": "Ribolla 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_5.2Ribolla_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 7020
+					},
+					{
+						"AssetName": "Ribolla 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_4.2Ribolla_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7740
+					},
+					{
+						"AssetName": "Ribolla 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_2_5.2Ribolla_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 6730
+					},
+					{
+						"AssetName": "Ribolla 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3.2Ribolla_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 7200
+					},
+					{
+						"AssetName": "Ribolla 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_5.2Ribolla_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 7660
+					},
+					{
+						"AssetName": "Ribolla 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_4.2Ribolla_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 8480
+					}
+				]
+			},
+			{
+				"ProductName": "Ribolla Frame 3",
+				"Assets": [
+					{
+						"AssetName": "Ribolla 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_2_5.3Ribolla_Frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 5400
+					},
+					{
+						"AssetName": "Ribolla 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3.3Ribolla_Frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 5800
+					},
+					{
+						"AssetName": "Ribolla 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_5.3Ribolla_Frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6190
+					},
+					{
+						"AssetName": "Ribolla 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_4.3Ribolla_Frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6870
+					},
+					{
+						"AssetName": "Ribolla 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_2_5.3Ribolla_Frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 6150
+					},
+					{
+						"AssetName": "Ribolla 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3.3Ribolla_Frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 6620
+					},
+					{
+						"AssetName": "Ribolla 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_5.3Ribolla_Frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 7020
+					},
+					{
+						"AssetName": "Ribolla 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_4.3Ribolla_Frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7740
+					},
+					{
+						"AssetName": "Ribolla 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_2_5.3Ribolla_Frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 6730
+					},
+					{
+						"AssetName": "Ribolla 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3.3Ribolla_Frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 7200
+					},
+					{
+						"AssetName": "Ribolla 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_5.3Ribolla_Frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 7660
+					},
+					{
+						"AssetName": "Ribolla 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_4.3Ribolla_Frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 8480
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name": "Verdeca",
+		"DisplayName": "Verdeca",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Verdeca frame 1",
+				"Assets": [
+					{
+						"AssetName": "Verdeca 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_4_3.1Verdeca_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 6450
+					},
+					{
+						"AssetName": "Verdeca 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_4_3_5.1Verdeca_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6750
+					},
+					{
+						"AssetName": "Verdeca 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_4_4.1Verdeca_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6950
+					},
+					{
+						"AssetName": "Verdeca 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_5_3.1Verdeca_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 8300
+					},
+					{
+						"AssetName": "Verdeca 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_5_3.1Verdeca_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 8700
+					},
+					{
+						"AssetName": "Verdeca 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_5_4.1Verdeca_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 9050
+					},
+					{
+						"AssetName": "Verdeca 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_6_3.1Verdeca_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 9300
+					},
+					{
+						"AssetName": "Verdeca 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_6_3_5.1Verdeca_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 9700
+					},
+					{
+						"AssetName": "Verdeca 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame1/1Verdeca_frame_6_4.1Verdeca_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Verdeca frame 2",
+				"Assets": [
+					{
+						"AssetName": "Verdeca 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_4_3.2Verdeca_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 6450
+					},
+					{
+						"AssetName": "Verdeca 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_4_3_5.2Verdeca_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 6750
+					},
+					{
+						"AssetName": "Verdeca 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_4_4.2Verdeca_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 6950
+					},
+					{
+						"AssetName": "Verdeca 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_5_3.2Verdeca_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 8300
+					},
+					{
+						"AssetName": "Verdeca 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_5_3_5.2Verdeca_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 8700
+					},
+					{
+						"AssetName": "Verdeca 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_5_4.2Verdeca_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 9050
+					},
+					{
+						"AssetName": "Verdeca 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_6_3.2Verdeca_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 9300
+					},
+					{
+						"AssetName": "Verdeca 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_6_3_5.2Verdeca_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 9700
+					},
+					{
+						"AssetName": "Verdeca 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Verdeca/Verdeca_frame2/2Verdeca_frame_6_4.2Verdeca_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name": "RibollaCustom",
+		"DisplayName": "RibollaCustom",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Ribolla Custom",
+				"Assets": [
+					{
+						"AssetName": "RibollaCustom",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Custom/Ribolla_Frame_1.Ribolla_Frame_1",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Custom/Ribolla_Frame_1_001.Ribolla_Frame_1_001",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Custom/Ribolla_Frame_1_002.Ribolla_Frame_1_002",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Custom/Ribolla_Frame_1_003.Ribolla_Frame_1_003",
+						"Dimensions":
+						{
+							"X": 0,
+							"Y": 0,
+							"Z": 0
+						},
+						"Price": 0
+					}
+				]
+			}
+		]
+	}
+]
