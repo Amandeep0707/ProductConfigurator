@@ -1,5 +1,3251 @@
 [
 	{
+		"Name": "Bosco",
+		"DisplayName": "Bosco",
+		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+		"Configurations": [
+			{
+				"ProductName": "Bosco Frame 1",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_4_2_5.1Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_4_3.1Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_4_3_5.1Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_4_4.1Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_4_6.1Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_5_2_5.1Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_5_3.1Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_5_3_5.1Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_5_4.1Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_5_6.1Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_6_2_5.1Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_6_3.1Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_6_3_5.1Bosco_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_6_4.1Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_6_6.1Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_7_2_5.1Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_7_3.1Bosco_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_7_3_5.1Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_7_4.1Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_8_4.1Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_8_6.1Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 9x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_9_4.1Bosco_frame_9_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5950
+					},
+					{
+						"AssetName": "Bosco 9x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_9_6.1Bosco_frame_9_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8110
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_10_6.1Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_12_4.1Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame1/1Bosco_frame_12_6.1Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Bosco Frame 2",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_4_2_5.2Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_4_3.2Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_4_3_5.2Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_4_4.2Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_4_6.2Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_5_2_5.2Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_5_3.2Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_5_3_5.2Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_5_4.2Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_5_6.2Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_6_2_5.2Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_6_3.2Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_6_3_5.2Bosco_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_6_4.2Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_6_6.2Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_7_2_5.2Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_7_3.2Bosco_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_7_3_5.2Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_7_4.2Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_8_4.2Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_8_6.2Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 9x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_9_4.2Bosco_frame_9_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5950
+					},
+					{
+						"AssetName": "Bosco 9x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_9_6.2Bosco_frame_9_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8110
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_10_6.2Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_12_4.2Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame2/2Bosco_frame_12_6.2Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Bosco Frame 3",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_4_2_5.3Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_4_3.3Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_4_3_5.3Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_4_4.3Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_4_6.3Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_5_2_5.3Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_5_3.3Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_5_3_5.3Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_5_4.3Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_5_6.3Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_6_2_5.3Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_6_3.3Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_6_3_5.3Bosco_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_6_4.3Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_6_6.3Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_7_2_5.3Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_7_3.3Bosco_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_7_3_5.3Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_7_4.3Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_8_4.3Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_8_6.3Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_10_6.3Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_12_4.3Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame3/3Bosco_frame_12_6.3Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Bosco Frame 4",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_4_2_5.4Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_4_3.4Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_4_3_5.4Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_4_4.4Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_4_6.4Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_5_2_5.4Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_5_3.4Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_5_3_5.4Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_5_4.4Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_5_6.4Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_6_2_5.4Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_6_3.4Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_6_3_5.4Bosco_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_6_4.4Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_6_6.4Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_7_2_5.4Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_7_3.4Bosco_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_7_3_5.4Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_7_4.4Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_8_4.4Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_8_6.4Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 9x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_9_4.4Bosco_frame_9_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5950
+					},
+					{
+						"AssetName": "Bosco 9x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_9_6.4Bosco_frame_9_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8110
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_10_6.4Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_12_4.4Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame4/4Bosco_frame_12_6.4Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Bosco Frame 5",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_4_2_5.5Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_4_3.5Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_4_3_5.5Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_4_4.5Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_4_6.5Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_5_2_5.5Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_5_3.5Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_5_3_5.5Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_5_4.5Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_5_6.5Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_6_2_5.5Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_6_3.5Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_6_3_5.5Bosco_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_6_4.5Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_6_6.5Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_7_2_5.5Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_7_3.5Bosco_frame_7_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_7_3_5.5Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_7_4.5Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_8_4.5Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_8_6.5Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 9x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_9_4.5Bosco_frame_9_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5950
+					},
+					{
+						"AssetName": "Bosco 9x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_9_6.5Bosco_frame_9_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8110
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_10_6.5Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_12_4.5Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame5/5Bosco_frame_12_6.5Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Bosco Frame 6",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_4_2_5.6Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_4_3.6Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_4_3_5.6Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_4_4.6Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_4_6.6Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_5_2_5.6Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_5_3.6Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_5_3_5.6Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_5_4.6Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_5_6.6Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_6_2_5.6Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_6_3.6Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_5_3_5.6Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_6_4.6Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_6_6.6Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_7_2_5.6Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_7_3_5.6Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_7_4.6Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_8_4.6Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_8_6.6Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 9x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_9_4.6Bosco_frame_9_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5950
+					},
+					{
+						"AssetName": "Bosco 9x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_9_6.6Bosco_frame_9_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8110
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_10_6.6Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_12_4.6Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame6/6Bosco_frame_12_6.6Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			},
+			{
+				"ProductName": "Bosco Frame 7",
+				"Assets": [
+					{
+						"AssetName": "Bosco 4x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_4_2_5.7Bosco_frame_4_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2300
+					},
+					{
+						"AssetName": "Bosco 4x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_4_3.7Bosco_frame_4_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2480
+					},
+					{
+						"AssetName": "Bosco 4x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_4_3_5.7Bosco_frame_4_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 2670
+					},
+					{
+						"AssetName": "Bosco 4x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_4_4.7Bosco_frame_4_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 4x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_4_6.7Bosco_frame_4_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 4,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 3820
+					},
+					{
+						"AssetName": "Bosco 5x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_5_2_5.7Bosco_frame_5_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2650
+					},
+					{
+						"AssetName": "Bosco 5x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_5_3.7Bosco_frame_5_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 2890
+					},
+					{
+						"AssetName": "Bosco 5x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_5_3_5.7Bosco_frame_5_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3070
+					},
+					{
+						"AssetName": "Bosco 5x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_5_4.7Bosco_frame_5_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3450
+					},
+					{
+						"AssetName": "Bosco 5x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_5_6.7Bosco_frame_5_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 5,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 4460
+					},
+					{
+						"AssetName": "Bosco 6x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_6_2_5.7Bosco_frame_6_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 2990
+					},
+					{
+						"AssetName": "Bosco 6x3",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_6_3.7Bosco_frame_6_3",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3,
+							"Z": 0
+						},
+						"Price": 3220
+					},
+					{
+						"AssetName": "Bosco 6x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_6_3_5.7Bosco_frame_6_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3500
+					},
+					{
+						"AssetName": "Bosco 6x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_6_4.7Bosco_frame_6_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 3950
+					},
+					{
+						"AssetName": "Bosco 6x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_6_6.7Bosco_frame_6_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 6,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 5150
+					},
+					{
+						"AssetName": "Bosco 7x2.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_7_2_5.7Bosco_frame_7_2_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 2.5,
+							"Z": 0
+						},
+						"Price": 3580
+					},
+					{
+						"AssetName": "Bosco 7x3.5",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_7_3_5.7Bosco_frame_7_3_5",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 3.5,
+							"Z": 0
+						},
+						"Price": 3960
+					},
+					{
+						"AssetName": "Bosco 7x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_7_4.7Bosco_frame_7_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 7,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7580
+					},
+					{
+						"AssetName": "Bosco 8x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_8_4.7Bosco_frame_8_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5350
+					},
+					{
+						"AssetName": "Bosco 8x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_8_6.7Bosco_frame_8_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 8,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 7350
+					},
+					{
+						"AssetName": "Bosco 9x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_9_4.7Bosco_frame_9_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 5950
+					},
+					{
+						"AssetName": "Bosco 9x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_9_6.7Bosco_frame_9_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 9,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8110
+					},
+					{
+						"AssetName": "Bosco 10x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_10_6.7Bosco_frame_10_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 10,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 8630
+					},
+					{
+						"AssetName": "Bosco 12x4",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_12_4.7Bosco_frame_12_4",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 4,
+							"Z": 0
+						},
+						"Price": 7320
+					},
+					{
+						"AssetName": "Bosco 12x6",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
+						"Asset": "/Game/Products/Meshes/Bosco/Bosco_frame7/7Bosco_frame_12_6.7Bosco_frame_12_6",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
+						"bFullFencingOptionAvailable": false,
+						"FullFencingAsset": "None",
+						"bGlassOptionAvailable": false,
+						"GlassAsset": "None",
+						"Dimensions":
+						{
+							"X": 12,
+							"Y": 6,
+							"Z": 0
+						},
+						"Price": 9990
+					}
+				]
+			}
+		]
+	},
+	{
 		"Name": "Giallo",
 		"DisplayName": "Giallo",
 		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
@@ -2266,7 +5512,6 @@
 				]
 			}
 		]
-		
 	},
 	{
 		"Name": "Pigato",
@@ -3267,13 +6512,13 @@
 					{
 						"AssetName": "Ribolla 4x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_frame_4_2_5.1Ribolla_frame_4_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_frame_4_2_5_Frame.1Ribolla_frame_4_2_5_Frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_frame_4_2_5_Half.1Ribolla_frame_4_2_5_Half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_frame_4_2_5_full.1Ribolla_frame_4_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_frame_4_2_5_glass.1Ribolla_frame_4_2_5_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3285,13 +6530,13 @@
 					{
 						"AssetName": "Ribolla 4x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3.1Ribolla_Frame_4_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_Frame.1Ribolla_Frame_4_3_Frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_half.1Ribolla_Frame_4_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_full.1Ribolla_Frame_4_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_glass.1Ribolla_Frame_4_3_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3303,13 +6548,13 @@
 					{
 						"AssetName": "Ribolla 4x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_5.1Ribolla_Frame_4_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_5_frame.1Ribolla_Frame_4_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_5_half.1Ribolla_Frame_4_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_5_full.1Ribolla_Frame_4_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_3_5_glass.1Ribolla_Frame_4_3_5_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3321,13 +6566,13 @@
 					{
 						"AssetName": "Ribolla 4x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_4.1Ribolla_Frame_4_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_4_frame.1Ribolla_Frame_4_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_4_half.1Ribolla_Frame_4_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_4_full.1Ribolla_Frame_4_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_4_4_glass.1Ribolla_Frame_4_4_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3339,13 +6584,13 @@
 					{
 						"AssetName": "Ribolla 5x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_2_5.1Ribolla_Frame_5_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_2_5_frame.1Ribolla_Frame_5_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_2_5_half.1Ribolla_Frame_5_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_2_5_full.1Ribolla_Frame_5_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_2_5_glass.1Ribolla_Frame_5_2_5_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3357,13 +6602,13 @@
 					{
 						"AssetName": "Ribolla 5x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_3_5.1Ribolla_Frame_5_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_3_5_frame.1Ribolla_Frame_5_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_3_5_half.1Ribolla_Frame_5_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_3_5_full.1Ribolla_Frame_5_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_5_3_5_glass.1Ribolla_Frame_5_3_5_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3393,13 +6638,13 @@
 					{
 						"AssetName": "Ribolla 6x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_2_5_.1Ribolla_Frame_6_2_5_",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_2_5__frame.1Ribolla_Frame_6_2_5__frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_2_5__half_001.1Ribolla_Frame_6_2_5__half_001",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_2_5__full_001.1Ribolla_Frame_6_2_5__full_001",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_2_5__glass.1Ribolla_Frame_6_2_5__glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3411,13 +6656,13 @@
 					{
 						"AssetName": "Ribolla 6x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3.1Ribolla_Frame_6_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_frame.1Ribolla_Frame_6_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_half.1Ribolla_Frame_6_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_full.1Ribolla_Frame_6_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_glass.1Ribolla_Frame_6_3_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3429,13 +6674,13 @@
 					{
 						"AssetName": "Ribolla 6x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_5.1Ribolla_Frame_6_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_5_frame.1Ribolla_Frame_6_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_5_half.1Ribolla_Frame_6_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_5_full.1Ribolla_Frame_6_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_3_5_glass.1Ribolla_Frame_6_3_5_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3447,13 +6692,13 @@
 					{
 						"AssetName": "Ribolla 6x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_4.1Ribolla_Frame_6_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_4_frame.1Ribolla_Frame_6_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_4_half.1Ribolla_Frame_6_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_4_full.1Ribolla_Frame_6_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame1/1Ribolla_Frame_6_4_glass.1Ribolla_Frame_6_4_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3470,13 +6715,13 @@
 					{
 						"AssetName": "Ribolla 4x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_2_5.2Ribolla_frame_4_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_2_5_frame.2Ribolla_frame_4_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_2_5_half.2Ribolla_frame_4_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_2_5_full.2Ribolla_frame_4_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_2_5_glass.2Ribolla_frame_4_2_5_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3488,13 +6733,13 @@
 					{
 						"AssetName": "Ribolla 4x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3.2Ribolla_frame_4_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_frame.2Ribolla_frame_4_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_half.2Ribolla_frame_4_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_full.2Ribolla_frame_4_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_glass.2Ribolla_frame_4_3_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3506,13 +6751,13 @@
 					{
 						"AssetName": "Ribolla 4x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_5.2Ribolla_frame_4_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_5_frame.2Ribolla_frame_4_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_5_half.2Ribolla_frame_4_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_5_full.2Ribolla_frame_4_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_3_5_glass.2Ribolla_frame_4_3_5_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3524,13 +6769,13 @@
 					{
 						"AssetName": "Ribolla 4x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_4.2Ribolla_frame_4_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_4_frame.2Ribolla_frame_4_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_4_half.2Ribolla_frame_4_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_4_full.2Ribolla_frame_4_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_4_4_glass.2Ribolla_frame_4_4_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3542,13 +6787,13 @@
 					{
 						"AssetName": "Ribolla 5x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_2_5.2Ribolla_frame_5_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_2_5_frame.2Ribolla_frame_5_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_2_5_half.2Ribolla_frame_5_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_2_5_full.2Ribolla_frame_5_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_2_5_glass.2Ribolla_frame_5_2_5_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3560,13 +6805,13 @@
 					{
 						"AssetName": "Ribolla 5x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3.2Ribolla_frame_5_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_frame.2Ribolla_frame_5_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_half.2Ribolla_frame_5_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_full.2Ribolla_frame_5_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_glass.2Ribolla_frame_5_3_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3578,13 +6823,13 @@
 					{
 						"AssetName": "Ribolla 5x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_5.2Ribolla_frame_5_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_5_frame.2Ribolla_frame_5_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_5_half.2Ribolla_frame_5_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_5_full.2Ribolla_frame_5_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_3_5_glass.2Ribolla_frame_5_3_5_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3596,13 +6841,13 @@
 					{
 						"AssetName": "Ribolla 5x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_4.2Ribolla_frame_5_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_4_frame.2Ribolla_frame_5_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_4_half.2Ribolla_frame_5_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_4_full.2Ribolla_frame_5_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_5_4_glass.2Ribolla_frame_5_4_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3614,13 +6859,13 @@
 					{
 						"AssetName": "Ribolla 6x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_2_5.2Ribolla_frame_6_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_2_5_frame.2Ribolla_frame_6_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_2_5_half.2Ribolla_frame_6_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_2_5_full.2Ribolla_frame_6_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_2_5_glass.2Ribolla_frame_6_2_5_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3632,13 +6877,13 @@
 					{
 						"AssetName": "Ribolla 6x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3.2Ribolla_frame_6_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_frame.2Ribolla_frame_6_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_half.2Ribolla_frame_6_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_full.2Ribolla_frame_6_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_glass.2Ribolla_frame_6_3_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3650,13 +6895,13 @@
 					{
 						"AssetName": "Ribolla 6x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_5.2Ribolla_frame_6_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_5_frame.2Ribolla_frame_6_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_5_half.2Ribolla_frame_6_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_5_full.2Ribolla_frame_6_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_3_5_glass.2Ribolla_frame_6_3_5_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3668,13 +6913,13 @@
 					{
 						"AssetName": "Ribolla 6x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_4.2Ribolla_frame_6_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_4_frame.2Ribolla_frame_6_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_4_half.2Ribolla_frame_6_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_4_full.2Ribolla_frame_6_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame2/2Ribolla_frame_6_4_glass.2Ribolla_frame_6_4_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3691,13 +6936,13 @@
 					{
 						"AssetName": "Ribolla 4x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_2_5.3Ribolla_Frame_4_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_2_5_frame.3Ribolla_Frame_4_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_2_5_half.3Ribolla_Frame_4_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_2_5_full.3Ribolla_Frame_4_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_2_5_glass.3Ribolla_Frame_4_2_5_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3709,13 +6954,13 @@
 					{
 						"AssetName": "Ribolla 4x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3.3Ribolla_Frame_4_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_frame.3Ribolla_Frame_4_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_half.3Ribolla_Frame_4_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_full.3Ribolla_Frame_4_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_glass.3Ribolla_Frame_4_3_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3727,13 +6972,13 @@
 					{
 						"AssetName": "Ribolla 4x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_5.3Ribolla_Frame_4_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_5_frame.3Ribolla_Frame_4_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_5_half.3Ribolla_Frame_4_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_5_full.3Ribolla_Frame_4_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_3_5_glass.3Ribolla_Frame_4_3_5_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3745,13 +6990,13 @@
 					{
 						"AssetName": "Ribolla 4x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_4.3Ribolla_Frame_4_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_4_frame.3Ribolla_Frame_4_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_4_half.3Ribolla_Frame_4_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_4_full.3Ribolla_Frame_4_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_4_4_glass.3Ribolla_Frame_4_4_glass",
 						"Dimensions":
 						{
 							"X": 4,
@@ -3763,13 +7008,13 @@
 					{
 						"AssetName": "Ribolla 5x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_2_5.3Ribolla_Frame_5_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_2_5_frame.3Ribolla_Frame_5_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_2_5_half.3Ribolla_Frame_5_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_2_5_full.3Ribolla_Frame_5_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_2_5_glass.3Ribolla_Frame_5_2_5_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3781,13 +7026,13 @@
 					{
 						"AssetName": "Ribolla 5x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3.3Ribolla_Frame_5_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_frame.3Ribolla_Frame_5_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_half.3Ribolla_Frame_5_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_full.3Ribolla_Frame_5_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_glass.3Ribolla_Frame_5_3_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3799,13 +7044,13 @@
 					{
 						"AssetName": "Ribolla 5x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_5.3Ribolla_Frame_5_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_5_frame.3Ribolla_Frame_5_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_5_half.3Ribolla_Frame_5_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_5_full.3Ribolla_Frame_5_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_3_5_glass.3Ribolla_Frame_5_3_5_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3817,13 +7062,13 @@
 					{
 						"AssetName": "Ribolla 5x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_4.3Ribolla_Frame_5_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_4_frame.3Ribolla_Frame_5_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_4_half.3Ribolla_Frame_5_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_4_full.3Ribolla_Frame_5_4_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_5_4_glass.3Ribolla_Frame_5_4_glass",
 						"Dimensions":
 						{
 							"X": 5,
@@ -3835,13 +7080,13 @@
 					{
 						"AssetName": "Ribolla 6x2.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_2_5.3Ribolla_Frame_6_2_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_2_5_frame.3Ribolla_Frame_6_2_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_2_5_half.3Ribolla_Frame_6_2_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_2_5_full.3Ribolla_Frame_6_2_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_2_5_glass.3Ribolla_Frame_6_2_5_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3853,13 +7098,13 @@
 					{
 						"AssetName": "Ribolla 6x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3.3Ribolla_Frame_6_3",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_frame.3Ribolla_Frame_6_3_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_half.3Ribolla_Frame_6_3_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_full.3Ribolla_Frame_6_3_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3-glass.3Ribolla_Frame_6_3-glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3871,13 +7116,13 @@
 					{
 						"AssetName": "Ribolla 6x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_5.3Ribolla_Frame_6_3_5",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_5_frame.3Ribolla_Frame_6_3_5_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_5_half.3Ribolla_Frame_6_3_5_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_5_full.3Ribolla_Frame_6_3_5_full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_3_5_glass.3Ribolla_Frame_6_3_5_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -3889,13 +7134,13 @@
 					{
 						"AssetName": "Ribolla 6x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_4.3Ribolla_Frame_6_4",
-						"bHalfFencingOptionAvailable": false,
-						"HalfFencingAsset": "None",
-						"bFullFencingOptionAvailable": false,
-						"FullFencingAsset": "None",
-						"bGlassOptionAvailable": false,
-						"GlassAsset": "None",
+						"Asset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_4_frame.3Ribolla_Frame_6_4_frame",
+						"bHalfFencingOptionAvailable": true,
+						"HalfFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_4_half.3Ribolla_Frame_6_4_half",
+						"bFullFencingOptionAvailable": true,
+						"FullFencingAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_4-full.3Ribolla_Frame_6_4-full",
+						"bGlassOptionAvailable": true,
+						"GlassAsset": "/Game/Products/Meshes/Ribolla/Ribolla_frame3/3Ribolla_Frame_6_4_glass.3Ribolla_Frame_6_4_glass",
 						"Dimensions":
 						{
 							"X": 6,
@@ -4244,36 +7489,6 @@
 							"Z": 0
 						},
 						"Price": 9990
-					}
-				]
-			}
-		]
-	},
-	{
-		"Name": "RibollaCustom",
-		"DisplayName": "RibollaCustom",
-		"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-		"Configurations": [
-			{
-				"ProductName": "Ribolla Custom",
-				"Assets": [
-					{
-						"AssetName": "RibollaCustom",
-						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Custom/Ribolla_Frame_1.Ribolla_Frame_1",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Custom/Ribolla_Frame_1_001.Ribolla_Frame_1_001",
-						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Custom/Ribolla_Frame_1_002.Ribolla_Frame_1_002",
-						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Custom/Ribolla_Frame_1_003.Ribolla_Frame_1_003",
-						"Dimensions":
-						{
-							"X": 0,
-							"Y": 0,
-							"Z": 0
-						},
-						"Price": 0
 					}
 				]
 			}

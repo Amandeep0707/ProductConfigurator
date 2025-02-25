@@ -76,3 +76,6 @@ DerivedDataCache/*
 
 # Ignore assets Folder
 Assets/*
+
+# Ignore Samples Folder
+Samples/*

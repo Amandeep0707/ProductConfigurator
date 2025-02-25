@@ -86,7 +86,7 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 	AsyncFullFencingMesh = AssetDetails.FullFencingAsset;
 	AsyncGlassMesh = AssetDetails.GlassAsset;
 
-	if (!AsyncAsset.IsNull())
+	if (!AsyncAsset.IsNull() || !AsyncFullFencingMesh.IsNull() || !AsyncHalfFencingMesh.IsNull() || !AsyncGlassMesh.IsNull())
 	{
 		TArray<FSoftObjectPath> AssetPaths;
 		AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
@@ -138,6 +138,10 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 		{
 			CurrentMaterialOption = MaterialOption1;
 		}
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Some assets are not set properly in the configuration."));
 	}
 }
 
