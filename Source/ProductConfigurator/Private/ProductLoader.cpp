@@ -171,6 +171,7 @@ void AProductLoader::OnAssetLoaded()
 	if (AsyncGlassMesh.IsValid())
 	{
 		GlassMeshComp->SetStaticMesh(AsyncGlassMesh.Get());
+		GlassMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 		GlassMeshComp->SetVisibility(bGlassVisible);
 	}
 	else GlassMeshComp->SetVisibility(false);
