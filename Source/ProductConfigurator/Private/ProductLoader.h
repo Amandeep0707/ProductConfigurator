@@ -41,6 +41,9 @@ struct FAssetDetails : public FTableRowBase
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
 	TSoftObjectPtr<UStaticMesh> GlassAsset;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
+	bool bUseMaterialSelector = true;
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FVector Dimensions;
 
@@ -54,6 +57,7 @@ struct FAssetDetails : public FTableRowBase
 		bHalfFencingOptionAvailable = false;
 		bFullFencingOptionAvailable = false;
 		bGlassOptionAvailable = false;
+		bUseMaterialSelector = false;
 		Dimensions = FVector::ZeroVector;
 		Price = 0.f;
 	}
@@ -97,6 +101,13 @@ struct FConfigurationData : public FTableRowBase
 	}
 };
 
+UENUM()
+enum ECurrency
+{
+	STR UMETA(DisplayName = "Sterling"),
+	EUR UMETA(DisplayName = "Euro"),
+};
+
 UCLASS()
 class AProductLoader : public AStaticMeshActor
 {
@@ -111,6 +122,9 @@ public:
 
 	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category = Configuration)
 	FName DefaultProductName = TEXT("Default");
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Configuration)
+	TEnumAsByte<ECurrency> Currency = ECurrency::EUR;
 
 	UPROPERTY(EditDefaultsOnly, Category = Configuration)
 	TSubclassOf<UUserWidget> ConfigurationWidget;
@@ -152,6 +166,9 @@ private:
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
 	UStaticMeshComponent* GlassMeshComp = nullptr;
+
+	UPROPERTY()
+	bool bUseGlassMaterialSelector = true;
 
 	UPROPERTY()
 	bool bGlassVisible = false;

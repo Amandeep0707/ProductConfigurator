@@ -106,6 +106,7 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 		if (bGlassOption)
 		{
 			AssetPaths.Add(AsyncGlassMesh.ToSoftObjectPath());
+			bUseGlassMaterialSelector = AssetDetails.bUseMaterialSelector;
 			bGlassVisible = bGlassOption;
 		} else bGlassVisible = false;
 
@@ -171,7 +172,14 @@ void AProductLoader::OnAssetLoaded()
 	if (AsyncGlassMesh.IsValid())
 	{
 		GlassMeshComp->SetStaticMesh(AsyncGlassMesh.Get());
-		GlassMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+		if (bUseGlassMaterialSelector)
+		{
+			GlassMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+		}
+		else
+		{
+			GlassMeshComp->SetMaterial(MaterialSelectorIndex, AsyncGlassMesh.Get()->GetMaterial(MaterialSelectorIndex));
+		}
 		GlassMeshComp->SetVisibility(bGlassVisible);
 	}
 	else GlassMeshComp->SetVisibility(false);
