@@ -25,6 +25,9 @@ struct FAssetDetails : public FTableRowBase
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	bool bHalfFencingOptionAvailable;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bHalfFencingOptionAvailable", EditConditionHides))
+	FName HalfFencingDisplayName;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bHalfFencingOptionAvailable", EditConditionHides))
 	TSoftObjectPtr<UStaticMesh> HalfFencingAsset;
@@ -33,10 +36,16 @@ struct FAssetDetails : public FTableRowBase
 	bool bFullFencingOptionAvailable;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFullFencingOptionAvailable", EditConditionHides))
+	FName FullFencingDisplayName;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFullFencingOptionAvailable", EditConditionHides))
 	TSoftObjectPtr<UStaticMesh> FullFencingAsset;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	bool bGlassOptionAvailable;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
+	FName GlassDisplayName;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
 	TSoftObjectPtr<UStaticMesh> GlassAsset;
@@ -114,7 +123,6 @@ class AProductLoader : public AStaticMeshActor
 	GENERATED_BODY()
 	AProductLoader();
 	virtual void BeginPlay() override;
-	virtual void Tick(float DeltaTime) override;
 
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta=(RowType="ConfigurationData"), Category = Configuration)

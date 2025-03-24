@@ -6119,198 +6119,198 @@
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3_frame.1Pinela_Deluxe_frame_3_3_frame",
 						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3_half.1Pinela_Deluxe_frame_3_3_half",
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3_full.1Pinela_Deluxe_frame_3_3_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3_glass.1Pinela_Deluxe_frame_3_3_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3_grill_full.1Pinela_Deluxe_frame_3_3_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_3_rooftop_1.1Pinela_Deluxe_frame_3_3_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 3,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 12730
 					},
 					{
 						"AssetName": "Pinela Delux 3.5x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5_frame.1Pinela_Deluxe_frame_3_5_3_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5_half.1Pinela_Deluxe_frame_3_5_3_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5_full.1Pinela_Deluxe_frame_3_5_3_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5_glass.1Pinela_Deluxe_frame_3_5_3_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5_grill_full.1Pinela_Deluxe_frame_3_5_3_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_3_5_rooftop_1.1Pinela_Deluxe_frame_3_5_3_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3.5,
 							"Y": 3.5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 15830
 					},
 					{
 						"AssetName": "Pinela Delux 3x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4_frame.1Pinela_Deluxe_frame_3_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4_half.1Pinela_Deluxe_frame_3_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4_full.1Pinela_Deluxe_frame_3_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4_glass.1Pinela_Deluxe_frame_3_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4_grill_full.1Pinela_Deluxe_frame_3_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_4_rooftop_1.1Pinela_Deluxe_frame_3_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 4,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 14870
 					},
 					{
 						"AssetName": "Pinela Delux 3x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_frame.1Pinela_Deluxe_frame_3_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_half.1Pinela_Deluxe_frame_3_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_full.1Pinela_Deluxe_frame_3_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_glass.1Pinela_Deluxe_frame_3_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_grill_full.1Pinela_Deluxe_frame_3_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_rooftop_1.1Pinela_Deluxe_frame_3_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 16870
 					},
 					{
 						"AssetName": "Pinela Delux 3x5.4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4_frame.1Pinela_Deluxe_frame_3_5_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4_half.1Pinela_Deluxe_frame_3_5_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4_full.1Pinela_Deluxe_frame_3_5_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4_glass.1Pinela_Deluxe_frame_3_5_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4_grill_full.1Pinela_Deluxe_frame_3_5_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_4_rooftop_1.1Pinela_Deluxe_frame_3_5_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
-							"Y": 5.4000000000000004,
+							"Y": 5.4,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 16870
 					},
 					{
 						"AssetName": "Pinela Delux 3x5.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5_frame.1Pinela_Deluxe_frame_3_5_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5_half.1Pinela_Deluxe_frame_3_5_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5_full.1Pinela_Deluxe_frame_3_5_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5_glass.1Pinela_Deluxe_frame_3_5_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5_grill_full.1Pinela_Deluxe_frame_3_5_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_5_rooftop_1.1Pinela_Deluxe_frame_3_5_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 5.5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 17770
 					},
 					{
 						"AssetName": "Pinela Delux 3x5.6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_frame_001.1Pinela_Deluxe_frame_3_6_frame_001",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_grill_half_001.1Pinela_Deluxe_frame_3_6_grill_half_001",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_6_frame.1Pinela_Deluxe_frame_3_5_6_frame",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_full_001.1Pinela_Deluxe_frame_3_6_full_001",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_6_glass.1Pinela_Deluxe_frame_3_5_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_grill_full_001.1Pinela_Deluxe_frame_3_6_grill_full_001",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_5_6_rooftop_1.1Pinela_Deluxe_frame_3_5_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
-							"Y": 5.5999999999999996,
+							"Y": 5.5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 17770
 					},
 					{
 						"AssetName": "Pinela Delux 3x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_frame.1Pinela_Deluxe_frame_3_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_half.1Pinela_Deluxe_frame_3_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_full.1Pinela_Deluxe_frame_3_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_glass.1Pinela_Deluxe_frame_3_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_grill_full.1Pinela_Deluxe_frame_3_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_3_6_rooftop_1.1Pinela_Deluxe_frame_3_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 22300
 					},
 					{
 						"AssetName": "Pinela Delux 4x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4_frame.1Pinela_Deluxe_frame_4_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4_half.1Pinela_Deluxe_frame_4_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4_full.1Pinela_Deluxe_frame_4_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4_glass.1Pinela_Deluxe_frame_4_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4_grill_full.1Pinela_Deluxe_frame_4_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_4_rooftop_1.1Pinela_Deluxe_frame_4_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 4,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 16850
 					},
 					{
 						"AssetName": "Pinela Delux 4x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5_frame.1Pinela_Deluxe_frame_4_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5_half.1Pinela_Deluxe_frame_4_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5_full.1Pinela_Deluxe_frame_4_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5_glass.1Pinela_Deluxe_frame_4_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5_grill_full.1Pinela_Deluxe_frame_4_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_5_rooftop_1.1Pinela_Deluxe_frame_4_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 20570
 					},
 					{
 						"AssetName": "Pinela Delux 4x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6_frame.1Pinela_Deluxe_frame_4_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6_half.1Pinela_Deluxe_frame_4_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6_full.1Pinela_Deluxe_frame_4_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6_glass.1Pinela_Deluxe_frame_4_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6_grill_full.1Pinela_Deluxe_frame_4_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame1/1Pinela_Deluxe_frame_4_6_rooftop_1.1Pinela_Deluxe_frame_4_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 23680
 					}
 				]
 			},
@@ -6320,182 +6320,182 @@
 					{
 						"AssetName": "Pinela Delux 3x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
-						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_frame_.2Pinela_Deluxe_frame_3_3_frame_",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_half.2Pinela_Deluxe_frame_3_3_half",
+						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_frame.2Pinela_Deluxe_frame_3_3_frame",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_full.2Pinela_Deluxe_frame_3_3_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_glass.2Pinela_Deluxe_frame_3_3_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_grill_full.2Pinela_Deluxe_frame_3_3_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_3_rooftop_1.2Pinela_Deluxe_frame_3_3_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 3,
 							"Z": 0
 						},
-						"Price": 10490
+						"Price": 12730
 					},
 					{
 						"AssetName": "Pinela Delux 3.5x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5_frame.2Pinela_Deluxe_frame_3_5_3_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5_half.2Pinela_Deluxe_frame_3_5_3_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5_full.2Pinela_Deluxe_frame_3_5_3_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5_glass.2Pinela_Deluxe_frame_3_5_3_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5_grill_full.2Pinela_Deluxe_frame_3_5_3_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_3_5_rooftop_1.2Pinela_Deluxe_frame_3_5_3_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3.5,
 							"Y": 3.5,
 							"Z": 0
 						},
-						"Price": 12750
+						"Price": 15830
 					},
 					{
 						"AssetName": "Pinela Delux 3x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4_frame.2Pinela_Deluxe_frame_3_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4_half.2Pinela_Deluxe_frame_3_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4_full.2Pinela_Deluxe_frame_3_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4_glass.2Pinela_Deluxe_frame_3_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4_grill_full.2Pinela_Deluxe_frame_3_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_4_rooftop_1.2Pinela_Deluxe_frame_3_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 4,
 							"Z": 0
 						},
-						"Price": 12250
+						"Price": 14870
 					},
 					{
 						"AssetName": "Pinela Delux 3x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_frame.2Pinela_Deluxe_frame_3_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_half.2Pinela_Deluxe_frame_3_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_full.2Pinela_Deluxe_frame_3_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_glass.2Pinela_Deluxe_frame_3_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_grill_full.2Pinela_Deluxe_frame_3_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_rooftop_1.2Pinela_Deluxe_frame_3_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 14650
+						"Price": 16650
 					},
 					{
 						"AssetName": "Pinela Delux 3x5.4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4_frame.2Pinela_Deluxe_frame_3_5_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4_half.2Pinela_Deluxe_frame_3_5_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4_full.2Pinela_Deluxe_frame_3_5_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4_glass.2Pinela_Deluxe_frame_3_5_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4_grill_full.2Pinela_Deluxe_frame_3_5_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_4_rooftop_1.2Pinela_Deluxe_frame_3_5_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 5.4000000000000004,
 							"Z": 0
 						},
-						"Price": 12750
+						"Price": 16650
 					},
 					{
 						"AssetName": "Pinela Delux 3x5.6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6_frame.2Pinela_Deluxe_frame_3_5_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6_half.2Pinela_Deluxe_frame_3_5_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6_full.2Pinela_Deluxe_frame_3_5_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6_glass.2Pinela_Deluxe_frame_3_5_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6_gril_full.2Pinela_Deluxe_frame_3_5_6_gril_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_5_6_rooftop_1.2Pinela_Deluxe_frame_3_5_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 5.5999999999999996,
 							"Z": 0
 						},
-						"Price": 14650
+						"Price": 16650
 					},
 					{
 						"AssetName": "Pinela Delux 3x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6_frame.2Pinela_Deluxe_frame_3_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6_half.2Pinela_Deluxe_frame_3_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6_full.2Pinela_Deluxe_frame_3_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6_glass.2Pinela_Deluxe_frame_3_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6_grill_full.2Pinela_Deluxe_frame_3_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_3_6_rooftop_1.2Pinela_Deluxe_frame_3_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 18380
+						"Price": 19350
 					},
 					{
 						"AssetName": "Pinela Delux 4x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4_frame.2Pinela_Deluxe_frame_4_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4_half.2Pinela_Deluxe_frame_4_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4_full.2Pinela_Deluxe_frame_4_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4_glass.2Pinela_Deluxe_frame_4_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4_full_grill.2Pinela_Deluxe_frame_4_4_full_grill",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_4_rooftop_1.2Pinela_Deluxe_frame_4_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 4,
 							"Z": 0
 						},
-						"Price": 13890
+						"Price": 16850
 					},
 					{
 						"AssetName": "Pinela Delux 4x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5_frame.2Pinela_Deluxe_frame_4_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5_half.2Pinela_Deluxe_frame_4_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5_full.2Pinela_Deluxe_frame_4_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5_glass.2Pinela_Deluxe_frame_4_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5_grill_full.2Pinela_Deluxe_frame_4_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_5_rooftop_1.2Pinela_Deluxe_frame_4_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 16950
+						"Price": 20570
 					},
 					{
 						"AssetName": "Pinela Delux 4x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6_frame.2Pinela_Deluxe_frame_4_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6_half.2Pinela_Deluxe_frame_4_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6_full.2Pinela_Deluxe_frame_4_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6_glass.2Pinela_Deluxe_frame_4_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6_grill_full.2Pinela_Deluxe_frame_4_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame2/2Pinela_Deluxe_frame_4_6_rooftop_1.2Pinela_Deluxe_frame_4_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 19500
+						"Price": 23680
 					}
 				]
 			},
@@ -6506,181 +6506,181 @@
 						"AssetName": "Pinela Delux 3x3",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_3_frame.3Pinela_Deluxe_frame_3_3_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_3_half.3Pinela_Deluxe_frame_3_3_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_3_full.3Pinela_Deluxe_frame_3_3_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_3_glass.3Pinela_Deluxe_frame_3_3_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_3_grill_full.3Pinela_Deluxe_frame_3_3_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_3_rooftop_1.3Pinela_Deluxe_frame_3_3_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 3,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 12730
 					},
 					{
 						"AssetName": "Pinela Delux 3x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_4_frame.3Pinela_Deluxe_frame_3_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_4_half.3Pinela_Deluxe_frame_3_4_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_4_full.3Pinela_Deluxe_frame_3_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_4_glass.3Pinela_Deluxe_frame_3_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_4_grill_full.3Pinela_Deluxe_frame_3_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_4_rooftop_1.3Pinela_Deluxe_frame_3_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 4,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 14870
 					},
 					{
 						"AssetName": "Pinela Delux 3x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_frame.3Pinela_Deluxe_frame_3_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_half.3Pinela_Deluxe_frame_3_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_full.3Pinela_Deluxe_frame_3_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_glass.3Pinela_Deluxe_frame_3_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_grill_full.3Pinela_Deluxe_frame_3_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_rooftop_1.3Pinela_Deluxe_frame_3_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 16650
 					},
 					{
 						"AssetName": "Pinela Delux 3x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_6_frame.3Pinela_Deluxe_frame_3_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_6_half.3Pinela_Deluxe_frame_3_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_6_full.3Pinela_Deluxe_frame_3_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_6_glass.3Pinela_Deluxe_frame_3_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_6_grill_full.3Pinela_Deluxe_frame_3_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_6_rooftop_1.3Pinela_Deluxe_frame_3_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 19350
 					},
 					{
 						"AssetName": "Pinela Delux 3.5x3.5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_3_5_frame.3Pinela_Deluxe_frame_3_5_3_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_3_5_half.3Pinela_Deluxe_frame_3_5_3_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_3_5_full.3Pinela_Deluxe_frame_3_5_3_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_3_5_glass.3Pinela_Deluxe_frame_3_5_3_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_3_5_grill_full.3Pinela_Deluxe_frame_3_5_3_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_3_5_rooftop_1.3Pinela_Deluxe_frame_3_5_3_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3.5,
 							"Y": 3.5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 15830
 					},
 					{
 						"AssetName": "Pinel Delux 3.5x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_5_frame.3Pinela_Deluxe_frame_3_5_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_5_half.3Pinela_Deluxe_frame_3_5_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_5_full.3Pinela_Deluxe_frame_3_5_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_5_glass.3Pinela_Deluxe_frame_3_5_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_5_grill_full.3Pinela_Deluxe_frame_3_5_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_5_rooftop_1.3Pinela_Deluxe_frame_3_5_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3.5,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 17770
 					},
 					{
 						"AssetName": "Pinela Delux 3.5x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_6_frame.3Pinela_Deluxe_frame_3_5_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_6_half.3Pinela_Deluxe_frame_3_5_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_6_full.3Pinela_Deluxe_frame_3_5_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_6_glass.3Pinela_Deluxe_frame_3_5_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_6_grill_full.3Pinela_Deluxe_frame_3_5_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_3_5_6_rooftop_1.3Pinela_Deluxe_frame_3_5_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 3.5,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 22300
 					},
 					{
 						"AssetName": "Pinela Delux 4x4",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_4_frame.3Pinela_Deluxe_frame_4_4_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_4_grill_half.3Pinela_Deluxe_frame_4_4_grill_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_4_full.3Pinela_Deluxe_frame_4_4_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_4_glass.3Pinela_Deluxe_frame_4_4_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_4_grill_full.3Pinela_Deluxe_frame_4_4_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_4_rooftop_1.3Pinela_Deluxe_frame_4_4_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 4,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 16850
 					},
 					{
 						"AssetName": "Pinela Delux 4x5",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_5_frame.3Pinela_Deluxe_frame_4_5_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_5_half.3Pinela_Deluxe_frame_4_5_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_5_full.3Pinela_Deluxe_frame_4_5_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_5_glass.3Pinela_Deluxe_frame_4_5_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_5_grill_full.3Pinela_Deluxe_frame_4_5_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_5_rooftop_1.3Pinela_Deluxe_frame_4_5_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 5,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 20570
 					},
 					{
 						"AssetName": "Pinela Delux 4x6",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Configurator/Frame1.Frame1'",
 						"Asset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_6_frame.3Pinela_Deluxe_frame_4_6_frame",
-						"bHalfFencingOptionAvailable": true,
-						"HalfFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_6_half.3Pinela_Deluxe_frame_4_6_half",
+						"bHalfFencingOptionAvailable": false,
+						"HalfFencingAsset": "None",
 						"bFullFencingOptionAvailable": true,
-						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_6_full.3Pinela_Deluxe_frame_4_6_full",
+						"FullFencingAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_6_glass.3Pinela_Deluxe_frame_4_6_glass",
 						"bGlassOptionAvailable": true,
-						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_6_grill_full.3Pinela_Deluxe_frame_4_6_grill_full",
+						"GlassAsset": "/Game/Products/Meshes/Pinela_Delux/Pinela_frame3/3Pinela_Deluxe_frame_4_6_rooftop_1.3Pinela_Deluxe_frame_4_6_rooftop_1",
 						"bUseMaterialSelector": true,
 						"Dimensions": {
 							"X": 4,
 							"Y": 6,
 							"Z": 0
 						},
-						"Price": 0
+						"Price": 23680
 					}
 				]
 			}

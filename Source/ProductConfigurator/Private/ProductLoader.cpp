@@ -9,7 +9,7 @@
 
 AProductLoader::AProductLoader()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 	GetStaticMeshComponent()->SetRenderCustomDepth(true);
 	
@@ -40,11 +40,6 @@ void AProductLoader::BeginPlay()
 	{
 		GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "GameMode Not Found. Configurator won't work properly.");
 	}
-}
-
-void AProductLoader::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
 }
 
 void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, bool bHalfFencing, bool bFullFencing, bool bGlassOption)
