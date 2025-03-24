@@ -64,8 +64,11 @@ struct FAssetDetails : public FTableRowBase
 		AssetName = TEXT("Default");
 		Thumbnail = nullptr;
 		bHalfFencingOptionAvailable = false;
+		HalfFencingDisplayName = TEXT("Half Fencing");
 		bFullFencingOptionAvailable = false;
+		FullFencingDisplayName = TEXT("Full Fencing");
 		bGlassOptionAvailable = false;
+		GlassDisplayName = TEXT("Glass");
 		bUseMaterialSelector = false;
 		Dimensions = FVector::ZeroVector;
 		Price = 0.f;
@@ -161,37 +164,37 @@ private:
 	 */
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-	UStaticMeshComponent* HalfFencingMeshComp = nullptr;
+	UStaticMeshComponent* OptionOneComp = nullptr;
 
 	UPROPERTY()
-	bool bHalfFencingVisible = false;
+	bool bOptionOneVisible = false;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-	UStaticMeshComponent* FullFencingMeshComp = nullptr;
+	UStaticMeshComponent* OptionTwoComp = nullptr;
 
 	UPROPERTY()
-	bool bFullFencingVisible = false;
+	bool bOptionTwoVisible = false;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-	UStaticMeshComponent* GlassMeshComp = nullptr;
+	UStaticMeshComponent* OptionThreeComp = nullptr;
 
 	UPROPERTY()
-	bool bUseGlassMaterialSelector = true;
+	bool bUseOptionThreeMaterialSelector = true;
 
 	UPROPERTY()
-	bool bGlassVisible = false;
+	bool bOptionThreeVisible = false;
 	
 	UPROPERTY()
 	TSoftObjectPtr<UStaticMesh> AsyncAsset;
 	
 	UPROPERTY()
-	TSoftObjectPtr<UStaticMesh> AsyncHalfFencingMesh;
+	TSoftObjectPtr<UStaticMesh> AsyncOptionOneMesh;
 	
 	UPROPERTY()
-	TSoftObjectPtr<UStaticMesh> AsyncFullFencingMesh;
+	TSoftObjectPtr<UStaticMesh> AsyncOptionTwoMesh;
 
 	UPROPERTY()
-	TSoftObjectPtr<UStaticMesh> AsyncGlassMesh;
+	TSoftObjectPtr<UStaticMesh> AsyncOptionThreeMesh;
 
 	UPROPERTY()
 	APlayerController* PlayerController = nullptr;
@@ -209,7 +212,7 @@ private:
 	 * Exposed Functions
 	 */
 	UFUNCTION(BlueprintCallable, Category = Configuration)
-	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, bool bHalfFencing = false, bool bFullFencing = false, bool bGlassOption = false);
+	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, bool bOptionOne = false, bool bOptionTwo = false, bool bOptionThree = false);
 
 	/**
 	 * Internal Functions

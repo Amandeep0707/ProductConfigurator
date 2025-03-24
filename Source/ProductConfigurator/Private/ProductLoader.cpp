@@ -13,17 +13,17 @@ AProductLoader::AProductLoader()
 
 	GetStaticMeshComponent()->SetRenderCustomDepth(true);
 	
-	HalfFencingMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("HalfFencingMeshComponent");
-	HalfFencingMeshComp->SetupAttachment(GetRootComponent());
-	HalfFencingMeshComp->SetRenderCustomDepth(true);
+	OptionOneComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionOneComponent");
+	OptionOneComp->SetupAttachment(GetRootComponent());
+	OptionOneComp->SetRenderCustomDepth(true);
 
-	FullFencingMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("FullFencingMeshComponent");
-	FullFencingMeshComp->SetupAttachment(GetRootComponent());
-	FullFencingMeshComp->SetRenderCustomDepth(true);
+	OptionTwoComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionTwoComponent");
+	OptionTwoComp->SetupAttachment(GetRootComponent());
+	OptionTwoComp->SetRenderCustomDepth(true);
 	
-	GlassMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("GlassMeshComponent");
-	GlassMeshComp->SetupAttachment(GetRootComponent());
-	GlassMeshComp->SetRenderCustomDepth(true);
+	OptionThreeComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionThreeComponent");
+	OptionThreeComp->SetupAttachment(GetRootComponent());
+	OptionThreeComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::BeginPlay()
@@ -42,7 +42,7 @@ void AProductLoader::BeginPlay()
 	}
 }
 
-void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, bool bHalfFencing, bool bFullFencing, bool bGlassOption)
+void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, bool bOptionOne, bool bOptionTwo, bool bOptionThree)
 {
 	if (!ConfigurationData)
 	{
@@ -77,33 +77,33 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 	// Get the correct asset
 	const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
 	AsyncAsset = AssetDetails.Asset;
-	AsyncHalfFencingMesh = AssetDetails.HalfFencingAsset;
-	AsyncFullFencingMesh = AssetDetails.FullFencingAsset;
-	AsyncGlassMesh = AssetDetails.GlassAsset;
+	AsyncOptionOneMesh = AssetDetails.HalfFencingAsset;
+	AsyncOptionTwoMesh = AssetDetails.FullFencingAsset;
+	AsyncOptionThreeMesh = AssetDetails.GlassAsset;
 
-	if (!AsyncAsset.IsNull() || !AsyncFullFencingMesh.IsNull() || !AsyncHalfFencingMesh.IsNull() || !AsyncGlassMesh.IsNull())
+	if (!AsyncAsset.IsNull() || !AsyncOptionTwoMesh.IsNull() || !AsyncOptionOneMesh.IsNull() || !AsyncOptionThreeMesh.IsNull())
 	{
 		TArray<FSoftObjectPath> AssetPaths;
 		AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
 		
-		if (bHalfFencing)
+		if (bOptionOne)
 		{
-			AssetPaths.Add(AsyncHalfFencingMesh.ToSoftObjectPath());
-			bHalfFencingVisible = bHalfFencing;
-		} else bHalfFencingVisible = false;
+			AssetPaths.Add(AsyncOptionOneMesh.ToSoftObjectPath());
+			bOptionOneVisible = bOptionOne;
+		} else bOptionOneVisible = false;
 		
-		if (bFullFencing)
+		if (bOptionTwo)
 		{
-			AssetPaths.Add(AsyncFullFencingMesh.ToSoftObjectPath());
-			bFullFencingVisible = bFullFencing;
-		} else bFullFencingVisible = false;
+			AssetPaths.Add(AsyncOptionTwoMesh.ToSoftObjectPath());
+			bOptionTwoVisible = bOptionTwo;
+		} else bOptionTwoVisible = false;
 		
-		if (bGlassOption)
+		if (bOptionThree)
 		{
-			AssetPaths.Add(AsyncGlassMesh.ToSoftObjectPath());
-			bUseGlassMaterialSelector = AssetDetails.bUseMaterialSelector;
-			bGlassVisible = bGlassOption;
-		} else bGlassVisible = false;
+			AssetPaths.Add(AsyncOptionThreeMesh.ToSoftObjectPath());
+			bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
+			bOptionThreeVisible = bOptionThree;
+		} else bOptionThreeVisible = false;
 
 		// Create a persistent StreamableManager instance
 		if (!StreamableManager)
@@ -148,36 +148,36 @@ void AProductLoader::OnAssetLoaded()
 		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
 		GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
-	if (AsyncHalfFencingMesh.IsValid())
+	if (AsyncOptionOneMesh.IsValid())
 	{
-		HalfFencingMeshComp->SetStaticMesh(AsyncHalfFencingMesh.Get());
-		HalfFencingMeshComp->SetVisibility(bHalfFencingVisible);
-		HalfFencingMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+		OptionOneComp->SetStaticMesh(AsyncOptionOneMesh.Get());
+		OptionOneComp->SetVisibility(bOptionOneVisible);
+		OptionOneComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
-	else HalfFencingMeshComp->SetVisibility(false);
+	else OptionOneComp->SetVisibility(false);
 	
-	if (AsyncFullFencingMesh.IsValid())
+	if (AsyncOptionTwoMesh.IsValid())
 	{
-		FullFencingMeshComp->SetStaticMesh(AsyncFullFencingMesh.Get());
-		FullFencingMeshComp->SetVisibility(bFullFencingVisible);
-		FullFencingMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+		OptionTwoComp->SetStaticMesh(AsyncOptionTwoMesh.Get());
+		OptionTwoComp->SetVisibility(bOptionTwoVisible);
+		OptionTwoComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 	}
-	else FullFencingMeshComp->SetVisibility(false);
+	else OptionTwoComp->SetVisibility(false);
 	
-	if (AsyncGlassMesh.IsValid())
+	if (AsyncOptionThreeMesh.IsValid())
 	{
-		GlassMeshComp->SetStaticMesh(AsyncGlassMesh.Get());
-		if (bUseGlassMaterialSelector)
+		OptionThreeComp->SetStaticMesh(AsyncOptionThreeMesh.Get());
+		if (bUseOptionThreeMaterialSelector)
 		{
-			GlassMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+			OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 		}
 		else
 		{
-			GlassMeshComp->SetMaterial(MaterialSelectorIndex, AsyncGlassMesh.Get()->GetMaterial(MaterialSelectorIndex));
+			OptionThreeComp->SetMaterial(MaterialSelectorIndex, AsyncOptionThreeMesh.Get()->GetMaterial(MaterialSelectorIndex));
 		}
-		GlassMeshComp->SetVisibility(bGlassVisible);
+		OptionThreeComp->SetVisibility(bOptionThreeVisible);
 	}
-	else GlassMeshComp->SetVisibility(false);
+	else OptionThreeComp->SetVisibility(false);
 }
 
 void AProductLoader::Initialize()
@@ -212,15 +212,15 @@ void AProductLoader::Initialize()
 void AProductLoader::OnMouseOverMesh()
 {
 	GetStaticMeshComponent()->SetRenderCustomDepth(true);
-	HalfFencingMeshComp->SetRenderCustomDepth(true);
-	FullFencingMeshComp->SetRenderCustomDepth(true);
-	GlassMeshComp->SetRenderCustomDepth(true);
+	OptionOneComp->SetRenderCustomDepth(true);
+	OptionTwoComp->SetRenderCustomDepth(true);
+	OptionThreeComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::OnMouseExitMesh()
 {
 	GetStaticMeshComponent()->SetRenderCustomDepth(false);
-	HalfFencingMeshComp->SetRenderCustomDepth(false);
-	FullFencingMeshComp->SetRenderCustomDepth(false);
-	GlassMeshComp->SetRenderCustomDepth(false);
+	OptionOneComp->SetRenderCustomDepth(false);
+	OptionTwoComp->SetRenderCustomDepth(false);
+	OptionThreeComp->SetRenderCustomDepth(false);
 }
