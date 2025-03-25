@@ -44,6 +44,23 @@ void AProductLoader::BeginPlay()
 
 void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, bool bOptionOne, bool bOptionTwo, bool bOptionThree)
 {
+	// Check if the current load request is the same as the last load
+	bool bSameModelRequested = (ProductName == LastLoadedProductName) && 
+								(VariantIndex == LastLoadedVariantIndex) && 
+								(VariantSizeIndex == LastLoadedVariantSizeIndex);
+
+	// Only reset toggle state if a new model is being loaded
+	if (!bSameModelRequested)
+	{
+		// Reset toggle state only for a new model
+		bCurrentToggleState = false;
+
+		// Update last loaded product details
+		LastLoadedProductName = ProductName;
+		LastLoadedVariantIndex = VariantIndex;
+		LastLoadedVariantSizeIndex = VariantSizeIndex;
+	}
+	
 	if (!ConfigurationData)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Configuration Data is null!"));
@@ -77,9 +94,10 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 	// Get the correct asset
 	const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
 	AsyncAsset = AssetDetails.Asset;
-	AsyncOptionOneMesh = AssetDetails.HalfFencingAsset;
-	AsyncOptionTwoMesh = AssetDetails.FullFencingAsset;
-	AsyncOptionThreeMesh = AssetDetails.GlassAsset;
+	AsyncOptionOneMesh = AssetDetails.OptionOneAsset;
+	AsyncOptionTwoMesh = AssetDetails.OptionTwoAsset;
+	AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
+	AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
 
 	if (!AsyncAsset.IsNull() || !AsyncOptionTwoMesh.IsNull() || !AsyncOptionOneMesh.IsNull() || !AsyncOptionThreeMesh.IsNull())
 	{
@@ -98,12 +116,34 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 			bOptionTwoVisible = bOptionTwo;
 		} else bOptionTwoVisible = false;
 		
-		if (bOptionThree)
+		// Option Three - Enhanced Toggle Handling
+		AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
+		AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
+		bOptionThreeVisible = false;
+
+		// Check if toggle is supported and both meshes are valid
+		if (AssetDetails.bUseOptionThreeAsToggle && 
+		!AsyncOptionThreeMesh.IsNull() && 
+		!AsyncOptionThreeMesh2.IsNull())
 		{
-			AssetPaths.Add(AsyncOptionThreeMesh.ToSoftObjectPath());
+			bUseToggleForOptionThree = true;
+			bOptionThreeVisible = true;
 			bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
-			bOptionThreeVisible = bOptionThree;
-		} else bOptionThreeVisible = false;
+
+			// Add both toggle meshes to loading
+			AssetPaths.Add(AsyncOptionThreeMesh.ToSoftObjectPath());
+			AssetPaths.Add(AsyncOptionThreeMesh2.ToSoftObjectPath());
+		}
+		else if (bOptionThree && !AsyncOptionThreeMesh.IsNull())
+		{
+			// Standard Option Three behavior
+			bOptionThreeVisible = true;
+			bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
+			AssetPaths.Add(AsyncOptionThreeMesh.ToSoftObjectPath());
+		}
+
+		// Material selection
+		CurrentMaterialOption = (MaterialIndex != 0) ? MaterialOption2 : MaterialOption1;
 
 		// Create a persistent StreamableManager instance
 		if (!StreamableManager)
@@ -124,15 +164,6 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to create streamable handle"));
 			return;
-		}
-
-		if (MaterialIndex)
-		{
-			CurrentMaterialOption = MaterialOption2;
-		}
-		else
-		{
-			CurrentMaterialOption = MaterialOption1;
 		}
 	}
 	else
@@ -164,20 +195,66 @@ void AProductLoader::OnAssetLoaded()
 	}
 	else OptionTwoComp->SetVisibility(false);
 	
-	if (AsyncOptionThreeMesh.IsValid())
+	// Option Three - Toggle or Standard
+	if (bUseToggleForOptionThree)
 	{
+		// Ensure both toggle meshes are valid
+		if (AsyncOptionThreeMesh.IsValid() && AsyncOptionThreeMesh2.IsValid())
+		{
+			OptionThreeComp->SetVisibility(true);
+
+			// Select mesh based on current toggle state
+			TSoftObjectPtr<UStaticMesh> CurrentToggleMesh = 
+				bCurrentToggleState ? AsyncOptionThreeMesh2 : AsyncOptionThreeMesh;
+
+			OptionThreeComp->SetStaticMesh(CurrentToggleMesh.Get());
+
+			// Material handling
+			if (bUseOptionThreeMaterialSelector)
+			{
+				OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+			}
+			else
+			{
+				// Use the default material of the current mesh
+				OptionThreeComp->SetMaterial(
+					MaterialSelectorIndex, 
+					CurrentToggleMesh.Get()->GetMaterial(MaterialSelectorIndex)
+				);
+			}
+
+			// Toggle state for next time
+			bCurrentToggleState = !bCurrentToggleState;
+		}
+		else
+		{
+			OptionThreeComp->SetVisibility(false);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, 
+				TEXT("Toggle meshes for Option Three are not properly configured."));
+		}
+	}
+	else if (AsyncOptionThreeMesh.IsValid())
+	{
+		// Standard Option Three behavior
 		OptionThreeComp->SetStaticMesh(AsyncOptionThreeMesh.Get());
+		OptionThreeComp->SetVisibility(bOptionThreeVisible);
+
 		if (bUseOptionThreeMaterialSelector)
 		{
 			OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
 		}
 		else
 		{
-			OptionThreeComp->SetMaterial(MaterialSelectorIndex, AsyncOptionThreeMesh.Get()->GetMaterial(MaterialSelectorIndex));
+			OptionThreeComp->SetMaterial(
+				MaterialSelectorIndex, 
+				AsyncOptionThreeMesh.Get()->GetMaterial(MaterialSelectorIndex)
+			);
 		}
-		OptionThreeComp->SetVisibility(bOptionThreeVisible);
 	}
-	else OptionThreeComp->SetVisibility(false);
+	else
+	{
+		OptionThreeComp->SetVisibility(false);
+	}
 }
 
 void AProductLoader::Initialize()

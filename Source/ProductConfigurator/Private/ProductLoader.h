@@ -24,33 +24,39 @@ struct FAssetDetails : public FTableRowBase
 	TSoftObjectPtr<UStaticMesh> Asset;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	bool bHalfFencingOptionAvailable;
+	bool bOptionOneAvailable;
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bHalfFencingOptionAvailable", EditConditionHides))
-	FName HalfFencingDisplayName;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionOneAvailable", EditConditionHides))
+	FName OptionOneDisplayName;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bHalfFencingOptionAvailable", EditConditionHides))
-	TSoftObjectPtr<UStaticMesh> HalfFencingAsset;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	bool bFullFencingOptionAvailable;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFullFencingOptionAvailable", EditConditionHides))
-	FName FullFencingDisplayName;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFullFencingOptionAvailable", EditConditionHides))
-	TSoftObjectPtr<UStaticMesh> FullFencingAsset;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionOneAvailable", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> OptionOneAsset;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	bool bGlassOptionAvailable;
+	bool bOptionTwoAvailable;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
-	FName GlassDisplayName;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionTwoAvailable", EditConditionHides))
+	FName OptionTwoDisplayName;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
-	TSoftObjectPtr<UStaticMesh> GlassAsset;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionTwoAvailable", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> OptionTwoAsset;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bGlassOptionAvailable", EditConditionHides))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	bool bOptionThreeAvailable;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
+	FName OptionThreeDisplayName;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> OptionThreeAsset;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
+	bool bUseOptionThreeAsToggle;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bUseOptionThreeAsToggle", EditConditionHides))
+	TSoftObjectPtr<UStaticMesh> OptionThreeAsset2;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
 	bool bUseMaterialSelector = true;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
@@ -63,12 +69,13 @@ struct FAssetDetails : public FTableRowBase
 	{
 		AssetName = TEXT("Default");
 		Thumbnail = nullptr;
-		bHalfFencingOptionAvailable = false;
-		HalfFencingDisplayName = TEXT("Half Fencing");
-		bFullFencingOptionAvailable = false;
-		FullFencingDisplayName = TEXT("Full Fencing");
-		bGlassOptionAvailable = false;
-		GlassDisplayName = TEXT("Glass");
+		bOptionOneAvailable = false;
+		OptionOneDisplayName = TEXT("Half Fencing");
+		bOptionTwoAvailable = false;
+		OptionTwoDisplayName = TEXT("Full Fencing");
+		bOptionThreeAvailable = false;
+		OptionThreeDisplayName = TEXT("Glass");
+		bUseOptionThreeAsToggle = false;
 		bUseMaterialSelector = false;
 		Dimensions = FVector::ZeroVector;
 		Price = 0.f;
@@ -183,6 +190,22 @@ private:
 
 	UPROPERTY()
 	bool bOptionThreeVisible = false;
+
+	UPROPERTY()
+	bool bUseToggleForOptionThree = false;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+	bool bCurrentToggleState = false;
+
+	// Track the last loaded product and variant for comparison
+	UPROPERTY()
+	FName LastLoadedProductName = NAME_None;
+
+	UPROPERTY()
+	int32 LastLoadedVariantIndex = INDEX_NONE;
+
+	UPROPERTY()
+	int32 LastLoadedVariantSizeIndex = INDEX_NONE;
 	
 	UPROPERTY()
 	TSoftObjectPtr<UStaticMesh> AsyncAsset;
@@ -195,6 +218,9 @@ private:
 
 	UPROPERTY()
 	TSoftObjectPtr<UStaticMesh> AsyncOptionThreeMesh;
+
+	UPROPERTY()
+	TSoftObjectPtr<UStaticMesh> AsyncOptionThreeMesh2;
 
 	UPROPERTY()
 	APlayerController* PlayerController = nullptr;
