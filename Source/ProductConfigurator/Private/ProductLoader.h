@@ -197,15 +197,20 @@ private:
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
 	bool bCurrentToggleState = false;
 
-	// Track the last loaded product and variant for comparison
 	UPROPERTY()
-	FName LastLoadedProductName = NAME_None;
-
+	FName LastLoadedProduct;
+    
 	UPROPERTY()
-	int32 LastLoadedVariantIndex = INDEX_NONE;
-
+	int32 LastVariantIndex = -1;
+    
 	UPROPERTY()
-	int32 LastLoadedVariantSizeIndex = INDEX_NONE;
+	int32 LastVariantSizeIndex = -1;
+	
+	UPROPERTY()
+	bool bLastOptionThreeEnabled = false;
+    
+	UPROPERTY()
+	bool bLastOptionThreeToggleState = false;
 	
 	UPROPERTY()
 	TSoftObjectPtr<UStaticMesh> AsyncAsset;
