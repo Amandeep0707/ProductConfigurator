@@ -45,6 +45,9 @@ struct FAssetDetails : public FTableRowBase
 	bool bOptionThreeAvailable;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
+	bool bUseOptionThreeAsDefault;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
 	FName OptionThreeDisplayName;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
@@ -74,6 +77,7 @@ struct FAssetDetails : public FTableRowBase
 		bOptionTwoAvailable = false;
 		OptionTwoDisplayName = TEXT("Full Fencing");
 		bOptionThreeAvailable = false;
+		bUseOptionThreeAsDefault = true;
 		OptionThreeDisplayName = TEXT("Glass");
 		bUseOptionThreeAsToggle = false;
 		bUseMaterialSelector = false;
@@ -243,7 +247,7 @@ private:
 	 * Exposed Functions
 	 */
 	UFUNCTION(BlueprintCallable, Category = Configuration)
-	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, bool bOptionOne = false, bool bOptionTwo = false, bool bOptionThree = false);
+	void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, bool bOptionOne = false, bool bOptionTwo = false, bool bOptionThree = true);
 
 	/**
 	 * Internal Functions
