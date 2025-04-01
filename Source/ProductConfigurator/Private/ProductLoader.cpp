@@ -113,18 +113,22 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
             bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
 
             // Check if Option Three configuration has changed
-            bool bIsSameModel = (ProductName == LastLoadedProduct) && 
-                               (VariantIndex == LastVariantIndex) && 
-                               (VariantSizeIndex == LastVariantSizeIndex);
-            
-            bool bIsSameOptionThreeConfig = bIsSameModel && (bOptionThree == bLastOptionThreeEnabled);
+        	bool bIsSameModel = (ProductName == LastLoadedProduct) && 
+				   (VariantIndex == LastVariantIndex) && 
+				   (VariantSizeIndex == LastVariantSizeIndex);
 
-            // Only toggle if Option Three configuration has changed
-            if (!bIsSameOptionThreeConfig)
-            {
-                bCurrentToggleState = !bLastOptionThreeToggleState;
-                bLastOptionThreeToggleState = bCurrentToggleState;
-            }
+        	if (!bIsSameModel)
+        	{
+        		// For new models, always start with toggle state false
+        		bCurrentToggleState = false;
+        		bLastOptionThreeToggleState = false;
+        	}
+        	else if (bOptionThree != bLastOptionThreeEnabled)
+        	{
+        		// Only toggle if Option Three setting has changed for the same model
+        		bCurrentToggleState = !bCurrentToggleState;
+        		bLastOptionThreeToggleState = bCurrentToggleState;
+        	}
             else
             {
                 bCurrentToggleState = bLastOptionThreeToggleState;
