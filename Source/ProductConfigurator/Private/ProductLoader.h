@@ -7,6 +7,8 @@
 #include "Engine/StreamableManager.h"
 #include "ProductLoader.generated.h"
 
+DECLARE_DYNAMIC_DELEGATE(FOnProductLoaded);
+
 class UConfiguratorUI;
 
 USTRUCT(BlueprintType)
@@ -139,6 +141,9 @@ class AProductLoader : public AStaticMeshActor
 	virtual void BeginPlay() override;
 
 public:
+
+	FOnProductLoaded OnProductLoaded;
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta=(RowType="ConfigurationData"), Category = Configuration)
 	UDataTable* ConfigurationData = nullptr;
 

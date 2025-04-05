@@ -12,18 +12,22 @@ AProductLoader::AProductLoader()
 	PrimaryActorTick.bCanEverTick = false;
 
 	GetStaticMeshComponent()->SetRenderCustomDepth(true);
+	GetStaticMeshComponent()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 	
 	OptionOneComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionOneComponent");
 	OptionOneComp->SetupAttachment(GetRootComponent());
 	OptionOneComp->SetRenderCustomDepth(true);
+	OptionOneComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 
 	OptionTwoComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionTwoComponent");
 	OptionTwoComp->SetupAttachment(GetRootComponent());
 	OptionTwoComp->SetRenderCustomDepth(true);
+	OptionTwoComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 	
 	OptionThreeComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionThreeComponent");
 	OptionThreeComp->SetupAttachment(GetRootComponent());
 	OptionThreeComp->SetRenderCustomDepth(true);
+	OptionThreeComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 }
 
 void AProductLoader::BeginPlay()
@@ -191,6 +195,7 @@ void AProductLoader::OnAssetLoaded()
 	{
 		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
 		GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+		
 	}
 	if (AsyncOptionOneMesh.IsValid())
 	{
@@ -261,6 +266,8 @@ void AProductLoader::OnAssetLoaded()
 	{
 		OptionThreeComp->SetVisibility(false);
 	}
+
+	OnProductLoaded.Execute();
 }
 
 void AProductLoader::Initialize()

@@ -9,6 +9,7 @@
 #include "Blueprint/WidgetLayoutLibrary.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Widgets/ConfiguratorUI.h"
 
@@ -25,8 +26,12 @@ ASmoothCameraPawn::ASmoothCameraPawn()
 	Sphere->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
 	Sphere->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 
+	CameraBoom = CreateDefaultSubobject<USpringArmComponent>("CameraBoom");
+	CameraBoom->SetupAttachment(Sphere);
+	CameraBoom->TargetArmLength = 1000.f;
+
 	Camera = CreateDefaultSubobject<UCineCameraComponent>("CineCamera");
-	Camera->SetupAttachment(Sphere);
+	Camera->SetupAttachment(CameraBoom);
 	Camera->bUsePawnControlRotation = true;
 }
 
@@ -44,6 +49,10 @@ void ASmoothCameraPawn::BeginPlay()
 	}
 
 	ProductLoader = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetProductLoader();
+	if (ProductLoader)
+	{
+		ProductLoader->OnProductLoaded.BindDynamic(this, &ASmoothCameraPawn::UpdateCameraLocation);
+	}
 }
 
 void ASmoothCameraPawn::Tick(float DeltaTime)
@@ -52,16 +61,45 @@ void ASmoothCameraPawn::Tick(float DeltaTime)
 	TraceForFocus();
 }
 
+void ASmoothCameraPawn::UpdateCameraLocation()
+{
+	if (ProductLoader)
+	{
+		FVector MinBounds, MaxBounds = FVector::ZeroVector;
+		ProductLoader->GetStaticMeshComponent()->GetLocalBounds(MinBounds, MaxBounds);
+		FVector Center = (MinBounds + MaxBounds) / 2;
+		
+		// Set the camera boom length to the distance from the center to the max bounds
+		float Distance = FVector::Distance(Center, MaxBounds);
+		CameraBoom->TargetArmLength = Distance * OrbitCameraDistance;
+		
+		// Set the camera position to the center of the mesh
+		SetActorLocation(Center);
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader not found!"));
+	}
+}
+
 void ASmoothCameraPawn::Move(const FInputActionValue& Value)
 {
-	const FVector LookVector = Value.Get<FVector>();
+		switch (ControlType)
+		{
+		case Flying:
+			{
+				const FVector LookVector = Value.Get<FVector>();
 
-	if (Camera)
-	{
-		PawnMovement->AddInputVector(Camera->GetForwardVector() * LookVector.Y);
-		PawnMovement->AddInputVector(Camera->GetRightVector() * LookVector.X);
-		PawnMovement->AddInputVector(Camera->GetUpVector() * LookVector.Z);
-	}
+				if (Camera)
+				{
+					PawnMovement->AddInputVector(Camera->GetForwardVector() * LookVector.Y);
+					PawnMovement->AddInputVector(Camera->GetRightVector() * LookVector.X);
+					PawnMovement->AddInputVector(Camera->GetUpVector() * LookVector.Z);
+				}
+			}
+			break;
+		default: return;
+		}
 }
 
 void ASmoothCameraPawn::Look(const FInputActionValue& Value)

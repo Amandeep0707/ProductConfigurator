@@ -7,12 +7,20 @@
 #include "GameFramework/Pawn.h"
 #include "SmoothCameraPawn.generated.h"
 
+class USpringArmComponent;
 class AProductLoader;
 class UCineCameraComponent;
 class USphereComponent;
 class UFloatingPawnMovement;
 class UInputMappingContext;
 class UInputAction;
+
+UENUM()
+enum EControlType
+{
+	Flying UMETA(DisplayName = "Flying"),
+	Orbit UMETA(DisplayName = "Orbit"),
+};
 
 UCLASS()
 class PRODUCTCONFIGURATOR_API ASmoothCameraPawn : public APawn
@@ -23,6 +31,9 @@ public:
 	ASmoothCameraPawn();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION()
+	void UpdateCameraLocation();
+
 protected:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
@@ -31,23 +42,29 @@ private:
 	/**
 	 * Input Variables
 	 */
-	UPROPERTY(EditDefaultsOnly, Category = Inputs)
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	UInputMappingContext* MappingContext;
 
-	UPROPERTY(EditDefaultsOnly, Category = Inputs)
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	UInputAction* IA_Fly;
 
-	UPROPERTY(EditDefaultsOnly, Category = Inputs)
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	UInputAction* IA_Look;
 
-	UPROPERTY(EditDefaultsOnly, Category = Inputs)
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	UInputAction* IA_ToggleUI;
 
-	UPROPERTY(EditDefaultsOnly, Category = Inputs)
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	UInputAction* IA_PrimaryClick;
 
-	UPROPERTY(EditDefaultsOnly, Category = Inputs)
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	UInputAction* IA_SecondaryClick;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
+	TEnumAsByte<EControlType> ControlType = EControlType::Orbit;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
+	float OrbitCameraDistance = 2.f;
 
 	/**
 	 * Internal Variables
@@ -57,6 +74,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	USphereComponent* Sphere;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
+	USpringArmComponent* CameraBoom;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	UCineCameraComponent* Camera;
