@@ -61,10 +61,16 @@ private:
 	UInputAction* IA_SecondaryClick;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
+	UInputAction* IA_Scroll;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	TEnumAsByte<EControlType> ControlType = EControlType::Orbit;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
 	float OrbitCameraDistance = 2.f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Controls | Inputs")
+	float ScrollSpeed = 30.f;
 
 	/**
 	 * Internal Variables
@@ -92,6 +98,9 @@ private:
 
 	UPROPERTY()
 	float FocusDistance = 0.f;
+
+	UPROPERTY()
+	float MinCameraDistance = 100.f;
 	
 	/**
 	 * Input Functions
@@ -101,5 +110,6 @@ private:
 	void ToggleUI(const FInputActionValue& Value);
 	void HandlePrimaryClick(const FInputActionValue& Value);
 	void HandleSecondaryClick(const FInputActionValue& Value);
+	void HandleScroll(const FInputActionValue& Value);
 	void TraceForFocus();
 };

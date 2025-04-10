@@ -70,8 +70,8 @@ void ASmoothCameraPawn::UpdateCameraLocation()
 		FVector Center = (MinBounds + MaxBounds) / 2;
 		
 		// Set the camera boom length to the distance from the center to the max bounds
-		float Distance = FVector::Distance(Center, MaxBounds);
-		CameraBoom->TargetArmLength = Distance * OrbitCameraDistance;
+		MinCameraDistance = FVector::Distance(Center, MaxBounds);
+		CameraBoom->TargetArmLength = MinCameraDistance * OrbitCameraDistance;
 		
 		// Set the camera position to the center of the mesh
 		SetActorLocation(Center);
@@ -140,6 +140,14 @@ void ASmoothCameraPawn::HandleSecondaryClick(const FInputActionValue& Value)
 	}
 }
 
+void ASmoothCameraPawn::HandleScroll(const FInputActionValue& Value)
+{
+	const float Scroll = Value.Get<float>();
+
+	CameraBoom->TargetArmLength = FMath::Clamp(CameraBoom->TargetArmLength + (Scroll * ScrollSpeed),
+		MinCameraDistance, MinCameraDistance * OrbitCameraDistance * 1.2f);
+}
+
 void ASmoothCameraPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -151,6 +159,7 @@ void ASmoothCameraPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 		EnhancedInputComponent->BindAction(IA_ToggleUI, ETriggerEvent::Started, this, &ASmoothCameraPawn::ToggleUI);
 		EnhancedInputComponent->BindAction(IA_PrimaryClick, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandlePrimaryClick);
 		EnhancedInputComponent->BindAction(IA_SecondaryClick, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandleSecondaryClick);
+		EnhancedInputComponent->BindAction(IA_Scroll, ETriggerEvent::Triggered, this, &ASmoothCameraPawn::HandleScroll);
 	}
 }
 
