@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "ProductLoader.h"
 #include "ConfiguratorGameMode.h"
 #include "Engine/StreamableManager.h"
@@ -9,101 +8,242 @@
 
 AProductLoader::AProductLoader()
 {
-	PrimaryActorTick.bCanEverTick = false;
+    PrimaryActorTick.bCanEverTick = false;
 
-	GetStaticMeshComponent()->SetRenderCustomDepth(true);
-	GetStaticMeshComponent()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-	
-	OptionOneComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionOneComponent");
-	OptionOneComp->SetupAttachment(GetRootComponent());
-	OptionOneComp->SetRenderCustomDepth(true);
-	OptionOneComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+    GetStaticMeshComponent()->SetRenderCustomDepth(true);
+    GetStaticMeshComponent()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+    
+    // Create Side Options Component
+    SideOptionComp = CreateDefaultSubobject<UStaticMeshComponent>("SideOptionComponent");
+    SideOptionComp->SetupAttachment(GetRootComponent());
+    SideOptionComp->SetRenderCustomDepth(true);
+    SideOptionComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+    
+    // Create Front Options Component
+    FrontOptionComp = CreateDefaultSubobject<UStaticMeshComponent>("FrontOptionComponent");
+    FrontOptionComp->SetupAttachment(GetRootComponent());
+    FrontOptionComp->SetRenderCustomDepth(true);
+    FrontOptionComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+    
+    // Legacy components
+    OptionOneComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionOneComponent");
+    OptionOneComp->SetupAttachment(GetRootComponent());
+    OptionOneComp->SetRenderCustomDepth(true);
+    OptionOneComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 
-	OptionTwoComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionTwoComponent");
-	OptionTwoComp->SetupAttachment(GetRootComponent());
-	OptionTwoComp->SetRenderCustomDepth(true);
-	OptionTwoComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-	
-	OptionThreeComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionThreeComponent");
-	OptionThreeComp->SetupAttachment(GetRootComponent());
-	OptionThreeComp->SetRenderCustomDepth(true);
-	OptionThreeComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+    OptionTwoComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionTwoComponent");
+    OptionTwoComp->SetupAttachment(GetRootComponent());
+    OptionTwoComp->SetRenderCustomDepth(true);
+    OptionTwoComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+    
+    OptionThreeComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionThreeComponent");
+    OptionThreeComp->SetupAttachment(GetRootComponent());
+    OptionThreeComp->SetRenderCustomDepth(true);
+    OptionThreeComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 }
 
 void AProductLoader::BeginPlay()
 {
-	Super::BeginPlay();
+    Super::BeginPlay();
 
-	// Set Reference in Game mode
-	if (AConfiguratorGameMode* GameMode = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld())))
-	{
-		GameMode->SetProductLoader(this);
-		Initialize();
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "GameMode Not Found. Configurator won't work properly.");
-	}
+    // Set Reference in Game mode
+    if (AConfiguratorGameMode* GameMode = Cast<AConfiguratorGameMode>(UGameplayStatics::GetGameMode(GetWorld())))
+    {
+        GameMode->SetProductLoader(this);
+        Initialize();
+    }
+    else
+    {
+        GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "GameMode Not Found. Configurator won't work properly.");
+    }
 }
 
-void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, bool bOptionOne, bool bOptionTwo, bool bOptionThree)
+void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, 
+                                   ESideOption SideOption, EFrontOption FrontOption)
 {
-	if (!ConfigurationData)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Configuration Data is null!"));
-		return;
-	}
+    if (!ConfigurationData)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Configuration Data is null!"));
+        return;
+    }
 
-	static const FString ContextString(TEXT("ConfigData"));
-	FConfigurationData* ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
+    static const FString ContextString(TEXT("ConfigData"));
+    FConfigurationData* ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
     
-	if (!ConfigData)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s. Please set correct DefaultProductName in Product Loader."), *ProductName.ToString()));
-		return;
-	}
+    if (!ConfigData)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s. Please set correct DefaultProductName in Product Loader."), *ProductName.ToString()));
+        return;
+    }
 
-	// Validate indices
-	if (!ConfigData->Configurations.IsValidIndex(VariantIndex))
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid variant index: %d"), VariantIndex));
-		return;
-	}
+    // Validate indices
+    if (!ConfigData->Configurations.IsValidIndex(VariantIndex))
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid variant index: %d"), VariantIndex));
+        return;
+    }
 
-	const FConfigurationDetails& Configuration = ConfigData->Configurations[VariantIndex];
+    const FConfigurationDetails& Configuration = ConfigData->Configurations[VariantIndex];
     
-	if (!Configuration.Assets.IsValidIndex(VariantSizeIndex))
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid size index: %d"), VariantSizeIndex));
-		return;
-	}
+    if (!Configuration.Assets.IsValidIndex(VariantSizeIndex))
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid size index: %d"), VariantSizeIndex));
+        return;
+    }
 
-	// Get the correct asset
-	const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
-	AsyncAsset = AssetDetails.Asset;
-	AsyncOptionOneMesh = AssetDetails.OptionOneAsset;
-	AsyncOptionTwoMesh = AssetDetails.OptionTwoAsset;
-	AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
-	AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
+    // Get the correct asset
+    const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
+    AsyncAsset = AssetDetails.Asset;
+    
+    // Store the currently selected options
+    CurrentSideOption = SideOption;
+    CurrentFrontOption = FrontOption;
+    
+    // Store side option meshes
+    AsyncSideGlassOptionAsset = AssetDetails.SideGlassOptionAsset;
+    AsyncSideHalfFencingOptionAsset = AssetDetails.SideHalfFencingOptionAsset;
+    AsyncSideFullFencingOptionAsset = AssetDetails.SideFullFencingOptionAsset;
+    
+    // Store front option meshes
+    AsyncFrontGlassOptionAsset = AssetDetails.FrontGlassOptionAsset;
+    AsyncFrontFullFencingOptionAsset = AssetDetails.FrontFullFencingOptionAsset;
+    
+    // Legacy assets (for backward compatibility)
+    AsyncOptionOneMesh = AssetDetails.OptionOneAsset;
+    AsyncOptionTwoMesh = AssetDetails.OptionTwoAsset;
+    AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
+    AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
 
-	if (!AsyncAsset.IsNull() || !AsyncOptionTwoMesh.IsNull() || !AsyncOptionOneMesh.IsNull() || !AsyncOptionThreeMesh.IsNull())
-	{
-		TArray<FSoftObjectPath> AssetPaths;
-		AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
-		
-		if (bOptionOne)
-		{
-			AssetPaths.Add(AsyncOptionOneMesh.ToSoftObjectPath());
-			bOptionOneVisible = bOptionOne;
-		} else bOptionOneVisible = false;
-		
-		if (bOptionTwo)
-		{
-			AssetPaths.Add(AsyncOptionTwoMesh.ToSoftObjectPath());
-			bOptionTwoVisible = bOptionTwo;
-		} else bOptionTwoVisible = false;
-		
-		// Option Three handling
+    // Initialize loading paths
+    TArray<FSoftObjectPath> AssetPaths;
+    AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
+    
+    // Add side option asset to load
+    if (SideOption != ESideOption::None && AssetDetails.bSideOptionsAvailable)
+    {
+        switch (SideOption)
+        {
+            case ESideOption::Glass:
+                if (!AsyncSideGlassOptionAsset.IsNull())
+                    AssetPaths.Add(AsyncSideGlassOptionAsset.ToSoftObjectPath());
+                break;
+            case ESideOption::HalfFencing:
+                if (!AsyncSideHalfFencingOptionAsset.IsNull())
+                    AssetPaths.Add(AsyncSideHalfFencingOptionAsset.ToSoftObjectPath());
+                break;
+            case ESideOption::FullFencing:
+                if (!AsyncSideFullFencingOptionAsset.IsNull())
+                    AssetPaths.Add(AsyncSideFullFencingOptionAsset.ToSoftObjectPath());
+                break;
+        }
+    }
+    
+    // Add front option asset to load
+    if (FrontOption != EFrontOption::None && AssetDetails.bFrontOptionsAvailable)
+    {
+        switch (FrontOption)
+        {
+            case EFrontOption::Glass:
+                if (!AsyncFrontGlassOptionAsset.IsNull())
+                    AssetPaths.Add(AsyncFrontGlassOptionAsset.ToSoftObjectPath());
+                break;
+            case EFrontOption::FullFencing:
+                if (!AsyncFrontFullFencingOptionAsset.IsNull())
+                    AssetPaths.Add(AsyncFrontFullFencingOptionAsset.ToSoftObjectPath());
+                break;
+        }
+    }
+
+    // Material selection
+    CurrentMaterialOption = (MaterialIndex != 0) ? MaterialOption2 : MaterialOption1;
+
+    // Store current model info
+    LastLoadedProduct = ProductName;
+    LastVariantIndex = VariantIndex;
+    LastVariantSizeIndex = VariantSizeIndex;
+
+    // Create a persistent StreamableManager instance
+    if (!StreamableManager)
+    {
+        StreamableManager = MakeShared<FStreamableManager>();
+    }
+
+    // Store the handle as a class member
+    StreamableHandle = StreamableManager->RequestAsyncLoad(
+        AssetPaths,
+        FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
+        0,
+        false
+    );
+
+    // Add handle validation
+    if (!StreamableHandle.IsValid())
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to create streamable handle"));
+        return;
+    }
+}
+
+// Legacy function for backward compatibility
+void AProductLoader::LoadAssetAsyncLegacy(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, 
+                                         bool bOptionOne, bool bOptionTwo, bool bOptionThree)
+{
+    if (!ConfigurationData)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Configuration Data is null!"));
+        return;
+    }
+
+    static const FString ContextString(TEXT("ConfigData"));
+    FConfigurationData* ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
+    
+    if (!ConfigData)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s. Please set correct DefaultProductName in Product Loader."), *ProductName.ToString()));
+        return;
+    }
+
+    // Validate indices
+    if (!ConfigData->Configurations.IsValidIndex(VariantIndex))
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid variant index: %d"), VariantIndex));
+        return;
+    }
+
+    const FConfigurationDetails& Configuration = ConfigData->Configurations[VariantIndex];
+    
+    if (!Configuration.Assets.IsValidIndex(VariantSizeIndex))
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid size index: %d"), VariantSizeIndex));
+        return;
+    }
+
+    // Get the correct asset
+    const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
+    AsyncAsset = AssetDetails.Asset;
+    AsyncOptionOneMesh = AssetDetails.OptionOneAsset;
+    AsyncOptionTwoMesh = AssetDetails.OptionTwoAsset;
+    AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
+    AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
+
+    if (!AsyncAsset.IsNull() || !AsyncOptionTwoMesh.IsNull() || !AsyncOptionOneMesh.IsNull() || !AsyncOptionThreeMesh.IsNull())
+    {
+        TArray<FSoftObjectPath> AssetPaths;
+        AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
+        
+        if (bOptionOne)
+        {
+            AssetPaths.Add(AsyncOptionOneMesh.ToSoftObjectPath());
+            bOptionOneVisible = bOptionOne;
+        } else bOptionOneVisible = false;
+        
+        if (bOptionTwo)
+        {
+            AssetPaths.Add(AsyncOptionTwoMesh.ToSoftObjectPath());
+            bOptionTwoVisible = bOptionTwo;
+        } else bOptionTwoVisible = false;
+        
+        // Option Three handling
         bOptionThreeVisible = false;
         bUseToggleForOptionThree = false;
 
@@ -117,22 +257,22 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
             bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
 
             // Check if Option Three configuration has changed
-        	bool bIsSameModel = (ProductName == LastLoadedProduct) && 
-				   (VariantIndex == LastVariantIndex) && 
-				   (VariantSizeIndex == LastVariantSizeIndex);
+            bool bIsSameModel = (ProductName == LastLoadedProduct) && 
+                   (VariantIndex == LastVariantIndex) && 
+                   (VariantSizeIndex == LastVariantSizeIndex);
 
-        	if (!bIsSameModel)
-        	{
-        		// For new models, always start with toggle state false
-        		bCurrentToggleState = false;
-        		bLastOptionThreeToggleState = false;
-        	}
-        	else if (bOptionThree != bLastOptionThreeEnabled)
-        	{
-        		// Only toggle if Option Three setting has changed for the same model
-        		bCurrentToggleState = !bCurrentToggleState;
-        		bLastOptionThreeToggleState = bCurrentToggleState;
-        	}
+            if (!bIsSameModel)
+            {
+                // For new models, always start with toggle state false
+                bCurrentToggleState = false;
+                bLastOptionThreeToggleState = false;
+            }
+            else if (bOptionThree != bLastOptionThreeEnabled)
+            {
+                // Only toggle if Option Three setting has changed for the same model
+                bCurrentToggleState = !bCurrentToggleState;
+                bLastOptionThreeToggleState = bCurrentToggleState;
+            }
             else
             {
                 bCurrentToggleState = bLastOptionThreeToggleState;
@@ -162,155 +302,279 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
         // Material selection
         CurrentMaterialOption = (MaterialIndex != 0) ? MaterialOption2 : MaterialOption1;
 
-		// Create a persistent StreamableManager instance
-		if (!StreamableManager)
-		{
-			StreamableManager = MakeShared<FStreamableManager>();
-		}
+        // Create a persistent StreamableManager instance
+        if (!StreamableManager)
+        {
+            StreamableManager = MakeShared<FStreamableManager>();
+        }
 
-		// Store the handle as a class member
-		StreamableHandle = StreamableManager->RequestAsyncLoad(
-			AssetPaths,
-			FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
-			0,
-			false
-		);
+        // Store the handle as a class member
+        StreamableHandle = StreamableManager->RequestAsyncLoad(
+            AssetPaths,
+            FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
+            0,
+            false
+        );
 
-		// Add handle validation
-		if (!StreamableHandle.IsValid())
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to create streamable handle"));
-			return;
-		}
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Some assets are not set properly in the configuration."));
-	}
+        // Add handle validation
+        if (!StreamableHandle.IsValid())
+        {
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to create streamable handle"));
+            return;
+        }
+    }
+    else
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Some assets are not set properly in the configuration."));
+    }
 }
 
 void AProductLoader::OnAssetLoaded()
 {
-	if (AsyncAsset.IsValid())
-	{
-		GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
-		GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-		
-	}
-	if (AsyncOptionOneMesh.IsValid())
-	{
-		OptionOneComp->SetStaticMesh(AsyncOptionOneMesh.Get());
-		OptionOneComp->SetVisibility(bOptionOneVisible);
-		OptionOneComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-	}
-	else OptionOneComp->SetVisibility(false);
-	
-	if (AsyncOptionTwoMesh.IsValid())
-	{
-		OptionTwoComp->SetStaticMesh(AsyncOptionTwoMesh.Get());
-		OptionTwoComp->SetVisibility(bOptionTwoVisible);
-		OptionTwoComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-	}
-	else OptionTwoComp->SetVisibility(false);
-	
-	// Option Three handling
-	if (bUseToggleForOptionThree)
-	{
-		if (AsyncOptionThreeMesh.IsValid() && AsyncOptionThreeMesh2.IsValid())
-		{
-			OptionThreeComp->SetVisibility(true);
+    // Set base mesh
+    if (AsyncAsset.IsValid())
+    {
+        GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
+        GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    
+    // Update side option mesh based on current selection
+    UpdateSideOptionMesh();
+    
+    // Update front option mesh based on current selection
+    UpdateFrontOptionMesh();
+    
+    // Legacy options handling (for backward compatibility)
+    if (AsyncOptionOneMesh.IsValid())
+    {
+        OptionOneComp->SetStaticMesh(AsyncOptionOneMesh.Get());
+        OptionOneComp->SetVisibility(bOptionOneVisible);
+        OptionOneComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    else OptionOneComp->SetVisibility(false);
+    
+    if (AsyncOptionTwoMesh.IsValid())
+    {
+        OptionTwoComp->SetStaticMesh(AsyncOptionTwoMesh.Get());
+        OptionTwoComp->SetVisibility(bOptionTwoVisible);
+        OptionTwoComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    else OptionTwoComp->SetVisibility(false);
+    
+    // Option Three handling for legacy components
+    if (bUseToggleForOptionThree)
+    {
+        if (AsyncOptionThreeMesh.IsValid() && AsyncOptionThreeMesh2.IsValid())
+        {
+            OptionThreeComp->SetVisibility(true);
             
-			// Use the stored toggle state
-			TSoftObjectPtr<UStaticMesh> CurrentToggleMesh = 
-				bCurrentToggleState ? AsyncOptionThreeMesh2 : AsyncOptionThreeMesh;
+            // Use the stored toggle state
+            TSoftObjectPtr<UStaticMesh> CurrentToggleMesh = 
+                bCurrentToggleState ? AsyncOptionThreeMesh2 : AsyncOptionThreeMesh;
 
-			OptionThreeComp->SetStaticMesh(CurrentToggleMesh.Get());
+            OptionThreeComp->SetStaticMesh(CurrentToggleMesh.Get());
 
-			if (bUseOptionThreeMaterialSelector)
-			{
-				OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-			}
-			else
-			{
-				OptionThreeComp->SetMaterial(
-					MaterialSelectorIndex, 
-					CurrentToggleMesh.Get()->GetMaterial(MaterialSelectorIndex)
-				);
-			}
-		}
-		else
-		{
-			OptionThreeComp->SetVisibility(false);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, 
-				TEXT("Toggle meshes for Option Three are not properly configured."));
-		}
-	}
-	else if (AsyncOptionThreeMesh.IsValid())
-	{
-		OptionThreeComp->SetStaticMesh(AsyncOptionThreeMesh.Get());
-		OptionThreeComp->SetVisibility(bOptionThreeVisible);
+            if (bUseOptionThreeMaterialSelector)
+            {
+                OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+            }
+            else
+            {
+                OptionThreeComp->SetMaterial(
+                    MaterialSelectorIndex, 
+                    CurrentToggleMesh.Get()->GetMaterial(MaterialSelectorIndex)
+                );
+            }
+        }
+        else
+        {
+            OptionThreeComp->SetVisibility(false);
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, 
+                TEXT("Toggle meshes for Option Three are not properly configured."));
+        }
+    }
+    else if (AsyncOptionThreeMesh.IsValid())
+    {
+        OptionThreeComp->SetStaticMesh(AsyncOptionThreeMesh.Get());
+        OptionThreeComp->SetVisibility(bOptionThreeVisible);
 
-		if (bUseOptionThreeMaterialSelector)
-		{
-			OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-		}
-		else
-		{
-			OptionThreeComp->SetMaterial(
-				MaterialSelectorIndex, 
-				AsyncOptionThreeMesh.Get()->GetMaterial(MaterialSelectorIndex)
-			);
-		}
-	}
-	else
-	{
-		OptionThreeComp->SetVisibility(false);
-	}
+        if (bUseOptionThreeMaterialSelector)
+        {
+            OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+        }
+        else
+        {
+            OptionThreeComp->SetMaterial(
+                MaterialSelectorIndex, 
+                AsyncOptionThreeMesh.Get()->GetMaterial(MaterialSelectorIndex)
+            );
+        }
+    }
+    else
+    {
+        OptionThreeComp->SetVisibility(false);
+    }
 
-	OnProductLoaded.Execute();
+    OnProductLoaded.Execute();
+}
+
+void AProductLoader::UpdateSideOptionMesh()
+{
+    // Handle side option visibility and mesh based on current selection
+    if (CurrentSideOption == ESideOption::None)
+    {
+        SideOptionComp->SetVisibility(false);
+        return;
+    }
+    
+    TSoftObjectPtr<UStaticMesh> SelectedMesh = nullptr;
+    bool bValidMesh = false;
+    
+    switch (CurrentSideOption)
+    {
+        case ESideOption::Glass:
+            if (AsyncSideGlassOptionAsset.IsValid())
+            {
+                SelectedMesh = AsyncSideGlassOptionAsset;
+                bValidMesh = true;
+            }
+            break;
+        case ESideOption::HalfFencing:
+            if (AsyncSideHalfFencingOptionAsset.IsValid())
+            {
+                SelectedMesh = AsyncSideHalfFencingOptionAsset;
+                bValidMesh = true;
+            }
+            break;
+        case ESideOption::FullFencing:
+            if (AsyncSideFullFencingOptionAsset.IsValid())
+            {
+                SelectedMesh = AsyncSideFullFencingOptionAsset;
+                bValidMesh = true;
+            }
+            break;
+    }
+    
+    if (bValidMesh)
+    {
+        SideOptionComp->SetStaticMesh(SelectedMesh.Get());
+        SideOptionComp->SetVisibility(true);
+        SideOptionComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    else
+    {
+        SideOptionComp->SetVisibility(false);
+    }
+}
+
+void AProductLoader::UpdateFrontOptionMesh()
+{
+    // Handle front option visibility and mesh based on current selection
+    if (CurrentFrontOption == EFrontOption::None)
+    {
+        FrontOptionComp->SetVisibility(false);
+        return;
+    }
+    
+    TSoftObjectPtr<UStaticMesh> SelectedMesh = nullptr;
+    bool bValidMesh = false;
+    
+    switch (CurrentFrontOption)
+    {
+        case EFrontOption::Glass:
+            if (AsyncFrontGlassOptionAsset.IsValid())
+            {
+                SelectedMesh = AsyncFrontGlassOptionAsset;
+                bValidMesh = true;
+            }
+            break;
+        case EFrontOption::FullFencing:
+            if (AsyncFrontFullFencingOptionAsset.IsValid())
+            {
+                SelectedMesh = AsyncFrontFullFencingOptionAsset;
+                bValidMesh = true;
+            }
+            break;
+    }
+    
+    if (bValidMesh)
+    {
+        FrontOptionComp->SetStaticMesh(SelectedMesh.Get());
+        FrontOptionComp->SetVisibility(true);
+        FrontOptionComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    else
+    {
+        FrontOptionComp->SetVisibility(false);
+    }
+}
+
+void AProductLoader::SetSideOption(ESideOption Option)
+{
+    // Only update if the option has changed
+    if (CurrentSideOption != Option)
+    {
+        CurrentSideOption = Option;
+        UpdateSideOptionMesh();
+    }
+}
+
+void AProductLoader::SetFrontOption(EFrontOption Option)
+{
+    // Only update if the option has changed
+    if (CurrentFrontOption != Option)
+    {
+        CurrentFrontOption = Option;
+        UpdateFrontOptionMesh();
+    }
 }
 
 void AProductLoader::Initialize()
 {
-	LoadAssetAsync(DefaultProductName);
+    // Initialize with default product and options
+    LoadAssetAsync(DefaultProductName);
 
-	PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-	if (PlayerController && ConfigurationWidget)
-	{
-		ConfigUI = CreateWidget<UConfiguratorUI>(GetWorld(), ConfigurationWidget);
-		if (ConfigUI)
-		{
-			ConfigUI->SetLoader(this);
-			ConfigUI->AddToViewport();
-			EnableInput(PlayerController);
-			FInputModeGameAndUI Input;
-			Input.SetWidgetToFocus(ConfigUI->TakeWidget());
-			PlayerController->SetInputMode(Input);
-			PlayerController->SetShowMouseCursor(true);
-		}
-		else
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: Can't create widget."));
-		}
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: No Input Widget Found."));
-	}
+    PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+    if (PlayerController && ConfigurationWidget)
+    {
+        ConfigUI = CreateWidget<UConfiguratorUI>(GetWorld(), ConfigurationWidget);
+        if (ConfigUI)
+        {
+            ConfigUI->SetLoader(this);
+            ConfigUI->AddToViewport();
+            EnableInput(PlayerController);
+            FInputModeGameAndUI Input;
+            Input.SetWidgetToFocus(ConfigUI->TakeWidget());
+            PlayerController->SetInputMode(Input);
+            PlayerController->SetShowMouseCursor(true);
+        }
+        else
+        {
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: Can't create widget."));
+        }
+    }
+    else
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("ProductLoader: No Input Widget Found."));
+    }
 }
 
 void AProductLoader::OnMouseOverMesh()
 {
-	GetStaticMeshComponent()->SetRenderCustomDepth(true);
-	OptionOneComp->SetRenderCustomDepth(true);
-	OptionTwoComp->SetRenderCustomDepth(true);
-	OptionThreeComp->SetRenderCustomDepth(true);
+    GetStaticMeshComponent()->SetRenderCustomDepth(true);
+    SideOptionComp->SetRenderCustomDepth(true);
+    FrontOptionComp->SetRenderCustomDepth(true);
+    OptionOneComp->SetRenderCustomDepth(true);
+    OptionTwoComp->SetRenderCustomDepth(true);
+    OptionThreeComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::OnMouseExitMesh()
 {
-	GetStaticMeshComponent()->SetRenderCustomDepth(false);
-	OptionOneComp->SetRenderCustomDepth(false);
-	OptionTwoComp->SetRenderCustomDepth(false);
-	OptionThreeComp->SetRenderCustomDepth(false);
+    GetStaticMeshComponent()->SetRenderCustomDepth(false);
+    SideOptionComp->SetRenderCustomDepth(false);
+    FrontOptionComp->SetRenderCustomDepth(false);
+    OptionOneComp->SetRenderCustomDepth(false);
+    OptionTwoComp->SetRenderCustomDepth(false);
+    OptionThreeComp->SetRenderCustomDepth(false);
 }
