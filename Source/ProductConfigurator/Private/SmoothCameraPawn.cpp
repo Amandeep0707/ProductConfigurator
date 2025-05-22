@@ -67,7 +67,7 @@ void ASmoothCameraPawn::UpdateCameraLocation()
 	{
 		FVector MinBounds, MaxBounds = FVector::ZeroVector;
 		ProductLoader->GetStaticMeshComponent()->GetLocalBounds(MinBounds, MaxBounds);
-		FVector Center = (MinBounds + MaxBounds) / 2;
+		const FVector Center = (MinBounds + MaxBounds) / 2;
 		
 		// Set the camera boom length to the distance from the center to the max bounds
 		MinCameraDistance = FVector::Distance(Center, MaxBounds);
