@@ -5,7 +5,7 @@
 		"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductA.ProductA'",
 		"Configurations": [
 			{
-				"ProductName": "Product A",
+				"ProductName": "Gem A",
 				"Assets": [
 					{
 						"AssetName": "A1 20x20",
@@ -33,8 +33,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 20,
 							"Y": 20,
 							"Z": 0
@@ -67,8 +66,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 40,
 							"Y": 40,
 							"Z": 0
@@ -78,10 +76,10 @@
 				]
 			},
 			{
-				"ProductName": "Product B",
+				"ProductName": "Gem B",
 				"Assets": [
 					{
-						"AssetName": "B1",
+						"AssetName": "B1 20x20",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductB.ProductB'",
 						"Asset": "/Game/Products/ProductB1_20x20.ProductB1_20x20",
 						"bSideOptionsAvailable": false,
@@ -106,8 +104,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 20,
 							"Y": 20,
 							"Z": 0
@@ -115,7 +112,7 @@
 						"Price": 67
 					},
 					{
-						"AssetName": "B2",
+						"AssetName": "B2 40x40",
 						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductB.ProductB'",
 						"Asset": "/Game/Products/ProductB2_40x40.ProductB2_40x40",
 						"bSideOptionsAvailable": false,
@@ -140,8 +137,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 40,
 							"Y": 40,
 							"Z": 0
@@ -151,11 +147,11 @@
 				]
 			},
 			{
-				"ProductName": "Product C",
+				"ProductName": "Gem C",
 				"Assets": [
 					{
-						"AssetName": "C1",
-						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductC.ProductC'",
+						"AssetName": "C1 20x20",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductB.ProductB'",
 						"Asset": "/Game/Products/ProductC1_20x20.ProductC1_20x20",
 						"bSideOptionsAvailable": false,
 						"SideOptionsDisplayName": "Side Options",
@@ -179,8 +175,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 20,
 							"Y": 20,
 							"Z": 0
@@ -188,8 +183,8 @@
 						"Price": 45
 					},
 					{
-						"AssetName": "C2",
-						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductC.ProductC'",
+						"AssetName": "C2 40x40",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductB.ProductB'",
 						"Asset": "/Game/Products/ProductC2_40x40.ProductC2_40x40",
 						"bSideOptionsAvailable": false,
 						"SideOptionsDisplayName": "Side Options",
@@ -213,8 +208,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 40,
 							"Y": 40,
 							"Z": 0
@@ -224,11 +218,11 @@
 				]
 			},
 			{
-				"ProductName": "Product D",
+				"ProductName": "Gem D",
 				"Assets": [
 					{
-						"AssetName": "D1",
-						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductD.ProductD'",
+						"AssetName": "D1 25x25",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductB.ProductB'",
 						"Asset": "/Game/Products/ProductD1_25x25.ProductD1_25x25",
 						"bSideOptionsAvailable": false,
 						"SideOptionsDisplayName": "Side Options",
@@ -252,8 +246,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 25,
 							"Y": 25,
 							"Z": 0
@@ -261,8 +254,8 @@
 						"Price": 0
 					},
 					{
-						"AssetName": "D2",
-						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductD.ProductD'",
+						"AssetName": "D2 50x50",
+						"Thumbnail": "/Script/Engine.Texture2D'/Game/Products/Icons/ProductB.ProductB'",
 						"Asset": "/Game/Products/ProductD2_50x50.ProductD2_50x50",
 						"bSideOptionsAvailable": false,
 						"SideOptionsDisplayName": "Side Options",
@@ -286,8 +279,7 @@
 						"bUseOptionThreeAsToggle": false,
 						"OptionThreeAsset2": "None",
 						"bUseMaterialSelector": false,
-						"Dimensions":
-						{
+						"Dimensions": {
 							"X": 50,
 							"Y": 50,
 							"Z": 0
