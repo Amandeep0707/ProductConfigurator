@@ -12,6 +12,12 @@ AProductLoader::AProductLoader()
 
     GetStaticMeshComponent()->SetRenderCustomDepth(true);
     GetStaticMeshComponent()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+
+    // Create Rooftop Component
+    RooftopComp = CreateDefaultSubobject<UStaticMeshComponent>("RooftopComponent");
+    RooftopComp->SetupAttachment(GetRootComponent());
+    RooftopComp->SetRenderCustomDepth(true);
+    RooftopComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
     
     // Create Side Options Component
     SideOptionComp = CreateDefaultSubobject<UStaticMeshComponent>("SideOptionComponent");
@@ -24,22 +30,6 @@ AProductLoader::AProductLoader()
     FrontOptionComp->SetupAttachment(GetRootComponent());
     FrontOptionComp->SetRenderCustomDepth(true);
     FrontOptionComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-    
-    // Legacy components
-    OptionOneComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionOneComponent");
-    OptionOneComp->SetupAttachment(GetRootComponent());
-    OptionOneComp->SetRenderCustomDepth(true);
-    OptionOneComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-
-    OptionTwoComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionTwoComponent");
-    OptionTwoComp->SetupAttachment(GetRootComponent());
-    OptionTwoComp->SetRenderCustomDepth(true);
-    OptionTwoComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
-    
-    OptionThreeComp = CreateDefaultSubobject<UStaticMeshComponent>("OptionThreeComponent");
-    OptionThreeComp->SetupAttachment(GetRootComponent());
-    OptionThreeComp->SetRenderCustomDepth(true);
-    OptionThreeComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 }
 
 void AProductLoader::BeginPlay()
@@ -58,8 +48,7 @@ void AProductLoader::BeginPlay()
     }
 }
 
-void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, 
-                                   ESideOption SideOption, EFrontOption FrontOption)
+void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, ESideOption SideOption, EFrontOption FrontOption)
 {
     if (!ConfigurationData)
     {
@@ -91,8 +80,22 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
         return;
     }
 
-    // Get the correct asset
+    // Get the correct asset details
     const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
+
+    // Check if the newly loaded model is different from the last one
+    if (LastLoadedProduct != ProductName || LastVariantIndex != VariantIndex || LastVariantSizeIndex != VariantSizeIndex)
+    {
+        // Reset toggle state for a new model
+        bCurrentRooftopToggleState = false;
+    }
+    
+    // Store rooftop options
+    bRooftopToggleAvailable = AssetDetails.bUseRooftopToggle;
+    AsyncRooftopAsset1 = AssetDetails.RooftopAsset1;
+    AsyncRooftopAsset2 = AssetDetails.RooftopAsset2;
+    
+    // Store assets to be loaded
     AsyncAsset = AssetDetails.Asset;
     
     // Store the currently selected options
@@ -108,15 +111,22 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
     AsyncFrontGlassOptionAsset = AssetDetails.FrontGlassOptionAsset;
     AsyncFrontFullFencingOptionAsset = AssetDetails.FrontFullFencingOptionAsset;
     
-    // Legacy assets (for backward compatibility)
-    AsyncOptionOneMesh = AssetDetails.OptionOneAsset;
-    AsyncOptionTwoMesh = AssetDetails.OptionTwoAsset;
-    AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
-    AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
-
     // Initialize loading paths
     TArray<FSoftObjectPath> AssetPaths;
-    AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
+    if (!AsyncAsset.IsNull())
+    {
+        AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
+    }
+
+    // Add rooftop assets to load
+    if (!AsyncRooftopAsset1.IsNull())
+    {
+        AssetPaths.Add(AsyncRooftopAsset1.ToSoftObjectPath());
+    }
+    if (bRooftopToggleAvailable && !AsyncRooftopAsset2.IsNull())
+    {
+        AssetPaths.Add(AsyncRooftopAsset2.ToSoftObjectPath());
+    }
     
     // Add side option asset to load
     if (SideOption != ESideOption::None && AssetDetails.bSideOptionsAvailable)
@@ -184,151 +194,6 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
     }
 }
 
-// Legacy function for backward compatibility
-void AProductLoader::LoadAssetAsyncLegacy(FName ProductName, int32 VariantIndex, int32 VariantSizeIndex, int32 MaterialIndex, 
-                                         bool bOptionOne, bool bOptionTwo, bool bOptionThree)
-{
-    if (!ConfigurationData)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Configuration Data is null!"));
-        return;
-    }
-
-    static const FString ContextString(TEXT("ConfigData"));
-    FConfigurationData* ConfigData = ConfigurationData->FindRow<FConfigurationData>(ProductName, ContextString, true);
-    
-    if (!ConfigData)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Product not found: %s. Please set correct DefaultProductName in Product Loader."), *ProductName.ToString()));
-        return;
-    }
-
-    // Validate indices
-    if (!ConfigData->Configurations.IsValidIndex(VariantIndex))
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid variant index: %d"), VariantIndex));
-        return;
-    }
-
-    const FConfigurationDetails& Configuration = ConfigData->Configurations[VariantIndex];
-    
-    if (!Configuration.Assets.IsValidIndex(VariantSizeIndex))
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Invalid size index: %d"), VariantSizeIndex));
-        return;
-    }
-
-    // Get the correct asset
-    const FAssetDetails& AssetDetails = Configuration.Assets[VariantSizeIndex];
-    AsyncAsset = AssetDetails.Asset;
-    AsyncOptionOneMesh = AssetDetails.OptionOneAsset;
-    AsyncOptionTwoMesh = AssetDetails.OptionTwoAsset;
-    AsyncOptionThreeMesh = AssetDetails.OptionThreeAsset;
-    AsyncOptionThreeMesh2 = AssetDetails.OptionThreeAsset2;
-
-    if (!AsyncAsset.IsNull() || !AsyncOptionTwoMesh.IsNull() || !AsyncOptionOneMesh.IsNull() || !AsyncOptionThreeMesh.IsNull())
-    {
-        TArray<FSoftObjectPath> AssetPaths;
-        AssetPaths.Add(AsyncAsset.ToSoftObjectPath());
-        
-        if (bOptionOne)
-        {
-            AssetPaths.Add(AsyncOptionOneMesh.ToSoftObjectPath());
-            bOptionOneVisible = bOptionOne;
-        } else bOptionOneVisible = false;
-        
-        if (bOptionTwo)
-        {
-            AssetPaths.Add(AsyncOptionTwoMesh.ToSoftObjectPath());
-            bOptionTwoVisible = bOptionTwo;
-        } else bOptionTwoVisible = false;
-        
-        // Option Three handling
-        bOptionThreeVisible = false;
-        bUseToggleForOptionThree = false;
-
-        // Check if toggle is supported and both meshes are valid
-        if (AssetDetails.bUseOptionThreeAsToggle && 
-            !AsyncOptionThreeMesh.IsNull() && 
-            !AsyncOptionThreeMesh2.IsNull())
-        {
-            bUseToggleForOptionThree = true;
-            bOptionThreeVisible = true;
-            bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
-
-            // Check if Option Three configuration has changed
-            bool bIsSameModel = (ProductName == LastLoadedProduct) && 
-                   (VariantIndex == LastVariantIndex) && 
-                   (VariantSizeIndex == LastVariantSizeIndex);
-
-            if (!bIsSameModel)
-            {
-                // For new models, always start with toggle state false
-                bCurrentToggleState = false;
-                bLastOptionThreeToggleState = false;
-            }
-            else if (bOptionThree != bLastOptionThreeEnabled)
-            {
-                // Only toggle if Option Three setting has changed for the same model
-                bCurrentToggleState = !bCurrentToggleState;
-                bLastOptionThreeToggleState = bCurrentToggleState;
-            }
-            else
-            {
-                bCurrentToggleState = bLastOptionThreeToggleState;
-            }
-
-            // Update last Option Three state
-            bLastOptionThreeEnabled = bOptionThree;
-
-            // Add both toggle meshes to loading
-            AssetPaths.Add(AsyncOptionThreeMesh.ToSoftObjectPath());
-            AssetPaths.Add(AsyncOptionThreeMesh2.ToSoftObjectPath());
-        }
-        else if (bOptionThree && !AsyncOptionThreeMesh.IsNull())
-        {
-            // Standard Option Three behavior
-            bOptionThreeVisible = true;
-            bUseOptionThreeMaterialSelector = AssetDetails.bUseMaterialSelector;
-            AssetPaths.Add(AsyncOptionThreeMesh.ToSoftObjectPath());
-            bLastOptionThreeEnabled = bOptionThree;
-        }
-
-        // Store current model info
-        LastLoadedProduct = ProductName;
-        LastVariantIndex = VariantIndex;
-        LastVariantSizeIndex = VariantSizeIndex;
-
-        // Material selection
-        CurrentMaterialOption = (MaterialIndex != 0) ? MaterialOption2 : MaterialOption1;
-
-        // Create a persistent StreamableManager instance
-        if (!StreamableManager)
-        {
-            StreamableManager = MakeShared<FStreamableManager>();
-        }
-
-        // Store the handle as a class member
-        StreamableHandle = StreamableManager->RequestAsyncLoad(
-            AssetPaths,
-            FStreamableDelegate::CreateUObject(this, &AProductLoader::OnAssetLoaded),
-            0,
-            false
-        );
-
-        // Add handle validation
-        if (!StreamableHandle.IsValid())
-        {
-            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to create streamable handle"));
-            return;
-        }
-    }
-    else
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Some assets are not set properly in the configuration."));
-    }
-}
-
 void AProductLoader::OnAssetLoaded()
 {
     // Set base mesh
@@ -337,6 +202,9 @@ void AProductLoader::OnAssetLoaded()
         GetStaticMeshComponent()->SetStaticMesh(AsyncAsset.Get());
         GetStaticMeshComponent()->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
     }
+
+    // Update rooftop option mesh based on current selection
+    UpdateRooftopMesh();
     
     // Update side option mesh based on current selection
     UpdateSideOptionMesh();
@@ -344,77 +212,6 @@ void AProductLoader::OnAssetLoaded()
     // Update front option mesh based on current selection
     UpdateFrontOptionMesh();
     
-    // Legacy options handling (for backward compatibility)
-    if (AsyncOptionOneMesh.IsValid())
-    {
-        OptionOneComp->SetStaticMesh(AsyncOptionOneMesh.Get());
-        OptionOneComp->SetVisibility(bOptionOneVisible);
-        OptionOneComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-    }
-    else OptionOneComp->SetVisibility(false);
-    
-    if (AsyncOptionTwoMesh.IsValid())
-    {
-        OptionTwoComp->SetStaticMesh(AsyncOptionTwoMesh.Get());
-        OptionTwoComp->SetVisibility(bOptionTwoVisible);
-        OptionTwoComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-    }
-    else OptionTwoComp->SetVisibility(false);
-    
-    // Option Three handling for legacy components
-    if (bUseToggleForOptionThree)
-    {
-        if (AsyncOptionThreeMesh.IsValid() && AsyncOptionThreeMesh2.IsValid())
-        {
-            OptionThreeComp->SetVisibility(true);
-            
-            // Use the stored toggle state
-            TSoftObjectPtr<UStaticMesh> CurrentToggleMesh = 
-                bCurrentToggleState ? AsyncOptionThreeMesh2 : AsyncOptionThreeMesh;
-
-            OptionThreeComp->SetStaticMesh(CurrentToggleMesh.Get());
-
-            if (bUseOptionThreeMaterialSelector)
-            {
-                OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-            }
-            else
-            {
-                OptionThreeComp->SetMaterial(
-                    MaterialSelectorIndex, 
-                    CurrentToggleMesh.Get()->GetMaterial(MaterialSelectorIndex)
-                );
-            }
-        }
-        else
-        {
-            OptionThreeComp->SetVisibility(false);
-            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, 
-                TEXT("Toggle meshes for Option Three are not properly configured."));
-        }
-    }
-    else if (AsyncOptionThreeMesh.IsValid())
-    {
-        OptionThreeComp->SetStaticMesh(AsyncOptionThreeMesh.Get());
-        OptionThreeComp->SetVisibility(bOptionThreeVisible);
-
-        if (bUseOptionThreeMaterialSelector)
-        {
-            OptionThreeComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
-        }
-        else
-        {
-            OptionThreeComp->SetMaterial(
-                MaterialSelectorIndex, 
-                AsyncOptionThreeMesh.Get()->GetMaterial(MaterialSelectorIndex)
-            );
-        }
-    }
-    else
-    {
-        OptionThreeComp->SetVisibility(false);
-    }
-
     OnProductLoaded.Execute();
 }
 
@@ -515,6 +312,7 @@ void AProductLoader::SetSideOption(ESideOption Option)
     if (CurrentSideOption != Option)
     {
         CurrentSideOption = Option;
+        // The mesh is already loaded, we just need to set it
         UpdateSideOptionMesh();
     }
 }
@@ -525,8 +323,25 @@ void AProductLoader::SetFrontOption(EFrontOption Option)
     if (CurrentFrontOption != Option)
     {
         CurrentFrontOption = Option;
+        // The mesh is already loaded, we just need to set it
         UpdateFrontOptionMesh();
     }
+}
+
+void AProductLoader::ToggleRooftop()
+{
+    if (!bRooftopToggleAvailable)
+    {
+        // Optional: Log a warning if called on a non-toggleable product
+        GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Yellow, TEXT("Rooftop toggle not available for this product."));
+        return;
+    }
+
+    // Flip the toggle state
+    bCurrentRooftopToggleState = !bCurrentRooftopToggleState;
+
+    // Update the mesh
+    UpdateRooftopMesh();
 }
 
 void AProductLoader::Initialize()
@@ -559,22 +374,45 @@ void AProductLoader::Initialize()
     }
 }
 
+void AProductLoader::UpdateRooftopMesh()
+{
+    TSoftObjectPtr<UStaticMesh> SelectedRooftopMesh = nullptr;
+
+    if (bRooftopToggleAvailable)
+    {
+        // Select mesh based on toggle state
+        SelectedRooftopMesh = bCurrentRooftopToggleState ? AsyncRooftopAsset2 : AsyncRooftopAsset1;
+    }
+    else
+    {
+        // Use the default single rooftop mesh
+        SelectedRooftopMesh = AsyncRooftopAsset1;
+    }
+
+    if (SelectedRooftopMesh.IsValid())
+    {
+        RooftopComp->SetStaticMesh(SelectedRooftopMesh.Get());
+        RooftopComp->SetVisibility(true);
+        RooftopComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    else
+    {
+        RooftopComp->SetVisibility(false);
+    }
+}
+
 void AProductLoader::OnMouseOverMesh()
 {
     GetStaticMeshComponent()->SetRenderCustomDepth(true);
+    RooftopComp->SetRenderCustomDepth(true);
     SideOptionComp->SetRenderCustomDepth(true);
     FrontOptionComp->SetRenderCustomDepth(true);
-    OptionOneComp->SetRenderCustomDepth(true);
-    OptionTwoComp->SetRenderCustomDepth(true);
-    OptionThreeComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::OnMouseExitMesh()
 {
     GetStaticMeshComponent()->SetRenderCustomDepth(false);
+    RooftopComp->SetRenderCustomDepth(false);
     SideOptionComp->SetRenderCustomDepth(false);
     FrontOptionComp->SetRenderCustomDepth(false);
-    OptionOneComp->SetRenderCustomDepth(false);
-    OptionTwoComp->SetRenderCustomDepth(false);
-    OptionThreeComp->SetRenderCustomDepth(false);
 }

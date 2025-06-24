@@ -43,6 +43,17 @@ struct FAssetDetails : public FTableRowBase
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     TSoftObjectPtr<UStaticMesh> Asset;
 
+    // --- Rooftop Assets ---
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    TSoftObjectPtr<UStaticMesh> RooftopAsset1;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    bool bUseRooftopToggle;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bUseRooftopToggle", EditConditionHides))
+    TSoftObjectPtr<UStaticMesh> RooftopAsset2;
+    // --------------------
+
     // Side Options
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     bool bSideOptionsAvailable;
@@ -72,44 +83,7 @@ struct FAssetDetails : public FTableRowBase
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFrontOptionsAvailable", EditConditionHides))
     TSoftObjectPtr<UStaticMesh> FrontFullFencingOptionAsset;
 
-    // Legacy options - keeping for backward compatibility
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-    bool bOptionOneAvailable;
-    
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionOneAvailable", EditConditionHides))
-    FName OptionOneDisplayName;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionOneAvailable", EditConditionHides))
-    TSoftObjectPtr<UStaticMesh> OptionOneAsset;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-    bool bOptionTwoAvailable;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionTwoAvailable", EditConditionHides))
-    FName OptionTwoDisplayName;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionTwoAvailable", EditConditionHides))
-    TSoftObjectPtr<UStaticMesh> OptionTwoAsset;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-    bool bOptionThreeAvailable;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
-    bool bUseOptionThreeAsDefault;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
-    FName OptionThreeDisplayName;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
-    TSoftObjectPtr<UStaticMesh> OptionThreeAsset;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable", EditConditionHides))
-    bool bUseOptionThreeAsToggle;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bUseOptionThreeAsToggle", EditConditionHides))
-    TSoftObjectPtr<UStaticMesh> OptionThreeAsset2;
-
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bOptionThreeAvailable || bSideOptionsAvailable || bFrontOptionsAvailable", EditConditionHides))
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bSideOptionsAvailable || bFrontOptionsAvailable", EditConditionHides))
     bool bUseMaterialSelector = true;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
@@ -123,6 +97,8 @@ struct FAssetDetails : public FTableRowBase
         AssetName = TEXT("Default");
         Thumbnail = nullptr;
         
+        bUseRooftopToggle = false;
+        
         // Initialize Side Options
         bSideOptionsAvailable = false;
         SideOptionsDisplayName = TEXT("Side Options");
@@ -131,15 +107,6 @@ struct FAssetDetails : public FTableRowBase
         bFrontOptionsAvailable = false;
         FrontOptionsDisplayName = TEXT("Front Options");
         
-        // Legacy options
-        bOptionOneAvailable = false;
-        OptionOneDisplayName = TEXT("Half Fencing");
-        bOptionTwoAvailable = false;
-        OptionTwoDisplayName = TEXT("Full Fencing");
-        bOptionThreeAvailable = false;
-        bUseOptionThreeAsDefault = true;
-        OptionThreeDisplayName = TEXT("Glass");
-        bUseOptionThreeAsToggle = false;
         bUseMaterialSelector = false;
         Dimensions = FVector::ZeroVector;
         Price = 0.f;
@@ -206,7 +173,7 @@ public:
     UDataTable* ConfigurationData = nullptr;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Configuration)
-    FName DefaultProductName = TEXT("Default");
+    FName DefaultProductName = TEXT("Bosco");
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Configuration)
     TEnumAsByte<ECurrency> Currency = ECurrency::EUR;
@@ -238,54 +205,38 @@ public:
     UFUNCTION(BlueprintCallable, Category = Configuration)
     void SetFrontOption(EFrontOption Option);
 
-private:
+    UFUNCTION(BlueprintCallable, Category = Configuration)
+    void ToggleRooftop();
 
+private:
     /**
      * Internal Variables
      */
 
-    // Side Options Components
+    // Rooftop Component
+    UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+    UStaticMeshComponent* RooftopComp = nullptr;
+
+    UPROPERTY()
+    bool bRooftopToggleAvailable = false;
+    
+    UPROPERTY()
+    bool bCurrentRooftopToggleState = false;
+
+    // Side Options Component
     UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
     UStaticMeshComponent* SideOptionComp = nullptr;
 
     UPROPERTY()
     ESideOption CurrentSideOption = ESideOption::None;
 
-    // Front Options Components
+    // Front Options Component
     UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
     UStaticMeshComponent* FrontOptionComp = nullptr;
 
     UPROPERTY()
     EFrontOption CurrentFrontOption = EFrontOption::None;
-
-    // Legacy components
-    UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-    UStaticMeshComponent* OptionOneComp = nullptr;
-
-    UPROPERTY()
-    bool bOptionOneVisible = false;
-
-    UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-    UStaticMeshComponent* OptionTwoComp = nullptr;
-
-    UPROPERTY()
-    bool bOptionTwoVisible = false;
-
-    UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-    UStaticMeshComponent* OptionThreeComp = nullptr;
-
-    UPROPERTY()
-    bool bUseOptionThreeMaterialSelector = true;
-
-    UPROPERTY()
-    bool bOptionThreeVisible = false;
-
-    UPROPERTY()
-    bool bUseToggleForOptionThree = false;
-
-    UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
-    bool bCurrentToggleState = false;
-
+    
     UPROPERTY()
     FName LastLoadedProduct;
     
@@ -295,15 +246,16 @@ private:
     UPROPERTY()
     int32 LastVariantSizeIndex = -1;
     
-    UPROPERTY()
-    bool bLastOptionThreeEnabled = false;
-    
-    UPROPERTY()
-    bool bLastOptionThreeToggleState = false;
-    
     // Base mesh asset
     UPROPERTY()
     TSoftObjectPtr<UStaticMesh> AsyncAsset;
+
+    // Rooftop Assets
+    UPROPERTY()
+    TSoftObjectPtr<UStaticMesh> AsyncRooftopAsset1;
+    
+    UPROPERTY()
+    TSoftObjectPtr<UStaticMesh> AsyncRooftopAsset2;
     
     // Side Option assets
     UPROPERTY()
@@ -322,19 +274,6 @@ private:
     UPROPERTY()
     TSoftObjectPtr<UStaticMesh> AsyncFrontFullFencingOptionAsset;
     
-    // Legacy assets
-    UPROPERTY()
-    TSoftObjectPtr<UStaticMesh> AsyncOptionOneMesh;
-    
-    UPROPERTY()
-    TSoftObjectPtr<UStaticMesh> AsyncOptionTwoMesh;
-
-    UPROPERTY()
-    TSoftObjectPtr<UStaticMesh> AsyncOptionThreeMesh;
-
-    UPROPERTY()
-    TSoftObjectPtr<UStaticMesh> AsyncOptionThreeMesh2;
-
     UPROPERTY()
     APlayerController* PlayerController = nullptr;
 
@@ -351,19 +290,13 @@ private:
      * Exposed Functions
      */
     UFUNCTION(BlueprintCallable, Category = Configuration)
-    void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, 
-                       ESideOption SideOption = ESideOption::None, EFrontOption FrontOption = EFrontOption::None);
-
-    // Legacy function kept for backward compatibility
-    UFUNCTION(BlueprintCallable, Category = Configuration)
-    void LoadAssetAsyncLegacy(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, 
-                             bool bOptionOne = false, bool bOptionTwo = false, bool bOptionThree = true);
-
+    void LoadAssetAsync(FName ProductName, int32 VariantIndex = 0, int32 VariantSizeIndex = 0, int32 MaterialIndex = 0, ESideOption SideOption = ESideOption::None, EFrontOption FrontOption = EFrontOption::None);
     /**
      * Internal Functions
      */
     void OnAssetLoaded();
     void Initialize();
+    void UpdateRooftopMesh();
     void UpdateSideOptionMesh();
     void UpdateFrontOptionMesh();
 };
