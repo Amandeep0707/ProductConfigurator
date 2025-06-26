@@ -82,6 +82,13 @@ struct FAssetDetails : public FTableRowBase
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bFrontOptionsAvailable", EditConditionHides))
     TSoftObjectPtr<UStaticMesh> FrontFullFencingOptionAsset;
+    
+    // Additional Mesh
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    bool bLoadAdditionalMesh;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bLoadAdditionalMesh", EditConditionHides))
+    TSoftObjectPtr<UStaticMesh> AdditionalMeshAsset;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (EditCondition = "bSideOptionsAvailable || bFrontOptionsAvailable", EditConditionHides))
     bool bUseMaterialSelector = true;
@@ -106,6 +113,8 @@ struct FAssetDetails : public FTableRowBase
         // Initialize Front Options
         bFrontOptionsAvailable = false;
         FrontOptionsDisplayName = TEXT("Front Options");
+        
+        bLoadAdditionalMesh = false;
         
         bUseMaterialSelector = false;
         Dimensions = FVector::ZeroVector;
@@ -236,6 +245,9 @@ private:
 
     UPROPERTY()
     EFrontOption CurrentFrontOption = EFrontOption::None;
+
+    UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = true))
+    UStaticMeshComponent* AdditionalMeshComp = nullptr;
     
     UPROPERTY()
     FName LastLoadedProduct;
@@ -273,6 +285,9 @@ private:
     
     UPROPERTY()
     TSoftObjectPtr<UStaticMesh> AsyncFrontFullFencingOptionAsset;
+
+    UPROPERTY()
+    TSoftObjectPtr<UStaticMesh> AsyncAdditionalMeshAsset;
     
     UPROPERTY()
     APlayerController* PlayerController = nullptr;
@@ -299,4 +314,5 @@ private:
     void UpdateRooftopMesh();
     void UpdateSideOptionMesh();
     void UpdateFrontOptionMesh();
+    void UpdateAdditionalMesh();
 };

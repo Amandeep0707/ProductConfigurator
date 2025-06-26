@@ -30,6 +30,12 @@ AProductLoader::AProductLoader()
     FrontOptionComp->SetupAttachment(GetRootComponent());
     FrontOptionComp->SetRenderCustomDepth(true);
     FrontOptionComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+
+    // Create Additional Mesh Component
+    AdditionalMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("AdditionalMeshComponent");
+    AdditionalMeshComp->SetupAttachment(GetRootComponent());
+    AdditionalMeshComp->SetRenderCustomDepth(true);
+    AdditionalMeshComp->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 }
 
 void AProductLoader::BeginPlay()
@@ -110,6 +116,17 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
     // Store front option meshes
     AsyncFrontGlassOptionAsset = AssetDetails.FrontGlassOptionAsset;
     AsyncFrontFullFencingOptionAsset = AssetDetails.FrontFullFencingOptionAsset;
+
+    // Store additional mesh
+    if (AssetDetails.bLoadAdditionalMesh)
+    {
+        AsyncAdditionalMeshAsset = AssetDetails.AdditionalMeshAsset;
+    }
+    else
+    {
+        // Clear the pointer if the new asset doesn't use an additional mesh
+        AsyncAdditionalMeshAsset = nullptr;
+    }
     
     // Initialize loading paths
     TArray<FSoftObjectPath> AssetPaths;
@@ -164,6 +181,12 @@ void AProductLoader::LoadAssetAsync(FName ProductName, int32 VariantIndex, int32
         }
     }
 
+    // Add additional mesh asset to load
+    if (AssetDetails.bLoadAdditionalMesh && !AsyncAdditionalMeshAsset.IsNull())
+    {
+        AssetPaths.Add(AsyncAdditionalMeshAsset.ToSoftObjectPath());
+    }
+
     // Material selection
     CurrentMaterialOption = (MaterialIndex != 0) ? MaterialOption2 : MaterialOption1;
 
@@ -211,6 +234,9 @@ void AProductLoader::OnAssetLoaded()
     
     // Update front option mesh based on current selection
     UpdateFrontOptionMesh();
+
+    // Update additional mesh
+    UpdateAdditionalMesh();
     
     OnProductLoaded.Execute();
 }
@@ -303,6 +329,22 @@ void AProductLoader::UpdateFrontOptionMesh()
     else
     {
         FrontOptionComp->SetVisibility(false);
+    }
+}
+
+void AProductLoader::UpdateAdditionalMesh()
+{
+    if (AsyncAdditionalMeshAsset.IsValid())
+    {
+        AdditionalMeshComp->SetStaticMesh(AsyncAdditionalMeshAsset.Get());
+        AdditionalMeshComp->SetVisibility(true);
+        AdditionalMeshComp->SetMaterial(MaterialSelectorIndex, CurrentMaterialOption);
+    }
+    else
+    {
+        // Hide the component if the asset is not valid or not used
+        AdditionalMeshComp->SetStaticMesh(nullptr);
+        AdditionalMeshComp->SetVisibility(false);
     }
 }
 
@@ -407,6 +449,7 @@ void AProductLoader::OnMouseOverMesh()
     RooftopComp->SetRenderCustomDepth(true);
     SideOptionComp->SetRenderCustomDepth(true);
     FrontOptionComp->SetRenderCustomDepth(true);
+    AdditionalMeshComp->SetRenderCustomDepth(true);
 }
 
 void AProductLoader::OnMouseExitMesh()
@@ -415,4 +458,5 @@ void AProductLoader::OnMouseExitMesh()
     RooftopComp->SetRenderCustomDepth(false);
     SideOptionComp->SetRenderCustomDepth(false);
     FrontOptionComp->SetRenderCustomDepth(false);
+    AdditionalMeshComp->SetRenderCustomDepth(false);
 }
